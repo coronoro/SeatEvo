@@ -1,4 +1,4 @@
 package model
 
-data class Track (val number: Int){
+data class Track(val number: Int) {
 }

@@ -128,11 +128,11 @@ object HelloJGraphT {
 
         // use helper classes to define how vertices should be rendered,
         // adhering to the DOT language restrictions
-        val vertexIdProvider =  ComponentNameProvider<URI>() {
-                it.host.replace('.', '_')
+        val vertexIdProvider = ComponentNameProvider<URI>() {
+            it.host.replace('.', '_')
         }
         val vertexLabelProvider = ComponentNameProvider<URI>() {
-                it.toString()
+            it.toString()
         }
         val exporter = DOTExporter<URI, DefaultEdge>(vertexIdProvider, vertexLabelProvider, null)
         val writer = StringWriter()

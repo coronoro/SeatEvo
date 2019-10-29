@@ -9,7 +9,7 @@ import kotlin.test.assertEquals
 class DurationConverterTest {
 
     @Test
-    fun test(){
+    fun test() {
         val duration = Duration.ofMinutes(15)
         val klaxon = Klaxon().converter(DurationConverter())
         val toJsonString = klaxon.toJsonString(duration)

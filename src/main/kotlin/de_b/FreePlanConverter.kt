@@ -3,14 +3,14 @@ package de_b
 import freeplan.Location
 import model.Station
 
-object  FreePlanConverter {
+object FreePlanConverter {
 
-    fun convert(location:Location): Station {
+    fun convert(location: Location): Station {
         return Station(location.name, location.id)
     }
 
-    fun convertAll(locations:List<Location>): List<Station> {
-        return locations.map { location -> convert(location)}
+    fun convertAll(locations: List<Location>): List<Station> {
+        return locations.map { location -> convert(location) }
     }
 
 }

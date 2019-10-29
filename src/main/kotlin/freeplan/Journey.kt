@@ -2,6 +2,7 @@ package freeplan
 
 import com.beust.klaxon.Json
 
-data class Journey (
+data class Journey(
     @Json(name = "train_locs")
-    val stops: List<JourneyStop>)
+    val stops: List<JourneyStop>
+)

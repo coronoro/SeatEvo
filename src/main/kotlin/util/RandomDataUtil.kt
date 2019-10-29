@@ -7,46 +7,42 @@ import model.TrainNetwork
 import model.Traveler
 import model.route.RouteItem
 import model.route.TravelerRoute
-import model.timetable.TimeTable
 import org.jgrapht.alg.shortestpath.DijkstraShortestPath
-import org.jgrapht.graph.DefaultWeightedEdge
-import java.lang.Exception
 import java.time.LocalTime
-import kotlin.random.Random
 
 object RandomDataUtil {
 
-    fun generateTravelers(network: TrainNetwork, amount: Int): List<Traveler>{
+    fun generateTravelers(network: TrainNetwork, amount: Int): List<Traveler> {
         val result = mutableListOf<Traveler>()
 
         val vertexSet = network.g.vertexSet()
         val stations = network.stations.toList()
 
-        for (i in 0 .. amount){
+        for (i in 0..amount) {
             //get a valid start point
             var startStationIndex: Int
             var startVertices: List<Pair<Station, LocalTime>>
-            do{
+            do {
                 startStationIndex = RandomUtil.seed.nextInt(0, stations.size - 1)
                 val startStation = stations.get(startStationIndex)
-                val vertices = vertexSet.filter { it -> it.first ==  startStation}
+                val vertices = vertexSet.filter { it -> it.first == startStation }
                 // get only vertices with an edge that leads to another station as a target
                 // might not be relevant in a real world szenario
-                startVertices = vertices.filter {it ->
-                    var result = false
+                startVertices = vertices.filter { it ->
+                    var filter = false
                     val outgoing = network.g.outgoingEdgesOf(it)
                     outgoing.forEach { edge ->
                         val vertex = network.g.getEdgeTarget(edge)
-                        if (vertex.first != startStation){
-                            result = true
+                        if (vertex.first != startStation) {
+                            filter = true
                         }
                     }
-                    result
+                    filter
                 }
-            }while (startVertices.isEmpty())
+            } while (startVertices.isEmpty())
 
             //TODO might be better to just get a random time?
-            val vertexIndex = RandomUtil.seed.nextInt(0, startVertices.size -1)
+            val vertexIndex = RandomUtil.seed.nextInt(0, startVertices.size - 1)
             val startVertex = startVertices.get(vertexIndex)
 
             //get target of the journey
@@ -54,28 +50,29 @@ object RandomDataUtil {
             var path: List<WeightedDataEdge>? = null
             do {
                 endStationIndex = RandomUtil.seed.nextInt(0, stations.size - 1)
-                if (startStationIndex != endStationIndex){
+                if (startStationIndex != endStationIndex) {
 
                     var pathWeight = Double.MAX_VALUE
-                    val endVertices= vertexSet.filter { it -> it.first == stations.get(endStationIndex) }
+                    val endVertices = vertexSet.filter { it -> it.first == stations.get(endStationIndex) }
                     endVertices.forEach { vertex ->
                         val graphData = DijkstraShortestPath.findPathBetween(network.g, startVertex, vertex);
-                        if (graphData != null){
-                            val weight = graphData.edgeList.fold(0.0, { acc, edge -> acc + network.g.getEdgeWeight(edge) })
-                            if (weight < pathWeight){
+                        if (graphData != null) {
+                            val weight =
+                                graphData.edgeList.fold(0.0, { acc, edge -> acc + network.g.getEdgeWeight(edge) })
+                            if (weight < pathWeight) {
                                 path = graphData.edgeList
                                 pathWeight = weight
                             }
                         }
                     }
                 }
-            }while (startStationIndex == endStationIndex || path == null)
+            } while (startStationIndex == endStationIndex || path == null)
 
             val routeList = mutableListOf<RouteItem>()
-            var previousTrain : Train? = null
+            var previousTrain: Train? = null
             path?.forEach { piece ->
                 val data = piece.data
-                if (data != null && data.train != previousTrain){
+                if (data != null && data.train != previousTrain) {
                     val from = network.g.getEdgeSource(piece)
                     previousTrain = data.train
                     val item = RouteItem(from.first, from.second, data.train, -1)

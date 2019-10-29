@@ -1,14 +1,30 @@
 [
-  {"wagons":  [
-    {"maxCapacity": 4},
-    {"maxCapacity": 4},
-    {"maxCapacity": 4}
-  ],
-  "id" :  0},
-  {"wagons":  [
-    {"maxCapacity": 3},
-    {"maxCapacity": 3},
-    {"maxCapacity": 3}
-  ],
-    "id" :  1}
+  {
+    "wagons": [
+      {
+        "maxCapacity": 4
+      },
+      {
+        "maxCapacity": 4
+      },
+      {
+        "maxCapacity": 4
+      }
+    ],
+    "id": 0
+  },
+  {
+    "wagons": [
+      {
+        "maxCapacity": 3
+      },
+      {
+        "maxCapacity": 3
+      },
+      {
+        "maxCapacity": 3
+      }
+    ],
+    "id": 1
+  }
 ]

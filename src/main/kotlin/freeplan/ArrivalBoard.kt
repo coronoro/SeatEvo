@@ -1,6 +1,6 @@
 package freeplan
 
-data class BoardEntry (
+data class BoardEntry(
     val name: String,
     val type: String,
     val boardId: Int,
@@ -10,5 +10,5 @@ data class BoardEntry (
     val origin: String,
     val track: String,
     val detailsId: String
-){
+) {
 }

@@ -12,12 +12,12 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 class XMLDataLoader {
 
-    companion object{
+    companion object {
 
         private val stationsLocation = "/stations/D_Bahnhof_2017_09.csv"
         private val wagonOrder = "/wagon_order/"
 
-        fun loadStationsMapping(): Map<String, Station>{
+        fun loadStationsMapping(): Map<String, Station> {
             val result = mutableMapOf<String, Station>()
             val resource = XMLDataLoader::class.java.getResource(stationsLocation)
             println("loading data from file: " + resource)
@@ -28,9 +28,9 @@ class XMLDataLoader {
                 reader.readLine()
 
                 var line = reader.readLine()
-                while (line != null){
+                while (line != null) {
                     val tokens = line.split(",")
-                    if (tokens.size > 0 ){
+                    if (tokens.size > 0) {
                         val id = tokens[StationCSV.EVA_NR.index]
                         val name = tokens[StationCSV.NAME.index]
                         val station = Station(name, id.toInt())
@@ -52,9 +52,9 @@ class XMLDataLoader {
 
             val resource = JsonDataLoader::class.java.getResource(wagonOrder)
             println("loading data from file: " + resource)
-            if (resource != null){
+            if (resource != null) {
                 val folder = File(resource.toURI())
-                if (folder.isDirectory){
+                if (folder.isDirectory) {
                     val listFiles = folder.listFiles()
                     listFiles.forEach { file ->
                         val documentBuilder = instance.newDocumentBuilder()
@@ -68,7 +68,7 @@ class XMLDataLoader {
                             ds100 = node.nodeValue
                         }
                         val station = stationsMapping.get(ds100)
-                        if (station == null){
+                        if (station == null) {
                             println("no station found for file: " + file.name)
                         }
                     }

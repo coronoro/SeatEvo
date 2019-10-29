@@ -9,7 +9,7 @@ import kotlin.test.assertEquals
 class LocalTimeConverterTest {
 
     @Test
-    fun test(){
+    fun test() {
         val localTime = LocalTime.of(15, 0)
         val klaxon = Klaxon().converter(LocalTimeConverter())
         val toJsonString = klaxon.toJsonString(localTime)

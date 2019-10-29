@@ -10,7 +10,7 @@ import kotlin.math.abs
 
 class TrainNetwork(val timeTables: List<TimeTable>) {
 
-    var g = DefaultDirectedWeightedGraph<Pair<Station,LocalTime>, WeightedDataEdge>(WeightedDataEdge::class.java)
+    var g = DefaultDirectedWeightedGraph<Pair<Station, LocalTime>, WeightedDataEdge>(WeightedDataEdge::class.java)
 
     var timeTableMap = HashMap<Int, TimeTable>()
 
@@ -22,12 +22,12 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
             timetable.departures.forEach { departure ->
                 for (i in 0 until timetable.stops.size) {
                     val first = timetable.stops.get(i)
-                    if(i+1 >= timetable.stops.size){
+                    if (i + 1 >= timetable.stops.size) {
                         break;
                     }
                     val second = timetable.stops.get(i + 1)
 
-                    if (first.departure != null && second.arrival != null){
+                    if (first.departure != null && second.arrival != null) {
                         val departureTime = departure.plus(first.departure)
                         var vertex1 = Pair(first.station, departureTime)
                         g.addVertex(vertex1)
@@ -44,8 +44,6 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
                     }
 
 
-
-
                 }
             }
         }
@@ -59,26 +57,26 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
     }
 
 
-    private fun addWaitingEdges(){
+    private fun addWaitingEdges() {
         val vertexSet = g.vertexSet()
         val stations = vertexSet.mapTo(HashSet<Station>()) { vertex -> vertex.first }
         stations.forEach { station ->
             val filter = vertexSet.filter { vertex -> vertex.first == station }
             val sorted = filter.sortedBy { it.second }
-            for (i in 0 until sorted.size){
-                if (i + 1 >= sorted.size){
+            for (i in 0 until sorted.size) {
+                if (i + 1 >= sorted.size) {
                     break
                 }
                 val first = sorted.get(i)
-                val second = sorted.get(i+1)
+                val second = sorted.get(i + 1)
                 val waiting = g.addEdge(first, second)
-                val between = ChronoUnit.MINUTES.between( first.second, second.second)
-                g.setEdgeWeight(waiting,between.toDouble())
+                val between = ChronoUnit.MINUTES.between(first.second, second.second)
+                g.setEdgeWeight(waiting, between.toDouble())
             }
         }
     }
 
-    fun getTimeTable(train:Train): TimeTable? {
+    fun getTimeTable(train: Train): TimeTable? {
         val timeTable = timeTableMap.get(train.id)
         return timeTable
     }
@@ -86,18 +84,18 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
     fun getTrack(train: Train, station: Station): Track? {
         var trackForStation: Track? = null
         val timeTable = getTimeTable(train)
-        if (timeTable != null){
+        if (timeTable != null) {
             trackForStation = timeTable.getTrackForStation(station)
         }
         return trackForStation
     }
 
-    fun getDistance(from: Train, fromWagonNumber: Int, to:Train, toWagonNumber: Int, station: Station): Int{
+    fun getDistance(from: Train, fromWagonNumber: Int, to: Train, toWagonNumber: Int, station: Station): Int {
         var result = 0
         val fromTrack = getTrack(from, station)
-        val toTrack = getTrack(from, station)
+        val toTrack = getTrack(to, station)
         //TODO implement
-        result = abs(fromWagonNumber- toWagonNumber) + 1
+        result = abs(fromWagonNumber - toWagonNumber) + 1
         return result
     }
 

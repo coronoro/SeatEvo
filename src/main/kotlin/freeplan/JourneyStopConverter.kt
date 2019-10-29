@@ -18,13 +18,13 @@ class JourneyStopConverter : Converter {
 
         try {
             arrTime = jv.objString("arrTime")
-        }catch (e: KlaxonException){
+        } catch (e: KlaxonException) {
 
         }
         var depTime: String? = null
         try {
             depTime = jv.objString("depTime")
-        }catch (e: KlaxonException){
+        } catch (e: KlaxonException) {
 
         }
 
@@ -33,12 +33,12 @@ class JourneyStopConverter : Converter {
         val type = jv.objString("type")
         val operator = jv.objString("operator")
 
-        var notes :List<Note> = emptyList()
+        var notes: List<Note> = emptyList()
         val array = jv.obj?.array<Note>("notes")
-        if (array != null){
+        if (array != null) {
             notes = array.toList()
         }
-        return JourneyStop(stopId, stopName,  lat, lon, arrTime, depTime, train, type, operator, notes)
+        return JourneyStop(stopId, stopName, lat, lon, arrTime, depTime, train, type, operator, notes)
     }
 
     override fun toJson(value: Any): String {

@@ -1,10 +1,10 @@
 package model.waycost
 
-class WayCostFunctions{
+class WayCostFunctions {
 
-    companion object{
+    companion object {
 
-        fun parallel(){
+        fun parallel() {
 
         }
 

@@ -2,7 +2,7 @@ package model.route
 
 import model.Identifiable
 
-abstract class Route<T>(val waypoints: List<T>, override val id: Int) : Identifiable{
+abstract class Route<T>(val waypoints: List<T>, override val id: Int) : Identifiable {
 
     private var iterator = waypoints.iterator()
 
@@ -10,11 +10,9 @@ abstract class Route<T>(val waypoints: List<T>, override val id: Int) : Identifi
         return iterator.next()
     }
 
-    fun anew(){
+    fun anew() {
         iterator = waypoints.iterator()
     }
-
-
 
 
 }

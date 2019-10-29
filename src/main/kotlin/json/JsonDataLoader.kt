@@ -10,7 +10,7 @@ import java.io.File
 
 class JsonDataLoader {
 
-    companion object{
+    companion object {
 
         private val trainRouteLocation = "/routes/trainRoutes.json"
         private val timeTableLocation = "/timetable/timetable.json"
@@ -18,15 +18,15 @@ class JsonDataLoader {
         private val stationsLocation = "/stations/stations.json"
         private val trainsLocation = "/trains/trains.json"
 
-        inline fun <reified T> loadJsonList(location: String, clazz: Class<T>):List<T>{
+        inline fun <reified T> loadJsonList(location: String, clazz: Class<T>): List<T> {
 
             var result = emptyList<T>()
             val resource = JsonDataLoader::class.java.getResource(location)
             println("loading data from file: " + resource)
-            if (resource != null){
+            if (resource != null) {
                 val file = File(resource.toURI())
                 val parse = JsonUtil.klaxon.parseArray<T>(file)
-                if (parse != null){
+                if (parse != null) {
                     result = parse
                 }
             }
@@ -56,11 +56,11 @@ class JsonDataLoader {
 
         }
 
-        fun <T : Identifiable>findIdentifier(list: List<T>, id: Int): T{
+        fun <T : Identifiable> findIdentifier(list: List<T>, id: Int): T {
             val filter = list.filter { item -> item.id == id }
-            if (filter.size == 1){
+            if (filter.size == 1) {
                 return filter[0]
-            }else
+            } else
                 throw Exception("used not defined Identifier")
         }
 

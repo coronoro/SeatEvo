@@ -12,6 +12,6 @@ abstract class MutationFunction(val mutationRate: Double) {
     var travelers = listOf<Traveler>()
     var network: TrainNetwork? = null
 
-    abstract fun mutate(individuals: List<Individual>) : List<Individual>
+    abstract fun mutate(individuals: List<Individual>): List<Individual>
 
 }

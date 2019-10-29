@@ -2,7 +2,7 @@ package util
 
 object StringUtil {
 
-    fun stripNonDigits(input: CharSequence ): String {
+    fun stripNonDigits(input: CharSequence): String {
         val sb = StringBuilder(
             input.length /* also inspired by seh's comment */
         )

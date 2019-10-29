@@ -4,10 +4,11 @@ import evo.recombination.TravelerCrossOver
 import evo.selectors.FitnessProportionalSelector
 import json.JsonDataLoader
 import model.TrainNetwork
+import model.Traveler
 import util.RandomDataUtil
 import java.io.File
 
-fun main (args: Array<String>){
+fun main(args: Array<String>) {
     loadMinimumExample()
     /*
     val stations = mutableListOf<Station>()
@@ -75,16 +76,27 @@ fun main (args: Array<String>){
 }
 
 
-fun loadMinimumExample(){
+fun loadMinimumExample() {
     val timeTables = JsonDataLoader.loadTimeTables()
     val trainNetwork = TrainNetwork(timeTables)
 
     val travelers = RandomDataUtil.generateTravelers(trainNetwork, 3)
+    travelers.forEach {
+        printTraveler(it)
+    }
     var popSize = 8
-    val genetic = SeatEvo(trainNetwork, travelers, popSize ,FitnessProportionalSelector(popSize), TravelerCrossOver(0.6), ChangeWagonMutation(0.85))
+    val genetic = SeatEvo(
+        trainNetwork,
+        travelers,
+        popSize,
+        FitnessProportionalSelector(popSize),
+        TravelerCrossOver(0.6),
+        ChangeWagonMutation(0.85)
+    )
     val result = genetic.evolution(5)
-    println(result)
 
+
+    println(result)
 
 
     /*
@@ -106,10 +118,17 @@ fun loadMinimumExample(){
      */
 }
 
+fun printTraveler(traveler: Traveler){
+    println("RouteId:" +traveler.route.id)
+    traveler.route.waypoints.forEach {
+        println("\t"+ it)
+    }
 
-fun save(data:String, resourcePath:String){
+}
+
+fun save(data: String, resourcePath: String) {
     val resource = JsonDataLoader::class.java.getResource(resourcePath)
-    if (resource != null){
+    if (resource != null) {
         File(resource.toURI()).writeText(data)
     }
 }

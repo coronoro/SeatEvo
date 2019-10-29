@@ -1,57 +1,104 @@
 [
   {
-    "train" : 0,
-    "departures" : [
-      {"hour":  10, "minute": 0},
-      {"hour":  12, "minute": 0}
+    "train": 0,
+    "departures": [
+      {
+        "hour": 10,
+        "minute": 0
+      },
+      {
+        "hour": 12,
+        "minute": 0
+      }
     ],
     "stops": [
       {
         "station": 0,
-        "departure": { "minutes": 0},
-        "track": {"number":  1}
+        "departure": {
+          "minutes": 0
+        },
+        "track": {
+          "number": 1
+        }
       },
       {
         "station": 1,
-        "arrival": {"minutes": 14},
-        "departure": {"minutes": 15},
-        "track": {"number":  1}
+        "arrival": {
+          "minutes": 14
+        },
+        "departure": {
+          "minutes": 15
+        },
+        "track": {
+          "number": 1
+        }
       },
       {
         "station": 2,
-        "arrival": {"minutes": 29},
-        "departure": {"minutes": 30},
-        "track": {"number":  1}
+        "arrival": {
+          "minutes": 29
+        },
+        "departure": {
+          "minutes": 30
+        },
+        "track": {
+          "number": 1
+        }
       },
       {
         "station": 3,
-        "arrival": {"minutes": 44},
-        "track": {"number":  1}
+        "arrival": {
+          "minutes": 44
+        },
+        "track": {
+          "number": 1
+        }
       }
+      
     ]
   },
   {
-    "train" : 1,
-    "departures" : [
-      {"hour":  10, "minute": 0},
-      {"hour":  11, "minute": 0}
+    "train": 1,
+    "departures": [
+      {
+        "hour": 10,
+        "minute": 0
+      },
+      {
+        "hour": 11,
+        "minute": 0
+      }
     ],
     "stops": [
       {
         "station": 4,
-        "departure": {"minutes": 0},
-        "track": {"number":  2}
+        "departure": {
+          "minutes": 0
+        },
+        "track": {
+          "number": 2
+        }
       },
       {
         "station": 2,
-        "arrival": {"minutes": 15},
-        "departure": {"minutes": 16},
-        "track": {"number":  2}
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": {
+          "minutes": 16
+        },
+        "track": {
+          "number": 2
+        }
       },
       {
         "station": 5,
-        "arrival": {"minutes": 29},
-        "track": {"number":  2}
+        "arrival": {
+          "minutes": 29
+        },
+        "track": {
+          "number": 2
+        }
       }
     ]
   }

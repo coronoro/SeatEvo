@@ -1,20 +1,17 @@
 package graph
 
-import org.jgrapht.graph.DefaultDirectedGraph
-import org.jgrapht.graph.DefaultEdge
-import org.junit.jupiter.api.BeforeAll
-import javax.imageio.ImageIO
-import java.io.File
-import com.mxgraph.util.mxCellRenderer
-import java.awt.image.BufferedImage
 import com.mxgraph.layout.mxCircleLayout
-import com.mxgraph.layout.mxIGraphLayout
+import com.mxgraph.util.mxCellRenderer
 import com.mxgraph.view.mxGraph
 import org.jgrapht.ext.JGraphXAdapter
+import org.jgrapht.graph.DefaultDirectedGraph
+import org.jgrapht.graph.DefaultEdge
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.awt.Color
-import kotlin.test.*
+import java.io.File
+import javax.imageio.ImageIO
+import kotlin.test.assertTrue
 
 
 class GraphVisualizationTest {
@@ -22,7 +19,7 @@ class GraphVisualizationTest {
     var g = DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge::class.java)
 
     @BeforeEach
-    fun init(){
+    fun init() {
 
 
         val x1 = "x1"
@@ -39,7 +36,7 @@ class GraphVisualizationTest {
     }
 
     @Test
-    fun test(){
+    fun test() {
         val graphAdapter = JGraphXAdapter<String, DefaultEdge>(g)
         val layout = mxCircleLayout(graphAdapter as mxGraph?)
         layout.execute(graphAdapter.defaultParent)
