@@ -15,8 +15,6 @@ import kotlin.random.Random
 
 object RandomDataUtil {
 
-    var seed = Random.Default
-
     fun generateTravelers(network: TrainNetwork, amount: Int): List<Traveler>{
         val result = mutableListOf<Traveler>()
 
@@ -28,7 +26,7 @@ object RandomDataUtil {
             var startStationIndex: Int
             var startVertices: List<Pair<Station, LocalTime>>
             do{
-                startStationIndex = seed.nextInt(0, stations.size - 1)
+                startStationIndex = RandomUtil.seed.nextInt(0, stations.size - 1)
                 val startStation = stations.get(startStationIndex)
                 val vertices = vertexSet.filter { it -> it.first ==  startStation}
                 // get only vertices with an edge that leads to another station as a target
@@ -47,14 +45,14 @@ object RandomDataUtil {
             }while (startVertices.isEmpty())
 
             //TODO might be better to just get a random time?
-            val vertexIndex = seed.nextInt(0, startVertices.size -1)
+            val vertexIndex = RandomUtil.seed.nextInt(0, startVertices.size -1)
             val startVertex = startVertices.get(vertexIndex)
 
             //get target of the journey
             var endStationIndex: Int
             var path: List<WeightedDataEdge>? = null
             do {
-                endStationIndex = seed.nextInt(0, stations.size - 1)
+                endStationIndex = RandomUtil.seed.nextInt(0, stations.size - 1)
                 if (startStationIndex != endStationIndex){
 
                     var pathWeight = Double.MAX_VALUE
