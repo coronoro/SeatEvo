@@ -1,4 +1,7 @@
 import evo.SeatEvo
+import evo.mutation.ChangeWagonMutation
+import evo.recombination.TravelerCrossOver
+import evo.selectors.FitnessProportionalSelector
 import json.JsonDataLoader
 import model.TrainNetwork
 import util.RandomDataUtil
@@ -77,7 +80,10 @@ fun loadMinimumExample(){
     val trainNetwork = TrainNetwork(timeTables)
 
     val travelers = RandomDataUtil.generateTravelers(trainNetwork, 3)
-    SeatEvo(trainNetwork, travelers)
+    var popSize = 8
+    val genetic = SeatEvo(trainNetwork, travelers, popSize ,FitnessProportionalSelector(popSize), TravelerCrossOver(0.6), ChangeWagonMutation(0.85))
+    val result = genetic.evolution(5)
+    println(result)
 
 
 

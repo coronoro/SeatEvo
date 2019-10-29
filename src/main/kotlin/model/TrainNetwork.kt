@@ -6,15 +6,19 @@ import org.jgrapht.graph.DefaultDirectedWeightedGraph
 import util.GraphUtil
 import java.time.LocalTime
 import java.time.temporal.ChronoUnit
+import kotlin.math.abs
 
-class TrainNetwork(timeTables: List<TimeTable>) {
+class TrainNetwork(val timeTables: List<TimeTable>) {
 
     var g = DefaultDirectedWeightedGraph<Pair<Station,LocalTime>, WeightedDataEdge>(WeightedDataEdge::class.java)
+
+    var timeTableMap = HashMap<Int, TimeTable>()
 
     val stations: HashSet<Station>
 
     init {
         timeTables.forEach { timetable ->
+            timeTableMap.put(timetable.train.id, timetable)
             timetable.departures.forEach { departure ->
                 for (i in 0 until timetable.stops.size) {
                     val first = timetable.stops.get(i)
@@ -55,7 +59,7 @@ class TrainNetwork(timeTables: List<TimeTable>) {
     }
 
 
-    fun addWaitingEdges(){
+    private fun addWaitingEdges(){
         val vertexSet = g.vertexSet()
         val stations = vertexSet.mapTo(HashSet<Station>()) { vertex -> vertex.first }
         stations.forEach { station ->
@@ -72,6 +76,29 @@ class TrainNetwork(timeTables: List<TimeTable>) {
                 g.setEdgeWeight(waiting,between.toDouble())
             }
         }
+    }
+
+    fun getTimeTable(train:Train): TimeTable? {
+        val timeTable = timeTableMap.get(train.id)
+        return timeTable
+    }
+
+    fun getTrack(train: Train, station: Station): Track? {
+        var trackForStation: Track? = null
+        val timeTable = getTimeTable(train)
+        if (timeTable != null){
+            trackForStation = timeTable.getTrackForStation(station)
+        }
+        return trackForStation
+    }
+
+    fun getDistance(from: Train, fromWagonNumber: Int, to:Train, toWagonNumber: Int, station: Station): Int{
+        var result = 0
+        val fromTrack = getTrack(from, station)
+        val toTrack = getTrack(from, station)
+        //TODO implement
+        result = abs(fromWagonNumber- toWagonNumber) + 1
+        return result
     }
 
 }

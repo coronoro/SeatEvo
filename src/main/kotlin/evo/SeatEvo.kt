@@ -1,5 +1,8 @@
 package evo
 
+import evo.mutation.MutationFunction
+import evo.recombination.RecombinationFunction
+import evo.selectors.SelectorFunction
 import model.TrainNetwork
 import model.Traveler
 import util.RandomDataUtil
@@ -8,12 +11,14 @@ import util.RandomUtil
 class SeatEvo(
     var network: TrainNetwork,
     var travelers: List<Traveler>,
-    var mutRate: Double = 1.0,
-    var recombRate: Double = 0.6,
-    var popSize: Int = 8,
-    val tCount: Int = 4) {
+    val popSize: Int = 8,
+    val selector: SelectorFunction,
+    val recobinator: RecombinationFunction,
+    val mutator: MutationFunction) {
 
-    fun evolution(cycles: Int){
+    fun evolution(cycles: Int): List<Individual> {
+        mutator.travelers = travelers
+        mutator.network = network
         //create initial population
         var population = createRandomPopulation()
         for(i in 0 .. cycles){
@@ -23,16 +28,31 @@ class SeatEvo(
                 it.fitness = evaluate
             }
 
+            val selected = selector.select(population)
+            population = recobinator.recombine(selected).toMutableList()
+            population = mutator.mutate(population).toMutableList()
         }
+        population.forEach{
+            val evaluate = evaluate(it)
+            it.fitness = evaluate
+        }
+
+        return population
+    }
+
+
+    private fun insert(population: List<Individual>){
+
+
     }
 
     private fun createRandomPopulation(): MutableList<Individual> {
         val population = mutableListOf<Individual>()
-        for (i in 0 until 8){
+        for (i in 0 until popSize){
             val individual = createRandomIndividual()
             population.add(individual)
         }
-        return population;
+        return population
     }
 
 

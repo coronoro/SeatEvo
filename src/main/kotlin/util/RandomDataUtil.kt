@@ -2,6 +2,7 @@ package util
 
 import graph.WeightedDataEdge
 import model.Station
+import model.Train
 import model.TrainNetwork
 import model.Traveler
 import model.route.RouteItem
@@ -71,15 +72,23 @@ object RandomDataUtil {
             }while (startStationIndex == endStationIndex || path == null)
 
             val routeList = mutableListOf<RouteItem>()
+            var previousTrain : Train? = null
             path?.forEach { piece ->
                 val data = piece.data
-                if (data != null){
+                if (data != null && data.train != previousTrain){
                     val from = network.g.getEdgeSource(piece)
-
+                    previousTrain = data.train
                     val item = RouteItem(from.first, from.second, data.train, -1)
                     routeList.add(item)
                 }
             }
+            val last = path?.last()
+            val data = last?.data
+            val from = network.g.getEdgeTarget(last)
+            previousTrain = data?.train
+            val item = RouteItem(from.first, from.second, data?.train!!, -1)
+            routeList.add(item)
+
             val route = TravelerRoute(routeList, i)
             val traveler = Traveler(route)
             result.add(traveler)
