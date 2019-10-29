@@ -3,7 +3,7 @@ package evo.selectors
 import evo.Individual
 import util.RandomUtil
 
-class StochasticUniversalSampling(var amount:Int): SelectorFunction() {
+class StochasticUniversalSampling(val amount:Int): SelectorFunction() {
 
     override fun select(population: List<Individual>): List<Individual> {
         val result = mutableListOf<Individual>()
@@ -18,6 +18,7 @@ class StochasticUniversalSampling(var amount:Int): SelectorFunction() {
             while (fitnessSum > start+(i*distance)){
                 individual = population.get(j)
                 fitnessSum += individual.fitness
+                j++
             }
             result.add(individual)
         }
