@@ -21,19 +21,19 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
             timeTableMap.put(timetable.train.id, timetable)
             timetable.departures.forEach { departure ->
                 for (i in 0 until timetable.stops.size) {
-                    val first = timetable.stops.get(i)
+                    val first = timetable.stops[i]
                     if (i + 1 >= timetable.stops.size) {
-                        break;
+                        break
                     }
-                    val second = timetable.stops.get(i + 1)
+                    val second = timetable.stops[i + 1]
 
                     if (first.departure != null && second.arrival != null) {
                         val departureTime = departure.plus(first.departure)
-                        var vertex1 = Pair(first.station, departureTime)
+                        val vertex1 = Pair(first.station, departureTime)
                         g.addVertex(vertex1)
 
                         val arrivalTime = departure.plus(second.arrival)
-                        var vertex2 = Pair(second.station, arrivalTime)
+                        val vertex2 = Pair(second.station, arrivalTime)
                         g.addVertex(vertex2)
 
                         val duration = second.arrival!!.minus(first.departure)
@@ -49,7 +49,7 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
         }
         // set stations
         val vertexSet = g.vertexSet()
-        stations = vertexSet.mapTo(HashSet<Station>()) { vertex -> vertex.first }
+        stations = vertexSet.mapTo(HashSet()) { vertex -> vertex.first }
 
         //add edges for waiting
         addWaitingEdges()
@@ -59,7 +59,7 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
 
     private fun addWaitingEdges() {
         val vertexSet = g.vertexSet()
-        val stations = vertexSet.mapTo(HashSet<Station>()) { vertex -> vertex.first }
+        val stations = vertexSet.mapTo(HashSet()) { vertex -> vertex.first }
         stations.forEach { station ->
             val filter = vertexSet.filter { vertex -> vertex.first == station }
             val sorted = filter.sortedBy { it.second }
@@ -90,12 +90,26 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
         return trackForStation
     }
 
+    /**
+     * gets distance between two trainwagons on a specific station
+     */
     fun getDistance(from: Train, fromWagonNumber: Int, to: Train, toWagonNumber: Int, station: Station): Int {
         var result = 0
         val fromTrack = getTrack(from, station)
         val toTrack = getTrack(to, station)
         //TODO implement
         result = abs(fromWagonNumber - toWagonNumber) + 1
+        return result
+    }
+
+    /**
+     * gets distance to board or leave a train on a specifiv station
+     */
+    fun getDistance(train: Train, wagon: Int, station: Station): Int {
+        var result = 0
+        val track = getTrack(train, station)
+        //TODO implement
+        result = wagon + 1
         return result
     }
 

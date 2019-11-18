@@ -1,7 +1,7 @@
 import evo.SeatEvo
 import evo.mutation.ChangeWagonMutation
 import evo.recombination.TravelerCrossOver
-import evo.selectors.FitnessProportionalSelector
+import evo.selectors.InverseFitnessProportionalSelector
 import json.JsonDataLoader
 import model.TrainNetwork
 import model.Traveler
@@ -89,14 +89,14 @@ fun loadMinimumExample() {
         trainNetwork,
         travelers,
         popSize,
-        FitnessProportionalSelector(popSize),
+        InverseFitnessProportionalSelector(popSize),
         TravelerCrossOver(0.6),
         ChangeWagonMutation(0.85)
     )
-    val result = genetic.evolution(5)
+    val result = genetic.evolution(20)
 
-
-    println(result)
+    println("==== result ====")
+    println(result.toString() + "fitness: "+ result.fitness)
 
 
     /*

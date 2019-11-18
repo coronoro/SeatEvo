@@ -34,7 +34,7 @@
  * Use:
  * java InstallCert hostname
  * Example:
- *% java InstallCert ecc.fedora.redhat.com
+ * % java InstallCert ecc.fedora.redhat.com
  */
 
 import javax.net.ssl.*;
@@ -49,6 +49,8 @@ import java.security.cert.X509Certificate;
  * with your trusted certificates.
  */
 public class InstallCert {
+
+    private static final char[] HEXDIGITS = "0123456789abcdef".toCharArray();
 
     public static void main(String[] args) throws Exception {
         String host;
@@ -156,8 +158,6 @@ public class InstallCert {
                         + alias + "'");
     }
 
-    private static final char[] HEXDIGITS = "0123456789abcdef".toCharArray();
-
     private static String toHexString(byte[] bytes) {
         StringBuilder sb = new StringBuilder(bytes.length * 3);
         for (int b : bytes) {
@@ -179,13 +179,13 @@ public class InstallCert {
         }
 
         public X509Certificate[] getAcceptedIssuers() {
-	   
-	    /** 
-	     * This change has been done due to the following resolution advised for Java 1.7+
-		http://infposs.blogspot.kr/2013/06/installcert-and-java-7.html
-       	     **/ 
-	    
-	    return new X509Certificate[0];	
+
+            /**
+             * This change has been done due to the following resolution advised for Java 1.7+
+             http://infposs.blogspot.kr/2013/06/installcert-and-java-7.html
+             **/
+
+            return new X509Certificate[0];
             //throw new UnsupportedOperationException();
         }
 

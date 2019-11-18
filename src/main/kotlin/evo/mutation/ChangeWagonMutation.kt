@@ -11,7 +11,10 @@ class ChangeWagonMutation(mutationRate: Double) : MutationFunction(mutationRate)
             if (mutate > mutationRate) {
                 val travelerIndex = RandomUtil.seed.nextInt(0, individual.data.size - 1)
                 val travelerPath = individual.data.get(travelerIndex).toMutableList()
-                val wagonIndex = RandomUtil.seed.nextInt(0, travelerPath.size - 1)
+                var wagonIndex = 0
+                if (travelerPath.size > 1){
+                    wagonIndex = RandomUtil.seed.nextInt(0, travelerPath.size - 1)
+                }
 
                 val traveler = this.travelers.get(travelerIndex)
                 val routeItem = traveler.route.waypoints.get(wagonIndex)

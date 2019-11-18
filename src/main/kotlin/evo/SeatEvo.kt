@@ -24,14 +24,16 @@ class SeatEvo(
         //create initial population
 
         var best = Individual(emptyList())
-        best.fitness = Int.MAX_VALUE
+        best.fitness = Double.MAX_VALUE
         var population = createRandomPopulation()
         for (i in 0..cycles) {
+            println("========================")
             // evaluate individuals
             population.forEach {
                 val evaluate = evaluate(it)
                 it.fitness = evaluate
-                if (evaluate < best.fitness)
+                println(it.toString() + " fitness: " + evaluate)
+                if (evaluate <= best.fitness)
                     best = it
             }
 
@@ -39,7 +41,7 @@ class SeatEvo(
             population = recobinator.recombine(selected).toMutableList()
             population = mutator.mutate(population).toMutableList()
         }
-
+        //evaluate the last population
         population.forEach {
             val evaluate = evaluate(it)
             it.fitness = evaluate
@@ -72,27 +74,33 @@ class SeatEvo(
     }
 
 
-    private fun evaluate(individual: Individual): Int {
-        var fitness = 0
+    private fun evaluate(individual: Individual): Double {
+        var fitness = 0.0
         for (i in 0 until travelers.size) {
             val wagonData = individual.data.get(i)
             val traveler = travelers.get(0)
-            val stopsSize = traveler.route.waypoints.size
-            for (j in 0 until stopsSize step 2) {
+            //ignore the last entry
+            val stopsSize = traveler.route.waypoints.size - 1
+            var distance = 0
+
+            for (j in 0 until stopsSize) {
                 val wp = traveler.route.waypoints.get(j)
                 val wagonNumber = wagonData.get(j)
-                if (j + 1 < stopsSize) {
-                    val nextWp = traveler.route.waypoints.get(j + 1)
-                    val nextWagonNumber = wagonData.get(j + 1)
-                    val station = nextWp.station
+                //if there is no predecessor
+                if (j-1 < 0){
                     //TODO check if there is any space in the wagon -> fitness penalty
-
-                    val distance = network.getDistance(wp.train, wagonNumber, nextWp.train, nextWagonNumber, station)
-                    fitness += distance
-                } else {
-
+                    distance = network.getDistance(wp.train, wagonNumber, wp.station)
+                }else{
+                    val previousWp = traveler.route.waypoints.get(j - 1)
+                    val previousWagonNumber = wagonData.get(j - 1)
+                    //TODO check if there is any space in the wagon -> fitness penalty
+                    distance = network.getDistance(wp.train, wagonNumber, previousWp.train, previousWagonNumber, wp.station)
                 }
+                fitness += distance
             }
+            //get the distance for leaving
+            val last = traveler.route.waypoints.last()
+            fitness += network.getDistance(last.train, wagonData.last(), last.station)
         }
         return fitness
     }
@@ -101,7 +109,8 @@ class SeatEvo(
         val data = mutableListOf<List<Int>>()
         travelers.forEach { traveler ->
             val routeWagons = mutableListOf<Int>()
-            traveler.route.waypoints.forEach { entry ->
+            for (i in 0 until traveler.route.waypoints.size - 1){
+                val entry = traveler.route.waypoints[i]
                 val max = entry.train.wagons.size
                 val wagonNumber = RandomUtil.seed.nextInt(0, max)
                 routeWagons.add(wagonNumber)
