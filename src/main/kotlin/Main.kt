@@ -2,6 +2,8 @@ import evo.SeatEvo
 import evo.mutation.ChangeWagonMutation
 import evo.recombination.TravelerCrossOver
 import evo.selectors.InverseFitnessProportionalSelector
+import evo.selectors.InverseStochasticUniversalSampling
+import evo.selectors.StochasticUniversalSampling
 import json.JsonDataLoader
 import model.TrainNetwork
 import model.Traveler
@@ -89,7 +91,7 @@ fun loadMinimumExample() {
         trainNetwork,
         travelers,
         popSize,
-        InverseFitnessProportionalSelector(popSize),
+        InverseStochasticUniversalSampling(popSize),
         TravelerCrossOver(0.6),
         ChangeWagonMutation(0.85)
     )
