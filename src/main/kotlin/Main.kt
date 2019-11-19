@@ -82,42 +82,29 @@ fun loadMinimumExample() {
     val timeTables = JsonDataLoader.loadTimeTables()
     val trainNetwork = TrainNetwork(timeTables)
 
-    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 3)
+    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 15)
     travelers.forEach {
         printTraveler(it)
     }
-    var popSize = 8
+    val popSize = 80
+    val cycles = 100
     val genetic = SeatEvo(
         trainNetwork,
         travelers,
         popSize,
+        cycles,
+        //InverseFitnessProportionalSelector(popSize),
         InverseStochasticUniversalSampling(popSize),
-        TravelerCrossOver(0.6),
-        ChangeWagonMutation(0.85)
+        TravelerCrossOver(0.75),
+        ChangeWagonMutation(0.9)
     )
-    val result = genetic.evolution(20)
+
+    val result = genetic.evolution()
 
     println("==== result ====")
-    println(result.toString() + "fitness: "+ result.fitness)
+    println(result.toString() + "fitness: " + result.fitness)
+    genetic.printConfig()
 
-
-    /*
-
-    val cityCount = timeTable.stations.size
-
-    for (i in 0 .. maximum){
-        val start = seed.nextInt(0, cityCount)
-        var end : Int
-        do {
-            end = seed.nextInt(0, cityCount)
-        }while (start == end)
-
-    }
-
-    println(timeTable)
-    //val seatEvo = SeatEvo(timeTable, )
-
-     */
 }
 
 fun printTraveler(traveler: Traveler){
