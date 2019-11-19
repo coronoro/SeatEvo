@@ -1,6 +1,5 @@
 package xml
 
-import de_b.StationCSV
 import json.JsonDataLoader
 import model.Station
 import model.Train
@@ -9,6 +8,13 @@ import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
 import javax.xml.parsers.DocumentBuilderFactory
+
+enum class StationCSV(var index: Int) {
+    EVA_NR(0),
+    DS100(1),
+    NAME(3)
+
+}
 
 class XMLDataLoader {
 
