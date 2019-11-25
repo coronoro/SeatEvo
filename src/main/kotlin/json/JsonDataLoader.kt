@@ -61,7 +61,7 @@ class JsonDataLoader {
             if (filter.size == 1) {
                 return filter[0]
             } else
-                throw Exception("used not defined Identifier")
+                throw Exception("used not defined Identifier: " + id)
         }
 
     }
