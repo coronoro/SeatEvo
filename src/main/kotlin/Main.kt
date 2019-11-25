@@ -81,13 +81,10 @@ fun main(args: Array<String>) {
 fun loadMinimumExample() {
     val timeTables = JsonDataLoader.loadTimeTables()
     val trainNetwork = TrainNetwork(timeTables)
+    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 45)
 
-    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 15)
-    travelers.forEach {
-        printTraveler(it)
-    }
-    val popSize = 80
-    val cycles = 100
+    val popSize = 200
+    val cycles = 400
     val genetic = SeatEvo(
         trainNetwork,
         travelers,
@@ -104,6 +101,12 @@ fun loadMinimumExample() {
     println("==== result ====")
     println(result.toString() + "fitness: " + result.fitness)
     genetic.printConfig()
+
+    println("==== travelers ====")
+
+    travelers.forEach {
+        printTraveler(it)
+    }
 
 }
 

@@ -18,4 +18,6 @@ data class TimeTable(var train: Train, val departures: List<LocalTime>, val stop
     fun getTrackForStation(station: Station): Track? {
         return stationTrailMap.get(station.id)
     }
+
+
 }

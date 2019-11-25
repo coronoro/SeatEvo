@@ -74,17 +74,12 @@ object RandomDataUtil {
                 val data = piece.data
                 if (data != null && data.train != previousTrain) {
                     val from = network.g.getEdgeSource(piece)
+                    val to = network.g.getEdgeTarget(piece)
                     previousTrain = data.train
-                    val item = RouteItem(from.first, from.second, data.train, -1)
+                    val item = RouteItem(from.first, from.second, to.first, to.second, data.train, -1)
                     routeList.add(item)
                 }
             }
-            val last = path?.last()
-            val data = last?.data
-            val from = network.g.getEdgeTarget(last)
-            previousTrain = data?.train
-            val item = RouteItem(from.first, from.second, data?.train!!, -1)
-            routeList.add(item)
 
             val route = TravelerRoute(routeList, i)
             val traveler = Traveler(route)
