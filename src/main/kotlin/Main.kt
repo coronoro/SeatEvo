@@ -81,9 +81,9 @@ fun main(args: Array<String>) {
 fun loadMinimumExample() {
     val timeTables = JsonDataLoader.loadTimeTables()
     val trainNetwork = TrainNetwork(timeTables)
-    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 45)
+    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 40)
 
-    val popSize = 200
+    val popSize = 250
     val cycles = 400
     val genetic = SeatEvo(
         trainNetwork,

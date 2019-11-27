@@ -12,7 +12,7 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
 
     var g = DefaultDirectedWeightedGraph<Pair<Station, LocalTime>, WeightedDataEdge>(WeightedDataEdge::class.java)
 
-    var timeTableMap = HashMap<Int, TimeTable>()
+    var timeTableMap = HashMap<String, TimeTable>()
 
     val stations: HashSet<Station>
 

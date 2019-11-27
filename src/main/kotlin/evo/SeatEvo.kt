@@ -37,6 +37,7 @@ class SeatEvo(
 
         var best = Individual(emptyList())
         var bestFitness = Double.MAX_VALUE
+        var bestCircle = 0;
         var population = createRandomPopulation()
         for (i in 0..cycles) {
             logging("======================== " + popSize + " | #" + i + " ======================== ")
@@ -48,6 +49,7 @@ class SeatEvo(
                 if (evaluate <= bestFitness){
                     best = it
                     bestFitness = evaluate
+                    bestCircle = i
                 }
             }
 
@@ -63,7 +65,7 @@ class SeatEvo(
                 best = it
         }
 
-        best
+        logging("best found in circle " + bestCircle)
         return best
     }
 
@@ -129,7 +131,7 @@ class SeatEvo(
     private fun getWagonOverload(individual: Individual): Int {
 
         var overload = 0
-        val trainmap = HashMap<Int, MutableList<RouteItem>>()
+        val trainmap = HashMap<String, MutableList<RouteItem>>()
         travelers.forEachIndexed { i, traveler ->
             traveler.route.waypoints.forEachIndexed { j, it ->
                 it.wagonNumber = individual.data[i][j]
@@ -159,6 +161,7 @@ class SeatEvo(
                     val wagon = routeItem.train.wagons.get(routeItem.wagonNumber)
                     wagon.occupied += 1
                     if (wagon.maxCapacity < wagon.occupied){
+                        logging("overload in train: " + key + " in wagon: "+  routeItem.wagonNumber)
                         overload += wagon.occupied - wagon.maxCapacity
                     }
                     past.push(routeItem)

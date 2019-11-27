@@ -81,10 +81,9 @@ object RandomDataUtil {
                 }
             }
 
-            val route = TravelerRoute(routeList, i)
+            val route = TravelerRoute(routeList, i.toString())
             val traveler = Traveler(route)
             result.add(traveler)
-
         }
         return result
     }

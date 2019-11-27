@@ -7,7 +7,7 @@ import java.time.LocalTime
 
 data class TimeTable(var train: Train, val departures: List<LocalTime>, val stops: List<StationStop>) {
 
-    private val stationTrailMap = HashMap<Int, Track>()
+    private val stationTrailMap = HashMap<String, Track>()
 
     init {
         stops.forEach { stop ->

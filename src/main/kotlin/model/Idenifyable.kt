@@ -2,6 +2,6 @@ package model
 
 interface Identifiable {
 
-    val id: Int
+    val id: String
 
 }

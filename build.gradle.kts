@@ -19,7 +19,7 @@ dependencies {
     implementation("com.beust:klaxon:5.1")
     compile(group= "org.restlet.jee", name= "org.restlet", version= "2.3.12")
     testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
-    implementation("com.github.coronoro:marudorAPI:c428bc2fcb")
+    implementation("com.github.coronoro:marudorAPI:8d111dd520")
     compile( "org.jgrapht", "jgrapht-core",  "1.3.1")
     compile( "org.jgrapht", "jgrapht-io",  "1.3.1")
     compile( "org.jgrapht", "jgrapht-ext",  "1.3.1")

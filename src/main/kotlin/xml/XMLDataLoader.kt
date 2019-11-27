@@ -39,7 +39,7 @@ class XMLDataLoader {
                     if (tokens.size > 0) {
                         val id = tokens[StationCSV.EVA_NR.index]
                         val name = tokens[StationCSV.NAME.index]
-                        val station = Station(name, id.toInt())
+                        val station = Station(name, id)
 
                         val ds100 = tokens[StationCSV.DS100.index]
                         result.put(ds100, station)

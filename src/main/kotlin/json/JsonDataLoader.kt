@@ -56,7 +56,7 @@ class JsonDataLoader {
 
         }
 
-        fun <T : Identifiable> findIdentifier(list: List<T>, id: Int): T {
+        fun <T : Identifiable> findIdentifier(list: List<T>, id: String): T {
             val filter = list.filter { item -> item.id == id }
             if (filter.size == 1) {
                 return filter[0]
