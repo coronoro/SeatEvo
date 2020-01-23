@@ -1,9 +1,7 @@
 import evo.SeatEvo
 import evo.mutation.ChangeWagonMutation
 import evo.recombination.TravelerCrossOver
-import evo.selectors.InverseFitnessProportionalSelector
 import evo.selectors.InverseStochasticUniversalSampling
-import evo.selectors.StochasticUniversalSampling
 import json.JsonDataLoader
 import model.TrainNetwork
 import model.Traveler
@@ -11,69 +9,8 @@ import util.RandomDataUtil
 import java.io.File
 
 fun main(args: Array<String>) {
+    //MarudorLoader.loadICE()
     loadMinimumExample()
-    /*
-    val stations = mutableListOf<Station>()
-    val trains = mutableListOf<Train>()
-    val locations = FreePlanApi.findLocations("Leipzig")
-    var routeID = 0
-    stations.addAll(FreePlanConverter.convertAll(locations))
-
-    locations.forEach{location ->
-        val arrivalBoards = FreePlanApi.getArrivalBoard(location)
-        arrivalBoards.forEach{board ->
-            val trainId = StringUtil.stripNonDigits(board.name).toInt()
-            val route = mutableListOf<Pair<Station, Track>>()
-            val stops = FreePlanApi.getJourney(board)
-            stops.sortedBy { it.depTime }
-            stops.forEach { stop ->
-                val filter = stations.filter { station -> station.id == stop.stopId }
-                var station: Station
-                if (filter.isEmpty()){
-                    val location = FreePlanApi.findLocation(stop.stopName, stop.stopId)
-                    if (location == null){
-                        throw Exception("no location found for: " + stop.stopName)
-                    }
-                    station = FreePlanConverter.convert(location)
-                    stations.add(station)
-                }else{
-                    station = filter.get(0)
-                }
-                route.add(Pair(station,Track(-1)))
-            }
-            val trainRoute = TrainRoute(route,routeID)
-            routeID++
-            trains.add(Train(emptyList(), trainRoute, trainId))
-        }
-    }
-
-    val klaxon = Klaxon()
-    val json = klaxon.toJsonString(stations)
-    save( klaxon.toJsonString(stations),"/stations/freeplan_stations.json")
-    save( klaxon.toJsonString(trains),"/stations/freeplan_trains.json")
-
-*/
-
-/*
-    val timeTable = JsonDataLoader.loadTimeTable()
-    val maximum = timeTable.getFlowMaximum()
-    val travelers = mutableListOf<Traveler>()
-
-    var seed = Random.Default
-    val cityCount = timeTable.stations.size
-
-    for (i in 0 .. maximum){
-        val start = seed.nextInt(0, cityCount)
-        var end : Int
-        do {
-            end = seed.nextInt(0, cityCount)
-        }while (start == end)
-
-    }
-
-    println(timeTable)
-    //val seatEvo = SeatEvo(timeTable)
-*/
 
 }
 
@@ -81,10 +18,10 @@ fun main(args: Array<String>) {
 fun loadMinimumExample() {
     val timeTables = JsonDataLoader.loadTimeTables()
     val trainNetwork = TrainNetwork(timeTables)
-    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 40)
+    val travelers = RandomDataUtil.generateTravelers(trainNetwork, 60)
 
-    val popSize = 250
-    val cycles = 400
+    val popSize = 400
+    val cycles = 600
     val genetic = SeatEvo(
         trainNetwork,
         travelers,
@@ -93,9 +30,9 @@ fun loadMinimumExample() {
         //InverseFitnessProportionalSelector(popSize),
         InverseStochasticUniversalSampling(popSize),
         TravelerCrossOver(0.75),
-        ChangeWagonMutation(0.9)
+        ChangeWagonMutation(0.8)
     )
-
+    genetic.logging = false
     val result = genetic.evolution()
 
     println("==== result ====")
@@ -103,6 +40,9 @@ fun loadMinimumExample() {
     genetic.printConfig()
 
     println("==== travelers ====")
+
+    genetic.analysis.showChart()
+    genetic.analysis.setVisible(true);
 
     travelers.forEach {
         printTraveler(it)

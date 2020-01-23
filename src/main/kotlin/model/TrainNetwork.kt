@@ -1,9 +1,11 @@
 package model
 
 import graph.WeightedDataEdge
+import model.timetable.DrivingDirection
+import model.timetable.StationStop
 import model.timetable.TimeTable
 import org.jgrapht.graph.DefaultDirectedWeightedGraph
-import util.GraphUtil
+import java.lang.Exception
 import java.time.LocalTime
 import java.time.temporal.ChronoUnit
 import kotlin.math.abs
@@ -42,8 +44,6 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
                         //TODO
                         g.setEdgeWeight(edge, duration.toMinutes().toDouble())
                     }
-
-
                 }
             }
         }
@@ -53,7 +53,6 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
 
         //add edges for waiting
         addWaitingEdges()
-        GraphUtil.visualize(g)
     }
 
 
@@ -81,13 +80,13 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
         return timeTable
     }
 
-    fun getTrack(train: Train, station: Station): Track? {
-        var trackForStation: Track? = null
+    fun getStationStop(train: Train, station: Station): StationStop? {
+        var stop: StationStop? = null
         val timeTable = getTimeTable(train)
         if (timeTable != null) {
-            trackForStation = timeTable.getTrackForStation(station)
+            stop = timeTable.getStationStop(station)
         }
-        return trackForStation
+        return stop
     }
 
     /**
@@ -95,10 +94,36 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
      */
     fun getDistance(from: Train, fromWagonNumber: Int, to: Train, toWagonNumber: Int, station: Station): Int {
         var result = 0
-        val fromTrack = getTrack(from, station)
-        val toTrack = getTrack(to, station)
-        //TODO implement
-        result = abs(fromWagonNumber - toWagonNumber) + 1
+        val fromStop = getStationStop(from, station)
+        val toStop = getStationStop(to, station)
+        if (fromStop != null && toStop != null) {
+            val fromTrack = fromStop.track
+            val toTrack = toStop.track
+
+            var forwardWagonOffsetFrom = 0
+            if (fromStop.direction == DrivingDirection.FORWARD){
+                forwardWagonOffsetFrom = from.wagons.size - fromWagonNumber
+            }
+            var forwardWagonOffsetTo = 0
+            if (toStop.direction == DrivingDirection.FORWARD){
+                forwardWagonOffsetTo = to.wagons.size - toWagonNumber
+            }
+            val fromTrackPosition = fromWagonNumber + forwardWagonOffsetFrom + fromStop.trackOffset
+            val toTrackPosition = toWagonNumber + forwardWagonOffsetTo + toStop.trackOffset
+
+            if ((fromTrack.pair != null && fromTrack.pair == toTrack.id) || fromTrack.id == toTrack.id) {
+                result = abs(fromTrackPosition - toTrackPosition) + 1
+            }else{
+                // from wagon to exit
+                result = Math.abs(fromTrackPosition - fromTrack.access) + 1
+                // from track to track
+                result += Math.abs(fromTrack.id - toTrack.id)
+                // from exit to wagon
+                result += Math.abs(toTrackPosition - toTrack.access) + 1
+            }
+        }else{
+            throw Exception("no Stops were defined for Train "+from.id + ", " + to.id + " at station: "+ station.id)
+        }
         return result
     }
 
@@ -107,7 +132,7 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
      */
     fun getDistance(train: Train, wagon: Int, station: Station): Int {
         var result = 0
-        val track = getTrack(train, station)
+        val track = getStationStop(train, station)
         //TODO implement
         result = wagon + 1
         return result

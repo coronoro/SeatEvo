@@ -3,7 +3,7 @@ package evo.recombination
 import evo.Individual
 import util.RandomUtil
 
-class TravelerCrossOver(recombinationRate: Double, var k: Int = 1) : RecombinationFunction(recombinationRate) {
+class WagonCrossOver(recombinationRate: Double, var k: Int = 1) : RecombinationFunction(recombinationRate) {
 
     override fun recombine(individuals: List<Individual>): MutableList<Individual> {
         if (individuals.size % 2 != 0) {
@@ -17,19 +17,17 @@ class TravelerCrossOver(recombinationRate: Double, var k: Int = 1) : Recombinati
             val recomb = RandomUtil.seed.nextDouble(0.0, 1.0)
             if (recomb > 1 - recombinationRate) {
                 val dataSize = a.data.size
-                var swapIndizes = mutableSetOf<Int>()
-                for (j in 0..k) {
-                    if (j == k) {
-                        swapIndizes.add(dataSize)
-                    } else {
-                        swapIndizes.add(RandomUtil.seed.nextInt(1, dataSize - 1))
-                    }
-                }
-                var previous = 0
                 val newDataA = mutableListOf<List<Int>>()
                 val newDataB = mutableListOf<List<Int>>()
-                val sorted = swapIndizes.sorted()
-                sorted.forEachIndexed { j,swapIndex ->
+                var previous = 0
+                for (j in 0..k) {
+                    var swapIndex: Int
+                    if (j == k) {
+                        swapIndex = dataSize
+                    } else {
+                        swapIndex = RandomUtil.seed.nextInt(0, dataSize - 1)
+                    }
+
                     var subListA: List<List<Int>>
                     var subListB: List<List<Int>>
                     if (j % 2 == 0) {

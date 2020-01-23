@@ -8,7 +8,7 @@ class ChangeWagonMutation(mutationRate: Double) : MutationFunction(mutationRate)
     override fun mutate(individuals: List<Individual>): List<Individual> {
         individuals.forEach { individual ->
             val mutate = RandomUtil.seed.nextDouble(0.0, 1.0)
-            if (mutate > mutationRate) {
+            if (mutate > 1 - mutationRate) {
                 val travelerIndex = RandomUtil.seed.nextInt(0, individual.data.size - 1)
                 val travelerPath = individual.data.get(travelerIndex).toMutableList()
                 var wagonIndex = 0

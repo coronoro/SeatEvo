@@ -1,4 +1,6 @@
 package model
 
-data class Station(val name: String, override val id: String) : Identifiable {
+import model.track.Track
+
+data class Station(val name: String, var tracks: List<Track>, override val id: String) : Identifiable {
 }

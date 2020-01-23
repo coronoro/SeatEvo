@@ -5,6 +5,6 @@ import kotlin.random.Random
 object RandomUtil {
 
     //var seed = Random.Default
-    var seed = Random(42)
+    var seed = Random(Random.Default.nextInt())
 
 }

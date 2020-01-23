@@ -11,7 +11,8 @@
         "maxCapacity": 4
       }
     ],
-    "id": "0"
+    "id": "0",
+    "name": "T0"
   },
   {
     "wagons": [
@@ -25,7 +26,9 @@
         "maxCapacity": 4
       }
     ],
-    "id": "1"
+    "id": "1",
+    ,
+    "name": "T1"
   },
   {
     "wagons": [
@@ -39,6 +42,7 @@
         "maxCapacity": 3
       }
     ],
-    "id": "2"
+    "id": "2",
+    "name": "T2"
   }
 ]

@@ -3,13 +3,11 @@ package evo
 import evo.mutation.MutationFunction
 import evo.recombination.RecombinationFunction
 import evo.selectors.SelectorFunction
-import model.Station
 import model.TrainNetwork
 import model.Traveler
-import model.Wagon
 import model.route.RouteItem
+import util.FileLogger
 import util.RandomUtil
-import java.time.LocalTime
 import java.util.*
 import kotlin.collections.HashMap
 
@@ -24,6 +22,8 @@ class SeatEvo(
 ) {
 
     var logging = true
+
+    var analysis = EvoAnalysis()
 
     /**
      * the penalty for overfilling a wagon
@@ -46,12 +46,13 @@ class SeatEvo(
                 val evaluate = evaluate(it)
                 it.fitness = evaluate
                 logging(it.toString() + " fitness: " + evaluate)
-                if (evaluate <= bestFitness){
+                if (evaluate < bestFitness){
                     best = it
                     bestFitness = evaluate
                     bestCircle = i
                 }
             }
+            analyzePopulation(population, i)
 
             val selected = selector.select(population)
             population = recobinator.recombine(selected).toMutableList()
@@ -67,6 +68,33 @@ class SeatEvo(
 
         logging("best found in circle " + bestCircle)
         return best
+    }
+
+    private fun analyzePopulation(population: MutableList<Individual>, circle: Int) {
+        var max = Double.MIN_VALUE
+        var min = Double.MAX_VALUE
+        var sum = 0.0
+        var populationDivergence = 1
+        val count = HashMap<Int, Int>()
+        population.forEach {
+            sum += it.fitness
+            if (it.fitness > max){
+                max = it.fitness
+            }else if (it.fitness < min){
+                min = it.fitness
+            }
+            val hash = it.data.hashCode()
+            var get = count.get(hash)
+            if (get == null){
+                get = 0
+            }
+            get ++
+            count.put(hash,get)
+        }
+        sum = sum/population.size
+        analysis.minDataSet.add(circle, min)
+        analysis.maxDataSet.add(circle, max)
+        FileLogger.write("" + circle + "," + min + "," + max + "," +sum +"\n")
     }
 
     fun printConfig(){
