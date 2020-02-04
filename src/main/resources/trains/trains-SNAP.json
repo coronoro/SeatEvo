@@ -1,0 +1,302 @@
+[
+  {
+    "id": "0",
+    "name": "Train0",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Train1",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Train2",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Train3",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Train4",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Train5",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Train6",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Train7",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Train8",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Train9",
+    "wagons": [
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": 4,
+        "occupied": 0
+      }
+    ]
+  }
+]

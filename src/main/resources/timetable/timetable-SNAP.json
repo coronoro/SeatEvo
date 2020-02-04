@@ -1,0 +1,467 @@
+[
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "0",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "1",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "1",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "2",
+        "track": {
+          "number": 0
+        }
+      }
+    ],
+    "train": "0"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [],
+    "train": "1"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "2",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "3",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "3",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "4",
+        "track": {
+          "number": 0
+        }
+      }
+    ],
+    "train": "2"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [],
+    "train": "3"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "4",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "5",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "5",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "6",
+        "track": {
+          "number": 0
+        }
+      }
+    ],
+    "train": "4"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [],
+    "train": "5"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "6",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "7",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "7",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "8",
+        "track": {
+          "number": 0
+        }
+      }
+    ],
+    "train": "6"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [],
+    "train": "7"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "8",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "9",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": null,
+        "departure": {
+          "minutes": 0
+        },
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "9",
+        "track": {
+          "number": 0
+        }
+      },
+      {
+        "arrival": {
+          "minutes": 15
+        },
+        "departure": null,
+        "direction": "FORWARD",
+        "offset": 0,
+        "station": "10",
+        "track": {
+          "number": 0
+        }
+      }
+    ],
+    "train": "8"
+  },
+  {
+    "departures": [
+      {
+        "hour": 12,
+        "minute": 0
+      },
+      {
+        "hour": 13,
+        "minute": 0
+      },
+      {
+        "hour": 14,
+        "minute": 0
+      },
+      {
+        "hour": 15,
+        "minute": 0
+      }
+    ],
+    "stops": [],
+    "train": "9"
+  }
+]

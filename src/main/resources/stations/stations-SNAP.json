@@ -1,202 +1,122 @@
 [
   {
     "id": "0",
-    "name": "A",
+    "name": "Station:S",
     "tracks": [
       {
-        "exit": 5,
-        "id": 1,
-        "pair": 2
-      },
-      {
-        "exit": 5,
-        "id": 2,
-        "pair": 1
-      },
-      {
-        "exit": 5,
-        "id": 3,
-        "pair": 4
-      },
-      {
-        "exit": 5,
-        "id": 4,
-        "pair": 3
-      },
-      {
-        "exit": 5,
-        "id": 5,
-        "pair": 6
-      },
-      {
-        "exit": 5,
-        "id": 6,
-        "pair": 5
-      },
-      {
-        "exit": 5,
-        "id": 7,
+        "access": 0,
+        "id": 0,
         "pair": null
       }
     ]
   },
   {
     "id": "1",
-    "name": "B",
+    "name": "Station:V0",
     "tracks": [
       {
-        "exit": 5,
-        "id": 1,
-        "pair": 2
-      },
-      {
-        "exit": 5,
-        "id": 2,
-        "pair": 1
-      },
-      {
-        "exit": 5,
-        "id": 3,
-        "pair": 4
-      },
-      {
-        "exit": 5,
-        "id": 4,
-        "pair": 3
+        "access": 0,
+        "id": 0,
+        "pair": null
       }
     ]
   },
   {
     "id": "2",
-    "name": "C",
+    "name": "Station:E0",
     "tracks": [
       {
-        "exit": 5,
-        "id": 1,
-        "pair": 2
-      },
-      {
-        "exit": 5,
-        "id": 2,
-        "pair": 1
-      },
-      {
-        "exit": 5,
-        "id": 3,
-        "pair": 4
-      },
-      {
-        "exit": 5,
-        "id": 4,
-        "pair": 3
-      },
-      {
-        "exit": 5,
-        "id": 5,
+        "access": 0,
+        "id": 0,
         "pair": null
       }
     ]
   },
   {
     "id": "3",
-    "name": "D",
+    "name": "Station:V1",
     "tracks": [
       {
-        "exit": 5,
-        "id": 1,
-        "pair": 2
-      },
-      {
-        "exit": 5,
-        "id": 2,
-        "pair": 1
-      },
-      {
-        "exit": 5,
-        "id": 3,
-        "pair": 4
-      },
-      {
-        "exit": 5,
-        "id": 4,
-        "pair": 3
-      },
-      {
-        "exit": 5,
-        "id": 5,
-        "pair": 6
-      },
-      {
-        "exit": 5,
-        "id": 6,
-        "pair": 5
+        "access": 0,
+        "id": 0,
+        "pair": null
       }
     ]
   },
   {
     "id": "4",
-    "name": "E",
+    "name": "Station:E1",
     "tracks": [
       {
-        "exit": 5,
-        "id": 1,
-        "pair": 2
-      },
-      {
-        "exit": 5,
-        "id": 2,
-        "pair": 1
-      },
-      {
-        "exit": 5,
-        "id": 3,
-        "pair": 4
-      },
-      {
-        "exit": 5,
-        "id": 4,
-        "pair": 3
-      },
-      {
-        "exit": 5,
-        "id": 5,
+        "access": 0,
+        "id": 0,
         "pair": null
       }
     ]
   },
   {
     "id": "5",
-    "name": "F",
+    "name": "Station:V2",
     "tracks": [
       {
-        "exit": 5,
-        "id": 1,
-        "pair": 2
-      },
+        "access": 0,
+        "id": 0,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Station:E2",
+    "tracks": [
       {
-        "exit": 5,
-        "id": 2,
-        "pair": 1
-      },
+        "access": 0,
+        "id": 0,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Station:V3",
+    "tracks": [
       {
-        "exit": 5,
-        "id": 3,
-        "pair": 4
-      },
+        "access": 0,
+        "id": 0,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Station:E3",
+    "tracks": [
       {
-        "exit": 5,
-        "id": 4,
-        "pair": 3
-      },
+        "access": 0,
+        "id": 0,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Station:V4",
+    "tracks": [
       {
-        "exit": 5,
-        "id": 5,
-        "pair": 6
-      },
+        "access": 0,
+        "id": 0,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Station:E4",
+    "tracks": [
       {
-        "exit": 5,
-        "id": 6,
-        "pair": 5
+        "access": 0,
+        "id": 0,
+        "pair": null
       }
     ]
   }
