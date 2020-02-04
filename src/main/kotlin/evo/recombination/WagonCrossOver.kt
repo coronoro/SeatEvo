@@ -25,7 +25,7 @@ class WagonCrossOver(recombinationRate: Double, var k: Int = 1) : RecombinationF
                     if (j == k) {
                         swapIndex = dataSize
                     } else {
-                        swapIndex = RandomUtil.seed.nextInt(0, dataSize - 1)
+                        swapIndex = RandomUtil.seed.nextInt(0, dataSize)
                     }
 
                     var subListA: List<List<Int>>

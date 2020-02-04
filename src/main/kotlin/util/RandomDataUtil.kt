@@ -18,12 +18,12 @@ object RandomDataUtil {
         val vertexSet = network.g.vertexSet()
         val stations = network.stations.toList()
 
-        for (i in 0..amount) {
+        for (i in 0 until amount) {
             //get a valid start point
             var startStationIndex: Int
             var startVertices: List<Pair<Station, LocalTime>>
             do {
-                startStationIndex = RandomUtil.seed.nextInt(0, stations.size - 1)
+                startStationIndex = RandomUtil.seed.nextInt(0, stations.size)
                 val startStation = stations.get(startStationIndex)
                 val vertices = vertexSet.filter { it -> it.first == startStation }
                 // get only vertices with an edge that leads to another station as a target
@@ -42,14 +42,14 @@ object RandomDataUtil {
             } while (startVertices.isEmpty())
 
             //TODO might be better to just get a random time?
-            val vertexIndex = RandomUtil.seed.nextInt(0, startVertices.size - 1)
+            val vertexIndex = RandomUtil.seed.nextInt(0, startVertices.size)
             val startVertex = startVertices.get(vertexIndex)
 
             //get target of the journey
             var endStationIndex: Int
             var path: List<WeightedDataEdge>? = null
             do {
-                endStationIndex = RandomUtil.seed.nextInt(0, stations.size - 1)
+                endStationIndex = RandomUtil.seed.nextInt(0, stations.size)
                 if (startStationIndex != endStationIndex) {
 
                     var pathWeight = Double.MAX_VALUE

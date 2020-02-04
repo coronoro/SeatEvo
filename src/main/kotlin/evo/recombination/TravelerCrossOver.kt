@@ -22,7 +22,7 @@ class TravelerCrossOver(recombinationRate: Double, var k: Int = 1) : Recombinati
                     if (j == k) {
                         swapIndizes.add(dataSize)
                     } else {
-                        swapIndizes.add(RandomUtil.seed.nextInt(1, dataSize - 1))
+                        swapIndizes.add(RandomUtil.seed.nextInt(1, dataSize))
                     }
                 }
                 var previous = 0
