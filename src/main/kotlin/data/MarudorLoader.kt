@@ -17,6 +17,7 @@ import java.util.*
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 import kotlin.collections.HashMap
+import kotlin.collections.HashSet
 
 
 object MarudorLoader {
@@ -48,12 +49,16 @@ object MarudorLoader {
             val search = MarudorApi.searchStations(stationsQueue.pop())
             if (!search.isEmpty()) {
                 val station = search.get(0)
-                stations.put(station.id, Station(station.title, emptyList(), station.id))
+                val stationRep = Station(station.title, emptyList(), station.id)
+                val trackSet = HashSet<Int>()
+                stations.put(station.id, stationRep)
                 val departuresInfo = MarudorApi.getDeparturesInfo(station)
                 if (departuresInfo != null){
                     departuresInfo.departures.forEach { departure ->
                         // only IC/E
                         if (departure.train.type.toLowerCase().startsWith("ic")){
+                            //add track
+                            trackSet.add(departure.platform.toInt())
                             // empty wagons
                             var wagons = mutableListOf<Wagon>()
                             val trainId = departure.train.number

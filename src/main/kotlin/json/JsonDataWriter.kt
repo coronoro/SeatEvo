@@ -35,5 +35,10 @@ object JsonDataWriter {
         writeFile(data, timetableLocation)
     }
 
+    fun writeJSonTimeTables(list: List<JsonTimeTable>){
+        val data = JsonUtil.klaxon.toJsonString(list)
+        writeFile(data, timetableLocation)
+    }
+
 
 }

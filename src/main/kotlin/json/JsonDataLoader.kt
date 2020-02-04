@@ -10,11 +10,13 @@ import java.io.File
 
 object JsonDataLoader {
 
-    private val trainRouteLocation = "/routes/trainRoutes.json"
     private val timeTableLocation = "/timetable/timetable.json"
-
     private val stationsLocation = "/stations/stations.json"
     private val trainsLocation = "/trains/trains.json"
+
+    private val timeTableSnapLocation = "/timetable/timetable-SNAP.json"
+    private val stationsSnapLocation = "/stations/stations-SNAP.json"
+    private val trainsSnapLocation = "/trains/trains-SNAP.json"
 
     inline fun <reified T> loadJsonList(location: String, clazz: Class<T>): List<T> {
 
@@ -31,13 +33,16 @@ object JsonDataLoader {
         return result
     }
 
-    fun loadTimeTables(): List<TimeTable> {
+    fun loadTimeTables(snap: Boolean = false): List<TimeTable> {
+        val stationFile = if (snap) stationsSnapLocation else stationsLocation
+        val trainFile = if (snap) trainsSnapLocation else trainsLocation
+        val timetableFile = if (snap) timeTableSnapLocation else timeTableLocation
+
         var result = mutableListOf<TimeTable>()
+        val stations = loadJsonList(stationFile, Station::class.java)
+        val trains = loadJsonList(trainFile, Train::class.java)
 
-        val stations = loadJsonList(stationsLocation, Station::class.java)
-        val trains = loadJsonList(trainsLocation, Train::class.java)
-
-        val jsonTimetables = loadJsonList(timeTableLocation, JsonTimeTable::class.java)
+        val jsonTimetables = loadJsonList(timetableFile, JsonTimeTable::class.java)
         jsonTimetables.forEach { json ->
             val train = findIdentifier(trains, json.train)
             var stops = mutableListOf<StationStop>()

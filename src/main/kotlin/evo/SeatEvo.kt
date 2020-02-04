@@ -128,7 +128,7 @@ class SeatEvo(
         var fitness = 0.0
         for (i in 0 until travelers.size) {
             val wagonData = individual.data.get(i)
-            val traveler = travelers.get(0)
+            val traveler = travelers.get(i)
             //ignore the last entry
             val stopsSize = traveler.route.waypoints.size
             var distance: Int
@@ -141,7 +141,6 @@ class SeatEvo(
                 }else{
                     val previousWp = traveler.route.waypoints.get(j - 1)
                     val previousWagonNumber = wagonData.get(j - 1)
-                    //TODO check if there is any space in the wagon -> fitness penalty
                     distance = network.getDistance(wp.train, wagonNumber, previousWp.train, previousWagonNumber, wp.fromStation)
                 }
                 fitness += distance

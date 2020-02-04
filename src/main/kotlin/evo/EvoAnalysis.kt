@@ -16,12 +16,12 @@ class EvoAnalysis: JFrame() {
     val minDataSet = XYSeries("min")
     val maxDataSet = XYSeries("max")
 
-    fun showChart(){
+    fun showChart(title:String = "Population overview"){
         var dataset = XYSeriesCollection();
         dataset.addSeries(minDataSet);
         dataset.addSeries(maxDataSet);
 
-        val chart = ChartFactory.createXYLineChart("Population overview", "cycle", "fitness", dataset)
+        val chart = ChartFactory.createXYLineChart(title, "cycle", "fitness", dataset)
 
         val plot = chart.xyPlot
         var renderer = XYLineAndShapeRenderer()
