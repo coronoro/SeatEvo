@@ -131,7 +131,7 @@ class SeatEvo(
             val traveler = travelers.get(i)
             //ignore the last entry
             val stopsSize = traveler.route.waypoints.size
-            var distance: Int
+            var distance: Double
             for (j in 0 until stopsSize) {
                 val wp = traveler.route.waypoints.get(j)
                 val wagonNumber = wagonData.get(j)
@@ -143,6 +143,7 @@ class SeatEvo(
                     val previousWagonNumber = wagonData.get(j - 1)
                     distance = network.getDistance(wp.train, wagonNumber, previousWp.train, previousWagonNumber, wp.fromStation)
                 }
+                distance = Math.pow(distance, 2.0)
                 fitness += distance
             }
             //get the distance for leaving

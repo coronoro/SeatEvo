@@ -92,8 +92,8 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
     /**
      * gets distance between two train wagons on a specific station
      */
-    fun getDistance(from: Train, fromWagonNumber: Int, to: Train, toWagonNumber: Int, station: Station): Int {
-        var result = 0
+    fun getDistance(from: Train, fromWagonNumber: Int, to: Train, toWagonNumber: Int, station: Station): Double {
+        var result = 0.0
         val fromStop = getStationStop(from, station)
         val toStop = getStationStop(to, station)
         if (fromStop != null && toStop != null) {
@@ -114,10 +114,10 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
             val toTrackPosition =  wagonOffsetTo + toStop.trackOffset
 
             if ((fromTrack.pair != null && fromTrack.pair == toTrack.id) || fromTrack.id == toTrack.id) {
-                result = abs(fromTrackPosition - toTrackPosition) + 1
+                result = (abs(fromTrackPosition - toTrackPosition) + 1).toDouble()
             }else{
                 // from wagon to exit
-                result = Math.abs(fromTrackPosition - fromTrack.access) + 1
+                result = (Math.abs(fromTrackPosition - fromTrack.access) + 1).toDouble()
                 // from track to track
                 result += Math.abs(fromTrack.id - toTrack.id)
                 // from exit to wagon
@@ -132,8 +132,8 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
     /**
      * gets distance to board or leave a train on a specific station
      */
-    fun getDistance(train: Train, wagon: Int, station: Station): Int {
-        var result = 0
+    fun getDistance(train: Train, wagon: Int, station: Station): Double {
+        var result = 0.0
         val stop = getStationStop(train, station)
         if (stop != null){
             var wagonOffsetTo = wagon
