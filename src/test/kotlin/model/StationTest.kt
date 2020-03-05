@@ -20,15 +20,6 @@ internal class StationTest{
         JsonDataWriter.writeStations(stations)
     }
 
-    @Test
-    fun testTime() {
-        val baseTime = LocalTime.of(0, 0 )
-        val timeDifference = 15
-        for (i in 0 .. 20){
-            println(baseTime.plusMinutes((i*timeDifference).toLong()))
-        }
-    }
-
 
 
     fun generateTracks(amount: Int):List<Track>{
