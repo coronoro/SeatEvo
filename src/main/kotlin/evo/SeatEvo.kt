@@ -23,6 +23,10 @@ class SeatEvo(
 
     var logging = true
 
+    var groupSoftConstraint = false
+    //contains the indizes in the genotype for members of the same group
+    var groupMap = HashMap<Int,MutableList<Int>>()
+
     var analysis = EvoAnalysis()
 
     /**
@@ -33,8 +37,10 @@ class SeatEvo(
     fun evolution(): Individual {
         mutator.travelers = travelers
         mutator.network = network
-        //create initial population
+        //create grouplist for easier access
+        fillGroupMap()
 
+        //create initial population
         var best = Individual(emptyList())
         var bestFitness = Double.MAX_VALUE
         var bestCircle = 0;
@@ -43,7 +49,22 @@ class SeatEvo(
             logging("======================== " + popSize + " | #" + i + " ======================== ")
             // evaluate individuals
             population.forEach {
-                val evaluate = evaluate(it)
+                if (!groupSoftConstraint){
+                    repairIndividualGroups(it)
+                }
+
+                var evaluate = evaluate(it)
+
+                // check for wagon penalty
+                val overload = getWagonOverload(it)
+                evaluate += penalty * overload
+
+                //check for group penalty
+                if (groupSoftConstraint){
+                    val splits = getGroupSplit(it)
+                    evaluate += penalty * splits
+                }
+
                 it.fitness = evaluate
                 logging(it.toString() + " fitness: " + evaluate)
                 if (evaluate < bestFitness){
@@ -114,6 +135,19 @@ class SeatEvo(
         }
     }
 
+    private fun fillGroupMap(){
+        travelers.forEachIndexed { index, traveler ->
+            val group = traveler.group
+            if (group != null){
+                var list = groupMap.get(group)
+                if (list == null){
+                    list = mutableListOf()
+                }
+                list.add(index)
+            }
+        }
+    }
+
     private fun createRandomPopulation(): MutableList<Individual> {
         val population = mutableListOf<Individual>()
         for (i in 0 until popSize) {
@@ -124,7 +158,7 @@ class SeatEvo(
     }
 
 
-    private fun evaluate(individual: Individual): Double {
+    fun evaluate(individual: Individual, pow: Boolean = true): Double {
         var fitness = 0.0
         for (i in 0 until travelers.size) {
             val wagonData = individual.data.get(i)
@@ -143,21 +177,69 @@ class SeatEvo(
                     val previousWagonNumber = wagonData.get(j - 1)
                     distance = network.getDistance(wp.train, wagonNumber, previousWp.train, previousWagonNumber, wp.fromStation)
                 }
-                distance = Math.pow(distance, 2.0)
+                if (pow)
+                    distance = Math.pow(distance, 2.0)
                 fitness += distance
             }
             //get the distance for leaving
             val last = traveler.route.waypoints.last()
             fitness += network.getDistance(last.train, wagonData.last(), last.toStation)
         }
-        // check for penalty
-        val overload = getWagonOverload(individual)
-        fitness += penalty * overload
         return fitness
     }
 
-    private fun getWagonOverload(individual: Individual): Int {
+    private fun repairIndividualGroups(individual: Individual) {
+        val data = individual.data.toMutableList()
+        
+        this.groupMap.keys.forEach { key ->
+            val indizes = groupMap.get(key)
+            if (indizes != null){
+                val first = indizes.first()
+                val sample = data[first]
+                var fix = false;
+                for (i in 1 until indizes.size){
+                    val index = indizes[i]
+                    val wagons = data[index]
+                    if (!wagons.equals(sample)){
+                        fix = true
+                        break;
+                    }
+                }
+                if (fix){
+                    val templateIndex = RandomUtil.seed.nextInt(0,indizes.size)
+                    val template = data[templateIndex]
+                    for (i in 0 until indizes.size){
+                        val index = indizes[i]
+                        data[index] = template
 
+                    }
+                }
+            }
+        }
+        individual.data = data
+    }
+
+    private fun getGroupSplit(individual: Individual): Int {
+        var splitAmount = 0
+        this.groupMap.keys.forEach { key ->
+            val indizes = groupMap.get(key)
+            if (indizes != null){
+                val first = indizes.first()
+                val sample = individual.data[first]
+                for (i in 1 until indizes.size){
+                    val index = indizes[i]
+                    val wagons = individual.data[index]
+                    if (!wagons.equals(sample)){
+                        splitAmount ++
+                    }
+                }
+            }
+
+        }
+        return splitAmount
+    }
+
+    private fun getWagonOverload(individual: Individual): Int {
         var overload = 0
         val trainmap = HashMap<String, MutableList<RouteItem>>()
         travelers.forEachIndexed { i, traveler ->
