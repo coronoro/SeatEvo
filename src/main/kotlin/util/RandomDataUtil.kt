@@ -72,12 +72,22 @@ object RandomDataUtil {
             var previousTrain: Train? = null
             path?.forEach { piece ->
                 val data = piece.data
-                if (data != null && data.train != previousTrain) {
-                    val from = network.g.getEdgeSource(piece)
-                    val to = network.g.getEdgeTarget(piece)
-                    previousTrain = data.train
-                    val item = RouteItem(from.first, from.second, to.first, to.second, data.train, -1)
-                    routeList.add(item)
+                //no waypoint if the traveler waits
+                if(data != null){
+                    // traveler get into a new train -> new routeitem
+                    if (data.train != previousTrain){
+                        val from = network.g.getEdgeSource(piece)
+                        val to = network.g.getEdgeTarget(piece)
+                        previousTrain = data.train
+                        val item = RouteItem(from.first, from.second, to.first, to.second, data.train, -1)
+                        routeList.add(item)
+                    }else{
+                        //traveler still takes the same train so just update the old routeitem
+                        val to = network.g.getEdgeTarget(piece)
+                        val last = routeList.last()
+                        last.toStation = to.first
+                        last.toTime = to.second
+                    }
                 }
             }
 
