@@ -17,7 +17,7 @@ internal class TravelerCrossOverTest {
 
     @BeforeAll
     fun setUp() {
-        RandomUtil.seed = Random(42)
+        RandomUtil.seed = Random(42) as Random.Default
         val dataA: List<List<Int>> = listOf(listOf(1,2,3,4,5,6), listOf(7,8,9,10), listOf(11,12,13,14,15))
         individuals.add(Individual(dataA))
         val dataB: List<List<Int>> = listOf(listOf(6,5,4,3,2,1), listOf(10,9,8,7), listOf(15,12,13,14,11))

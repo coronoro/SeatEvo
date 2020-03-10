@@ -1,3 +1,4 @@
+import analysis.TravelerAnalysis
 import data.DataGenerator
 import data.MarudorLoader
 import evo.SeatEvo
@@ -5,59 +6,32 @@ import evo.mutation.ChangeWagonMutation
 import evo.mutation.WagonSwapMutation
 import evo.recombination.TravelerCrossOver
 import evo.recombination.WagonCrossOver
-import evo.selectors.InverseFitnessProportionalSelector
 import evo.selectors.InverseStochasticUniversalSampling
 import evo.selectors.TournamentSelector
 import json.JsonDataLoader
 import model.TrainNetwork
 import model.Traveler
-import util.GraphUtil
 import util.RandomDataUtil
 import java.io.File
 
 fun main(args: Array<String>) {
-    //MarudorLoader.loadICE()
+    System.setProperty("org.graphstream.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
+
+    //TravelerAnalysis.analyseTravelerGen()
+    //TravelerAnalysis.analyseGridTravelerGraph(3, 4000)
+
+    //load data from marudor
+    MarudorLoader.loadICE()
+
     //loadMinimumExample()
     //analyseProblemDifficulty()
-    analyseTravelerGen()
     //analyseTrainStationLinaerity()
     //analyseGridNetwork()
     //geneticAnalysis()
 }
 
 
-fun geneticAnalysis(){
-    var stations = 15;
-    println("Stations: " + stations)
-    var travelerAmount = 120
 
-    DataGenerator.generateStairNetwork(stations, false, 1, 5, 4)
-    //DataGenerator.generateGridNetwork(Pair(f,f), 1, 1, 5)
-    val timeTables = JsonDataLoader.loadTimeTables(true)
-    val trainNetwork = TrainNetwork(timeTables)
-    val travelers = RandomDataUtil.generateTravelers(trainNetwork, travelerAmount)
-    for (i in 1.. 10 step 1){
-        val popSize = 300
-        val cycles = 100
-        val genetic = SeatEvo(
-            trainNetwork,
-            travelers,
-            popSize,
-            cycles,
-//            InverseFitnessProportionalSelector(popSize),
-//            InverseStochasticUniversalSampling(popSize),
-        TournamentSelector(4),
-            //TravelerCrossOver(i/10.0),
-            WagonCrossOver(i/10.0),
-            ChangeWagonMutation(0.4)
-//        WagonSwapMutation(0.9)
-        )
-        genetic.logging = false
-        val result = genetic.evolution()
-        genetic.analysis.showChart("InvFitProp" +i)
-        genetic.analysis.setVisible(true);
-    }
-}
 
 
 
@@ -66,7 +40,6 @@ fun analyseGridNetwork(){
     DataGenerator.generateGridNetwork(Pair(3,3),1,8,5)
     val timeTables = JsonDataLoader.loadTimeTables(true)
     val trainNetwork = TrainNetwork(timeTables)
-    GraphUtil.visualize(trainNetwork.g)
     val travelers = RandomDataUtil.generateTravelers(trainNetwork, 120)
 
     val popSize = 300
@@ -96,12 +69,6 @@ fun analyseGridNetwork(){
     genetic.analysis.showChart()
     genetic.analysis.setVisible(true);
 
-    /*
-    travelers.forEach {
-        printTraveler(it)
-    }
-    */
-    analyzeTravelers(travelers)
 }
 
 fun compareSelection(){
@@ -143,66 +110,13 @@ fun analyseProblemDifficulty(){
 }
 
 
-fun analyseTravelerGen(){
-    val arrayOf = arrayOf(3,4,5)
-    for (i in 0 until arrayOf.size) {
-        var f = arrayOf[i]
-    //for (f in 2 .. 25) {
-    //for (f in 3 .. 25) {
-        println("frequency: " +f)
-        //DataGenerator.generateStairNetwork(f, false, 1, 5, 4)
-        DataGenerator.generateGridNetwork(Pair(f,f), 1, 1, 5)
-        val timeTables = JsonDataLoader.loadTimeTables(true)
-        val trainNetwork = TrainNetwork(timeTables)
-        val rounds = 100
 
-        for (travelerAmount in 4000..5000 step 1000) {
-            val averageHashmap = HashMap<Int, Double>()
-            val averageWayMap = HashMap<String, Double>()
-            for (i in 0 until rounds) {
-                //println("========================== #"+i)
-                val travelers = RandomDataUtil.generateTravelers(trainNetwork, travelerAmount)
-                val analyzeTravelers = analyzeTravelers(travelers, false)
-                analyzeTravelers.entries.forEach {
-                    var get = averageHashmap.get(it.key)
-                    if (get == null) {
-                        get = 0.0
-                    }
-                    get = it.value + get ?: 0.0
-                    averageHashmap.put(it.key, get)
-                }
-                val wayMap = analyzeTravelerWay(travelers, false)
-                wayMap.entries.forEach {
-                    var get = averageWayMap.get(it.key)
-                    if (get == null) {
-                        get = 0.0
-                    }
-                    get = it.value + get!!
-                    averageWayMap.put(it.key, get!!)
-                }
-            }
-
-            print(travelerAmount.toString() + "\t")
-            averageHashmap.keys.sorted().forEach { key ->
-                var get = averageHashmap.get(key)
-                val average = (get ?: 0.0) / rounds
-                print(average.toString() + "\t")
-            }
-            println()
-
-            println("max: " + averageHashmap.keys.sorted().last())
-            averageWayMap.entries.forEach {
-                val average = it.value / rounds
-                println(it.key + "\t" + average)
-            }
-
-        }
-    }
-}
 
 fun loadMinimumExample() {
-    val timeTables = JsonDataLoader.loadTimeTables(true)
+    val timeTables = JsonDataLoader.loadTimeTables(false)
     val trainNetwork = TrainNetwork(timeTables)
+    val display = trainNetwork.graph.display()
+    display.disableAutoLayout()
     val travelers = RandomDataUtil.generateTravelers(trainNetwork, 900)
 
     val popSize = 2000
@@ -231,51 +145,9 @@ fun loadMinimumExample() {
     genetic.analysis.showChart()
     genetic.analysis.setVisible(true);
 
-    /*
-    travelers.forEach {
-        printTraveler(it)
-    }
-    */
-    analyzeTravelers(travelers)
+
 }
 
-fun analyzeTravelers(travelers: List<Traveler>, print:Boolean = true): HashMap<Int, Int> {
-    val hashmap = HashMap<Int,Int>()
-    travelers.forEach { traveler ->
-        val size = traveler.route.waypoints.size - 1
-        var amount = hashmap.get(size)
-        if (amount == null)
-            amount = 0
-        amount++
-        hashmap.set(size, amount)
-    }
-    if (print){
-        hashmap.entries.forEach {
-            println(it.key.toString() + ": " + it.value)
-        }
-    }
-    return hashmap
-}
-
-fun analyzeTravelerWay(travelers: List<Traveler>, print:Boolean = true): HashMap<String, Int> {
-    val hashmap = HashMap<String,Int>()
-    travelers.forEach { traveler ->
-        traveler.route.waypoints.forEach {
-            val key = it.fromStation.name +"-"+ it.toStation.name
-            var amount = hashmap.get(key)
-            if (amount == null)
-                amount = 0
-            amount++
-            hashmap.set(key, amount)
-        }
-    }
-    if (print){
-        hashmap.entries.forEach {
-            println(it.key.toString() + ": " + it.value)
-        }
-    }
-    return hashmap
-}
 
 fun printTraveler(traveler: Traveler){
     println("RouteId:" +traveler.route.id)

@@ -110,7 +110,7 @@ object DataGenerator {
         val gridStations = Array(dimension.first) {Array<Station?>(dimension.second) {null} }
         for (i in 0 until dimension.first){
             for (j in 0 until dimension.second){
-                var station = Station(stationNamePrefix +i +":"+j, trackList, stationID.toString())
+                var station = Station(stationNamePrefix +i +"|"+j, trackList, stationID.toString())
                 stationID ++
                 stations.add(station)
                 gridStations[i][j] = station

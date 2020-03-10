@@ -1,18 +1,20 @@
 package model
 
-import graph.WeightedDataEdge
 import model.timetable.DrivingDirection
 import model.timetable.StationStop
 import model.timetable.TimeTable
-import org.jgrapht.graph.DefaultDirectedWeightedGraph
+import org.graphstream.graph.Edge
+import org.graphstream.graph.Node
+import org.graphstream.graph.implementations.SingleGraph
 import java.lang.Exception
 import java.time.LocalTime
+import java.time.temporal.ChronoField
 import java.time.temporal.ChronoUnit
 import kotlin.math.abs
 
 class TrainNetwork(val timeTables: List<TimeTable>) {
 
-    var g = DefaultDirectedWeightedGraph<Pair<Station, LocalTime>, WeightedDataEdge>(WeightedDataEdge::class.java)
+    var graph = SingleGraph("timetable")
 
     var timeTableMap = HashMap<String, TimeTable>()
 
@@ -30,47 +32,81 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
                     val second = timetable.stops[i + 1]
 
                     if (first.departure != null && second.arrival != null) {
+
                         val departureTime = departure.plus(first.departure)
-                        val vertex1 = Pair(first.station, departureTime)
-                        g.addVertex(vertex1)
+                        val node1ID = first.station.name + "@" + departureTime
+                        var node1 = graph.getNode<Node>(node1ID)
+                        if (node1 == null){
+                            node1 = graph.addNode(node1ID)
+                            node1.addAttribute("ui.label", first.station.name);
+                            node1.addAttribute("station", first.station)
+                            node1.addAttribute("time", departureTime)
+                        }
 
                         val arrivalTime = departure.plus(second.arrival)
-                        val vertex2 = Pair(second.station, arrivalTime)
-                        g.addVertex(vertex2)
+                        val node2ID = second.station.name + "@" + arrivalTime
+                        var node2 = graph.getNode<Node>(node2ID)
+                        if (node2 == null){
+                            node2 = graph.addNode(node2ID)
+                            node2.addAttribute("ui.label", second.station.name);
+                            node2.addAttribute("station", second.station)
+                            node2.addAttribute("time", arrivalTime)
+                        }
 
                         val duration = second.arrival!!.minus(first.departure)
-                        val edge = g.addEdge(vertex1, vertex2)
-                        edge.data = timetable
+                        val edge : Edge = graph.addEdge(node1ID+"-"+node2ID, node1, node2, true)
+                        edge.setAttribute("weight", duration.toMinutes().toDouble())
+                        edge.setAttribute("timetable", timetable)
                         //TODO
-                        g.setEdgeWeight(edge, duration.toMinutes().toDouble())
                     }
                 }
             }
         }
         // set stations
-        val vertexSet = g.vertexSet()
-        stations = vertexSet.mapTo(HashSet()) { vertex -> vertex.first }
+        val nodeSet = graph.getNodeSet<Node>()
+        stations = nodeSet.mapTo(HashSet()) { node -> node.getAttribute<Station>("station") }
 
         //add edges for waiting
         addWaitingEdges()
+
+        //position nodes for display
+        addNodePositions()
+    }
+
+    private fun addNodePositions() {
+        val sorted = stations.sortedBy { it.name }
+        var coordinate = 0.0
+        val coordinateMap = sorted.associateBy({ it.name }, {
+            coordinate = coordinate + 5
+            coordinate
+        })
+        val nodes = graph.getNodeSet<Node>()
+        nodes.forEach { node ->
+            val time = node.getAttribute<LocalTime>("time")
+            val x = time.get(ChronoField.MINUTE_OF_DAY)
+            val station = node.getAttribute<Station>("station")
+            val y = coordinateMap.get(station.name)
+            node.addAttribute("xyz", x, y, 0)
+            node.addAttribute("ui.style", "text-alignment: above; text-background-mode:plain;text-size:15px;");
+        }
+
     }
 
 
     private fun addWaitingEdges() {
-        val vertexSet = g.vertexSet()
-        val stations = vertexSet.mapTo(HashSet()) { vertex -> vertex.first }
+        val nodeSet = graph.getNodeSet<Node>()
         stations.forEach { station ->
-            val filter = vertexSet.filter { vertex -> vertex.first == station }
-            val sorted = filter.sortedBy { it.second }
+            val filter = nodeSet.filter { node -> node.getAttribute<Station>("station").equals(station) }
+            val sorted = filter.sortedBy { it.getAttribute<LocalTime>("time")}
             for (i in 0 until sorted.size) {
                 if (i + 1 >= sorted.size) {
                     break
                 }
                 val first = sorted.get(i)
                 val second = sorted.get(i + 1)
-                val waiting = g.addEdge(first, second)
-                val between = ChronoUnit.MINUTES.between(first.second, second.second)
-                g.setEdgeWeight(waiting, between.toDouble())
+                val waiting : Edge = graph.addEdge(first.id + "-"+ second.id, first, second, true)
+                val between = ChronoUnit.MINUTES.between(first.getAttribute("time"), second.getAttribute("time")).toDouble()
+                waiting.setAttribute("weight", between)
             }
         }
     }

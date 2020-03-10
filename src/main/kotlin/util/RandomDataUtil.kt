@@ -1,39 +1,44 @@
 package util
 
-import graph.WeightedDataEdge
 import model.Station
 import model.Train
 import model.TrainNetwork
 import model.Traveler
 import model.route.RouteItem
 import model.route.TravelerRoute
-import org.jgrapht.alg.shortestpath.DijkstraShortestPath
+import model.timetable.TimeTable
+import org.graphstream.graph.Edge
+import org.graphstream.graph.Node
 import java.time.LocalTime
+import org.graphstream.algorithm.Dijkstra;
+import org.graphstream.graph.Path
 
 object RandomDataUtil {
 
     fun generateTravelers(network: TrainNetwork, amount: Int): List<Traveler> {
         val result = mutableListOf<Traveler>()
 
-        val vertexSet = network.g.vertexSet()
+        val nodeSet = network.graph.getNodeSet<Node>()
         val stations = network.stations.toList()
+        val dijkstra = Dijkstra(Dijkstra.Element.EDGE, null, "weight");
+        dijkstra.init(network.graph);
 
         for (i in 0 until amount) {
             //get a valid start point
             var startStationIndex: Int
-            var startVertices: List<Pair<Station, LocalTime>>
+            var startVertices: List<Node>
             do {
                 startStationIndex = RandomUtil.seed.nextInt(0, stations.size)
                 val startStation = stations.get(startStationIndex)
-                val vertices = vertexSet.filter { it -> it.first == startStation }
+                val nodes = nodeSet.filter { node -> node.getAttribute<Station>("station") == startStation }
                 // get only vertices with an edge that leads to another station as a target
                 // might not be relevant in a real world szenario
-                startVertices = vertices.filter { it ->
+                startVertices = nodes.filter { it ->
                     var filter = false
-                    val outgoing = network.g.outgoingEdgesOf(it)
+                    val outgoing = it.getEachLeavingEdge<Edge>()
                     outgoing.forEach { edge ->
-                        val vertex = network.g.getEdgeTarget(edge)
-                        if (vertex.first != startStation) {
+                        val vertex = edge.getTargetNode<Node>()
+                        if (vertex.getAttribute<Station>("station") != startStation) {
                             filter = true
                         }
                     }
@@ -42,25 +47,26 @@ object RandomDataUtil {
             } while (startVertices.isEmpty())
 
             //TODO might be better to just get a random time?
-            val vertexIndex = RandomUtil.seed.nextInt(0, startVertices.size)
-            val startVertex = startVertices.get(vertexIndex)
+            val NodeIndex = RandomUtil.seed.nextInt(0, startVertices.size)
+            val startNode = startVertices.get(NodeIndex)
 
             //get target of the journey
             var endStationIndex: Int
-            var path: List<WeightedDataEdge>? = null
+            var path: Path? = null
+            dijkstra.setSource(startNode)
+            dijkstra.compute()
             do {
                 endStationIndex = RandomUtil.seed.nextInt(0, stations.size)
                 if (startStationIndex != endStationIndex) {
 
                     var pathWeight = Double.MAX_VALUE
-                    val endVertices = vertexSet.filter { it -> it.first == stations.get(endStationIndex) }
-                    endVertices.forEach { vertex ->
-                        val graphData = DijkstraShortestPath.findPathBetween(network.g, startVertex, vertex);
-                        if (graphData != null) {
-                            val weight =
-                                graphData.edgeList.fold(0.0, { acc, edge -> acc + network.g.getEdgeWeight(edge) })
+                    val endNodes = nodeSet.filter { node -> node.getAttribute<Station>("station") == stations.get(endStationIndex) }
+                    endNodes.forEach {  endNode ->
+                        val dijkstraPath = dijkstra.getPath(endNode)
+                        if (dijkstraPath != null && !dijkstraPath.empty()){
+                            val weight = dijkstraPath.getPathWeight("weight")
                             if (weight < pathWeight) {
-                                path = graphData.edgeList
+                                path = dijkstraPath
                                 pathWeight = weight
                             }
                         }
@@ -70,25 +76,36 @@ object RandomDataUtil {
 
             val routeList = mutableListOf<RouteItem>()
             var previousTrain: Train? = null
-            path?.forEach { piece ->
-                val data = piece.data
+            val pathEdges = path?.getEachEdge<Edge>()
+            pathEdges!!.forEach { edge ->
+                val data = edge.getAttribute<TimeTable>("timetable")
                 //no waypoint if the traveler waits
                 if(data != null){
                     // traveler get into a new train -> new routeitem
                     if (data.train != previousTrain){
-                        val from = network.g.getEdgeSource(piece)
-                        val to = network.g.getEdgeTarget(piece)
+                        val fromNode = edge.getSourceNode<Node>()
+                        val fromStation = fromNode.getAttribute<Station>("station")
+                        val fromTime = fromNode.getAttribute<LocalTime>("time")
+                        val toNode = edge.getTargetNode<Node>()
+                        val toStation = toNode.getAttribute<Station>("station")
+                        val toTime = toNode.getAttribute<LocalTime>("time")
                         previousTrain = data.train
-                        val item = RouteItem(from.first, from.second, to.first, to.second, data.train, -1)
+                        val item = RouteItem(fromStation, fromTime, toStation, toTime, data.train, -1)
                         routeList.add(item)
                     }else{
                         //traveler still takes the same train so just update the old routeitem
-                        val to = network.g.getEdgeTarget(piece)
+                        val toNode = edge.getTargetNode<Node>()
                         val last = routeList.last()
-                        last.toStation = to.first
-                        last.toTime = to.second
+                        last.toStation = toNode.getAttribute<Station>("station")
+                        last.toTime = toNode.getAttribute<LocalTime>("time")
                     }
                 }
+            }
+            if (routeList.isEmpty()){
+                println("start" + startNode)
+                println("end" + startNode)
+                throw Exception("no empty routes allowed")
+
             }
 
             val route = TravelerRoute(routeList, i.toString())
