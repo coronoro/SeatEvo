@@ -4,7 +4,9 @@ import json.JsonDataWriter
 import json.JsonStationStop
 import json.JsonTimeTable
 import json.JsonTrack
+import marudor.AbstractRestApi
 import marudor.MarudorApi
+import marudor.hafas.TrainDetails
 import model.Station
 import model.track.Track
 import model.Train
@@ -12,6 +14,8 @@ import model.Wagon
 import model.timetable.DrivingDirection
 import model.timetable.StationStop
 import model.timetable.TimeTable
+import org.restlet.Restlet
+import java.lang.Exception
 import java.time.Duration
 import java.time.Instant
 import java.time.LocalTime
@@ -36,6 +40,8 @@ object MarudorLoader {
     }
 
     fun loadICE(){
+        LoggingConfig()
+        //AbstractRestApi.wait = 10000
         var stations = HashMap<String,Station>()
         var trains = HashMap<String,Train>()
         var timeTables = mutableListOf<JsonTimeTable>()
@@ -47,15 +53,24 @@ object MarudorLoader {
         // init queue with one start station
         val startStation = "Leipzig HBF"
         stationsQueue.add(startStation)
-        processedStations.add(startStation)
 
 
         while (!stationsQueue.isEmpty()){
-            val search = MarudorApi.searchStations(stationsQueue.pop())
+            var search : List<marudor.station.Station>  = emptyList()
+            try {
+                val pop = stationsQueue.pop()
+                if (!processedStations.contains(pop)) {
+                    println("searching. " + pop)
+                    search = MarudorApi.searchStations(pop)
+                }
+            }catch (e:Exception){
+                e.printStackTrace()
+            }
+
             if (!search.isEmpty()) {
                 search.forEach { station ->
                     // check if the station has been processed already
-                    if (!processedStations.contains(station.id)){
+                    if (!processedStations.contains(station.title)){
                         // add it because we are processing it now
                         processedStations.add(station.id)
                         val stationRep = Station(station.title, emptyList(), station.id)
@@ -68,7 +83,14 @@ object MarudorLoader {
                                 // only IC/E
                                 if (departure.train.type.toLowerCase().startsWith("ic")){
                                     //add track
-                                    trackSet.add(departure.platform.toInt())
+                                    val platform = departure.platform
+                                    if (platform != null){
+                                        val p: Pattern = Pattern.compile("\\d+")
+                                        val m: Matcher = p.matcher(platform)
+                                        if (m.matches())
+                                            trackSet.add(m.group(0).toInt())
+                                    }
+
                                     // empty wagons
                                     var wagons = mutableListOf<Wagon>()
                                     val trainId = departure.train.number
@@ -77,7 +99,7 @@ object MarudorLoader {
                                     //load all stations for this route which havent been loaded yet
                                     departure.route.forEach { route ->
                                         if (!processedStations.contains(route.name)){
-                                            //stationsQueue.add(route.name)
+                                            stationsQueue.add(route.name)
                                         }
                                     }
                                     var list = departureMap.get(trainId)
@@ -94,6 +116,9 @@ object MarudorLoader {
             }
         }
 
+        JsonDataWriter.writeTrains(trains.values.toList())
+        JsonDataWriter.writeStations(stations.values.toList())
+
         departureMap.keys.forEach { key -> 
             val departuresList = departureMap.get(key)
             val stops = mutableListOf<JsonStationStop>()
@@ -104,13 +129,21 @@ object MarudorLoader {
                 // get the stationStops
                 if (!departuresList.isEmpty()){
                     val departure = departuresList.first()
-                    val trainDetails = MarudorApi.getTrainDetails(key, departure)
+
+                    var trainDetails: TrainDetails? = null
+                    while (trainDetails == null){
+                        try {
+                            trainDetails = MarudorApi.getTrainDetails(key, departure)
+                        }catch (e: Exception){
+                            e.printStackTrace()
+                        }
+                    }
+
                     if (trainDetails != null){
                         var start =  Instant.now()
                         trainDetails.stops.forEachIndexed { index, stop ->
                             val departureInfo = stop.departure
                             val arrivalInfo = stop.arrival
-
 
                             var arrival: Duration? = null
                             var departure: Duration? = null
@@ -119,15 +152,16 @@ object MarudorLoader {
                             var offset = 0
                             var direction = DrivingDirection.FORWARD
                             if (departureInfo != null){
-                                var string = "-1"
+                                var string: String
                                 if (departureInfo.scheduledPlatform != null){
                                     string = departureInfo.scheduledPlatform!!
                                 }else{
-                                    string = departureInfo.platform
+                                    string = departureInfo.platform ?: "-1"
                                 }
                                 val p: Pattern = Pattern.compile("\\d+")
                                 val m: Matcher = p.matcher(string)
-                                track = JsonTrack( m.group(0).toInt())
+                                if (m.matches())
+                                    track = JsonTrack(m.group(0).toInt())
                             }
 
                             if (index == 0) {
@@ -164,8 +198,7 @@ object MarudorLoader {
             timeTables.add(JsonTimeTable(train.id, departures, stops))
         }
 
-        JsonDataWriter.writeTrains(trains.values.toList())
-        JsonDataWriter.writeStations(stations.values.toList())
+
         JsonDataWriter.writeJSonTimeTables(timeTables)
 
     }

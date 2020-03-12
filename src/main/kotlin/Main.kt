@@ -9,6 +9,7 @@ import evo.recombination.WagonCrossOver
 import evo.selectors.InverseStochasticUniversalSampling
 import evo.selectors.TournamentSelector
 import json.JsonDataLoader
+import marudor.MarudorApi
 import model.TrainNetwork
 import model.Traveler
 import util.RandomDataUtil
@@ -22,12 +23,19 @@ fun main(args: Array<String>) {
 
     //load data from marudor
     MarudorLoader.loadICE()
+    val timeTables = JsonDataLoader.loadTimeTables(true)
+    val trainNetwork = TrainNetwork(timeTables)
+    trainNetwork.graph.display(false)
+
+    //analyse genetic algorithm
+
 
     //loadMinimumExample()
     //analyseProblemDifficulty()
     //analyseTrainStationLinaerity()
     //analyseGridNetwork()
     //geneticAnalysis()
+
 }
 
 
