@@ -22,10 +22,10 @@ fun main(args: Array<String>) {
     //TravelerAnalysis.analyseGridTravelerGraph(3, 4000)
 
     //load data from marudor
-    MarudorLoader.loadICE()
-    val timeTables = JsonDataLoader.loadTimeTables(true)
-    val trainNetwork = TrainNetwork(timeTables)
-    trainNetwork.graph.display(false)
+    //MarudorLoader.loadICE()
+    //MarudorLoader.loadAllStationTracks()
+    MarudorLoader.loadICETimeTables()
+
 
     //analyse genetic algorithm
 

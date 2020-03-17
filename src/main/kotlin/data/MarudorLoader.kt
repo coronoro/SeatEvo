@@ -1,12 +1,10 @@
 package data
 
-import json.JsonDataWriter
-import json.JsonStationStop
-import json.JsonTimeTable
-import json.JsonTrack
+import json.*
 import marudor.AbstractRestApi
 import marudor.MarudorApi
 import marudor.hafas.TrainDetails
+import marudor.wagonSequence.WagonSequence
 import model.Station
 import model.track.Track
 import model.Train
@@ -16,10 +14,8 @@ import model.timetable.StationStop
 import model.timetable.TimeTable
 import org.restlet.Restlet
 import java.lang.Exception
-import java.time.Duration
-import java.time.Instant
-import java.time.LocalTime
-import java.time.ZoneId
+import java.time.*
+import java.time.temporal.ChronoUnit
 import java.util.*
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -39,6 +35,152 @@ object MarudorLoader {
         return Station(first.title, tracks, first.id)
     }
 
+    fun loadAllStationTracks(){
+        val stations = JsonDataLoader.loadStations(true)
+        stations.forEach { station ->
+            val departuresInfo = MarudorApi.getDeparturesInfo(station.id)
+            val platformSet = HashSet<Int>()
+            if (departuresInfo != null){
+                departuresInfo.departures.forEach { deparure ->
+                    val platform = deparure.platform
+                    if (platform != null) {
+                        val p: Pattern = Pattern.compile("\\d+")
+                        val m: Matcher = p.matcher(platform)
+                        if (m.matches())
+                            platformSet.add(m.group(0).toInt())
+                    }
+                }
+                val trackList = mutableListOf<Track>()
+                platformSet.forEach {
+                    trackList.add(Track(0, null, it))
+                }
+                station.tracks = trackList
+            }
+        }
+        JsonDataWriter.writeStations(stations)
+    }
+
+    fun platformParse(string:String):Int?{
+        var result : Int? = null
+        val p: Pattern = Pattern.compile("\\d+")
+        val m: Matcher = p.matcher(string)
+        if (m.matches())
+            result = m.group(0).toInt()
+        return result
+    }
+
+
+    fun loadICETimeTables(){
+        LoggingConfig()
+        val timetables = mutableListOf<JsonTimeTable>()
+        val trains = mutableListOf<Train>()
+        var stations = JsonDataLoader.loadStations(true).toMutableList()
+        var stationsMap = stations.associate {  it.id to it}.toMutableMap()
+
+        stations.forEach { station ->
+            println("loading for station:" + station.name)
+            val departuresInfo = MarudorApi.getDeparturesInfo(station.id, lookahead = 240, lookbehind = 240)
+            if (departuresInfo != null){
+                println("found " + departuresInfo.departures.size + " departures")
+                departuresInfo.departures.forEach { departure ->
+                    if (departure.train.type.toLowerCase().startsWith("ic")) {
+                        val trainId = departure.train.number
+                        val trainName = departure.train.name
+
+                        var wagonSize = 0
+                        val wagons = mutableListOf<Wagon>()
+
+                        val trainDetails = MarudorApi.getTrainDetails(departure.train)
+                        if (trainDetails != null){
+                            var departures = mutableListOf<LocalTime>()
+                            val stops = mutableListOf<JsonStationStop>()
+                            var start: Instant? = null
+                            trainDetails.stops.forEach { stop ->
+                                // create a new station if its not known
+                                val id = stop.station.id
+                                var get = stationsMap.get(id)
+                                if (get == null){
+                                    get = Station(stop.station.title, emptyList(), id)
+                                    stationsMap.put(id, get)
+                                }
+                                // calculate arrival
+                                val arrivalInfo = stop.arrival
+                                val departureInfo = stop.departure
+
+                                var arrival: Duration? = null
+                                var departure: Duration? = null
+
+                                if (arrivalInfo != null){
+                                    val arrivalInstant = Instant.ofEpochMilli(arrivalInfo.scheduledTime)
+                                    arrival = Duration.between(start, arrivalInstant)
+                                }else if(start != null && departureInfo != null){
+                                    //sometimes there is no arrival even though its not the first station
+                                    val arrivalInstant = Instant.ofEpochMilli(departureInfo.scheduledTime).minus(1, ChronoUnit.MINUTES)
+                                    arrival = Duration.between(start, arrivalInstant)
+                                }
+                                if (departureInfo != null){
+                                    val departureInstant = Instant.ofEpochMilli(departureInfo.scheduledTime)
+                                    // first stop
+                                    if (start == null){
+                                        start = departureInstant
+                                        val zone = departureInstant.atZone(ZoneId.of("Europe/Berlin"))
+                                        departures.add(LocalTime.of(zone.hour, zone.minute))
+                                    }
+                                    departure = Duration.between(start, departureInstant)
+                                }
+
+
+                                // set driving direction
+                                var wagonSequence: WagonSequence? = null
+                                try {
+                                    val stopInfo = departureInfo ?: arrivalInfo
+                                    val scheduledTime = stopInfo!!.scheduledTime
+                                    wagonSequence = MarudorApi.getWagonSequence(trainId, scheduledTime.toString())
+                                }catch (e : Exception){
+                                    e.printStackTrace()
+                                }
+
+                                var direction = DrivingDirection.FORWARD
+                                if (wagonSequence != null && !"VORWAERTS".equals(wagonSequence!!.fahrtrichtung)){
+                                    direction = DrivingDirection.BACKWARD
+                                }
+
+                                // get wagons size maximum
+                                if (wagonSequence != null && wagonSequence.allFahrzeuggruppe.size > wagonSize){
+                                    var wagonSize = wagonSequence.allFahrzeuggruppe.size
+                                }
+
+                                // get platform
+                                val platform = platformParse(stop.departure!!.platform ?: "-1") ?: -1
+                                // if platform is unknown make a new one
+                                var filter = get.tracks.filter { it.id == platform }
+                                if (filter.isEmpty()){
+                                    val trackList = get.tracks.toMutableList()
+                                    trackList.add(Track(0, null, platform))
+                                    get.tracks = trackList
+                                }
+                                // TODO get track offset
+                                var offset = 0
+                                stops.add(JsonStationStop(id, arrival, departure, JsonTrack(platform), offset, direction))
+                            }
+
+                            for (i in 0 until wagonSize){
+                                wagons.add(Wagon(-1))
+                            }
+                            var train = Train(wagons, trainId, trainName)
+                            println("adding train:" + train)
+                            trains.add(train)
+                            timetables.add(JsonTimeTable(train.id, departures, stops))
+                        }
+                    }
+                }
+            }
+        }
+        JsonDataWriter.writeJSonTimeTables(timetables)
+        JsonDataWriter.writeTrains(trains)
+    }
+
+
     fun loadICE(){
         LoggingConfig()
         //AbstractRestApi.wait = 10000
@@ -49,7 +191,7 @@ object MarudorLoader {
         var departureMap = HashMap<String, MutableList<String>>()
 
         var stationsQueue = ArrayDeque<String>()
-        var processedStations = mutableListOf<String>()
+        var processedStations = HashSet<String>()
         // init queue with one start station
         val startStation = "Leipzig HBF"
         stationsQueue.add(startStation)
@@ -59,7 +201,7 @@ object MarudorLoader {
             var search : List<marudor.station.Station>  = emptyList()
             try {
                 val pop = stationsQueue.pop()
-                if (!processedStations.contains(pop)) {
+                if (!processedStations.contains(pop.toLowerCase())) {
                     println("searching. " + pop)
                     search = MarudorApi.searchStations(pop)
                 }
@@ -72,7 +214,7 @@ object MarudorLoader {
                     // check if the station has been processed already
                     if (!processedStations.contains(station.title)){
                         // add it because we are processing it now
-                        processedStations.add(station.id)
+                        processedStations.add(station.title.toLowerCase())
                         val stationRep = Station(station.title, emptyList(), station.id)
                         stations.put(station.id, stationRep)
 
@@ -98,7 +240,7 @@ object MarudorLoader {
                                     trains.put(trainName, Train(wagons, trainId, trainName))
                                     //load all stations for this route which havent been loaded yet
                                     departure.route.forEach { route ->
-                                        if (!processedStations.contains(route.name)){
+                                        if (!processedStations.contains(route.name.toLowerCase()) && !stationsQueue.contains(route.name)){
                                             stationsQueue.add(route.name)
                                         }
                                     }
@@ -179,7 +321,7 @@ object MarudorLoader {
                                 arrival = Duration.between(start, end)
                             }
 
-                            stops.add(JsonStationStop(stop.station.id,arrival, departure, track, offset, direction))
+                            stops.add(JsonStationStop(stop.station.id, arrival, departure, track, offset, direction))
                         }
                     }
                 }

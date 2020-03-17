@@ -1,34 +1,27 @@
 package data
 
-import java.util.logging.ConsoleHandler
-import java.util.logging.Level
-import java.util.logging.Logger
-import java.util.logging.SimpleFormatter
+import java.util.logging.*
 
 
 class LoggingConfig {
 
-    fun LoggingConfig() {
+    init {
         try {
-            // Load a properties file from class path that way can't be achieved with java.util.logging.config.file
-            /*
-            final LogManager logManager = LogManager.getLogManager();
-            try (final InputStream is = getClass().getResourceAsStream("/logging.properties")) {
-                logManager.readConfiguration(is);
-            }
-            */
-
             // Programmatic configuration
             System.setProperty(
                 "java.util.logging.SimpleFormatter.format",
                 "%1\$tY-%1\$tm-%1\$td %1\$tH:%1\$tM:%1\$tS.%1\$tL %4$-7s [%3\$s] (%2\$s) %5\$s %6\$s%n"
             )
-            val consoleHandler = ConsoleHandler()
-            consoleHandler.level = Level.SEVERE
-            consoleHandler.formatter = SimpleFormatter()
-            val app: Logger = Logger.getLogger("app")
-            app.setLevel(Level.SEVERE)
-            app.addHandler(consoleHandler)
+            val logger = Logger.getLogger("org.restlet")
+            for (handler in logger.parent.handlers) {
+                // Find the console handler
+                if (handler.javaClass.equals(ConsoleHandler::class.java)) {
+                    // set level to SEVERE. We could disable it completely with
+                    // a custom filter but this is good enough.
+                    handler.level = Level.SEVERE
+                }
+            }
+            LogManager.getLogManager().reset();
         } catch (e: Exception) {
             // The runtime won't show stack traces if the exception is thrown
             e.printStackTrace()

@@ -33,14 +33,24 @@ object JsonDataLoader {
         return result
     }
 
-    fun loadTimeTables(snap: Boolean = false): List<TimeTable> {
-        val stationFile = if (snap) stationsSnapLocation else stationsLocation
+    fun loadTrains(snap: Boolean = false): List<Train> {
         val trainFile = if (snap) trainsSnapLocation else trainsLocation
+        val trains = loadJsonList(trainFile, Train::class.java)
+        return trains
+    }
+
+    fun loadStations(snap: Boolean = false): List<Station> {
+        val stationFile = if (snap) stationsSnapLocation else stationsLocation
+        val stations = loadJsonList(stationFile, Station::class.java)
+        return stations
+    }
+
+    fun loadTimeTables(snap: Boolean = false): List<TimeTable> {
         val timetableFile = if (snap) timeTableSnapLocation else timeTableLocation
 
         var result = mutableListOf<TimeTable>()
-        val stations = loadJsonList(stationFile, Station::class.java)
-        val trains = loadJsonList(trainFile, Train::class.java)
+        val stations = loadStations()
+        val trains = loadTrains()
 
         val jsonTimetables = loadJsonList(timetableFile, JsonTimeTable::class.java)
         jsonTimetables.forEach { json ->
