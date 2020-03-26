@@ -1,0 +1,9613 @@
+[
+  {
+    "id": "143",
+    "name": "IC 143",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "148",
+    "name": "IC 148",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "145",
+    "name": "IC 145",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "146",
+    "name": "IC 146",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "name": "IC 147",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "144",
+    "name": "IC 144",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "name": "IC 149",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "name": "IC 142",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "701",
+    "name": "ICE 701",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1003",
+    "name": "ICE 1003",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "722",
+    "name": "ICE 722",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "527",
+    "name": "ICE 527",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "800",
+    "name": "ICE 800",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "583",
+    "name": "ICE 583",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "228",
+    "name": "ICE 228",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "880",
+    "name": "ICE 880",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2068",
+    "name": "IC 2068",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "505",
+    "name": "ICE 505",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "720",
+    "name": "ICE 720",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1139",
+    "name": "ICE 1139",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "508",
+    "name": "ICE 508",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2065",
+    "name": "IC 2065",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1221",
+    "name": "ICE 1221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "ICE 91",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "588",
+    "name": "ICE 588",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "703",
+    "name": "ICE 703",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "628",
+    "name": "ICE 628",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1004",
+    "name": "ICE 1004",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "621",
+    "name": "ICE 621",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "708",
+    "name": "ICE 708",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "585",
+    "name": "ICE 585",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1093",
+    "name": "ICE 1093",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "ICE 28",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "ICE 93",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "788",
+    "name": "ICE 788",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2066",
+    "name": "IC 2066",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "507",
+    "name": "ICE 507",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "626",
+    "name": "ICE 626",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "506",
+    "name": "ICE 506",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1223",
+    "name": "ICE 1223",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2067",
+    "name": "IC 2067",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "787",
+    "name": "ICE 787",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "ICE 27",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "586",
+    "name": "ICE 586",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "name": "ICE 92",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "705",
+    "name": "ICE 705",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1005",
+    "name": "ICE 1005",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1144",
+    "name": "ICE 1144",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "625",
+    "name": "ICE 625",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "706",
+    "name": "ICE 706",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "587",
+    "name": "ICE 587",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "ICE 26",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "786",
+    "name": "ICE 786",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2064",
+    "name": "IC 2064",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "509",
+    "name": "ICE 509",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "622",
+    "name": "ICE 622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "627",
+    "name": "ICE 627",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "504",
+    "name": "ICE 504",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2069",
+    "name": "IC 2069",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "789",
+    "name": "ICE 789",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "ICE 29",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "584",
+    "name": "ICE 584",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "707",
+    "name": "ICE 707",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "620",
+    "name": "ICE 620",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1002",
+    "name": "ICE 1002",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "629",
+    "name": "ICE 629",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "704",
+    "name": "ICE 704",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1589",
+    "name": "ICE 1589",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1707",
+    "name": "ICE 1707",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "ICE 90",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2062",
+    "name": "IC 2062",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1601",
+    "name": "ICE 1601",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1502",
+    "name": "ICE 1502",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "528",
+    "name": "ICE 528",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "721",
+    "name": "ICE 721",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "502",
+    "name": "ICE 502",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "881",
+    "name": "ICE 881",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "229",
+    "name": "ICE 229",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2161",
+    "name": "IC 2161",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "582",
+    "name": "ICE 582",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2389",
+    "name": "IC 2389",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2382",
+    "name": "IC 2382",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "488",
+    "name": "IC 488",
+    "wagons": []
+  },
+  {
+    "id": "185",
+    "name": "IC 185",
+    "wagons": []
+  },
+  {
+    "id": "188",
+    "name": "IC 188",
+    "wagons": []
+  },
+  {
+    "id": "485",
+    "name": "IC 485",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "486",
+    "name": "IC 486",
+    "wagons": []
+  },
+  {
+    "id": "187",
+    "name": "IC 187",
+    "wagons": []
+  },
+  {
+    "id": "186",
+    "name": "IC 186",
+    "wagons": []
+  },
+  {
+    "id": "487",
+    "name": "IC 487",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "484",
+    "name": "IC 484",
+    "wagons": []
+  },
+  {
+    "id": "189",
+    "name": "IC 189",
+    "wagons": []
+  },
+  {
+    "id": "184",
+    "name": "IC 184",
+    "wagons": []
+  },
+  {
+    "id": "489",
+    "name": "IC 489",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "482",
+    "name": "IC 482",
+    "wagons": []
+  },
+  {
+    "id": "281",
+    "name": "IC 281",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "182",
+    "name": "IC 182",
+    "wagons": []
+  },
+  {
+    "id": "381",
+    "name": "IC 381",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "ICE 26",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "ICE 23",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "ICE 90",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "ICE 91",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "ICE 93",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "ICE 27",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "ICE 20",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "ICE 29",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "507",
+    "name": "ICE 507",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1600",
+    "name": "ICE 1600",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1557",
+    "name": "ICE 1557",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2440",
+    "name": "IC 2440",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "599",
+    "name": "ICE 599",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2035",
+    "name": "IC 2035",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2036",
+    "name": "IC 2036",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "692",
+    "name": "ICE 692",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2443",
+    "name": "IC 2443",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1558",
+    "name": "ICE 1558",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "509",
+    "name": "ICE 509",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2063",
+    "name": "IC 2063",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "508",
+    "name": "ICE 508",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1559",
+    "name": "ICE 1559",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2442",
+    "name": "IC 2442",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "691",
+    "name": "ICE 691",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2037",
+    "name": "IC 2037",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2034",
+    "name": "IC 2034",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "690",
+    "name": "ICE 690",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2441",
+    "name": "IC 2441",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1556",
+    "name": "ICE 1556",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1601",
+    "name": "ICE 1601",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2060",
+    "name": "IC 2060",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "506",
+    "name": "ICE 506",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1651",
+    "name": "ICE 1651",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2444",
+    "name": "IC 2444",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "693",
+    "name": "ICE 693",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2039",
+    "name": "IC 2039",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2032",
+    "name": "IC 2032",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "598",
+    "name": "ICE 598",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2049",
+    "name": "IC 2049",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1554",
+    "name": "ICE 1554",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "603",
+    "name": "ICE 603",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "504",
+    "name": "ICE 504",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1653",
+    "name": "ICE 1653",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2446",
+    "name": "IC 2446",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "695",
+    "name": "ICE 695",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2239",
+    "name": "IC 2239",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2030",
+    "name": "IC 2030",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2908",
+    "name": "ICE 2908",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "596",
+    "name": "ICE 596",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2047",
+    "name": "IC 2047",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1552",
+    "name": "ICE 1552",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1605",
+    "name": "ICE 1605",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1705",
+    "name": "ICE 1705",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "ICE 20",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "973",
+    "name": "ICE 973",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2280",
+    "name": "IC 2280",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "598",
+    "name": "ICE 598",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2015",
+    "name": "IC 2015",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2387",
+    "name": "IC 2387",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "576",
+    "name": "ICE 576",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "595",
+    "name": "ICE 595",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "917",
+    "name": "ICE 917",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "280",
+    "name": "IC 280",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "518",
+    "name": "ICE 518",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2068",
+    "name": "IC 2068",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2069",
+    "name": "IC 2069",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "517",
+    "name": "ICE 517",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9573",
+    "name": "ICE 9573",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "189",
+    "name": "IC 189",
+    "wagons": []
+  },
+  {
+    "id": "710",
+    "name": "ICE 710",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "575",
+    "name": "ICE 575",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2388",
+    "name": "IC 2388",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "596",
+    "name": "ICE 596",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2908",
+    "name": "ICE 2908",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9572",
+    "name": "ICE 9572",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2016",
+    "name": "IC 2016",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2389",
+    "name": "IC 2389",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1094",
+    "name": "ICE 1094",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "597",
+    "name": "ICE 597",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "188",
+    "name": "IC 188",
+    "wagons": []
+  },
+  {
+    "id": "2294",
+    "name": "IC 2294",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "516",
+    "name": "ICE 516",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2066",
+    "name": "IC 2066",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1912",
+    "name": "IC 1912",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2161",
+    "name": "IC 2161",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "519",
+    "name": "ICE 519",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2905",
+    "name": "ICE 2905",
+    "wagons": []
+  },
+  {
+    "id": "281",
+    "name": "IC 281",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "914",
+    "name": "ICE 914",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "577",
+    "name": "ICE 577",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2386",
+    "name": "IC 2386",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "594",
+    "name": "ICE 594",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2058",
+    "name": "IC 2058",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2318",
+    "name": "IC 2318",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2281",
+    "name": "IC 2281",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "599",
+    "name": "ICE 599",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "572",
+    "name": "ICE 572",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1011",
+    "name": "ICE 1011",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "186",
+    "name": "IC 186",
+    "wagons": []
+  },
+  {
+    "id": "1962",
+    "name": "IC 1962",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "514",
+    "name": "ICE 514",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2064",
+    "name": "IC 2064",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2163",
+    "name": "IC 2163",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "611",
+    "name": "ICE 611",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "283",
+    "name": "IC 283",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "912",
+    "name": "ICE 912",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "579",
+    "name": "ICE 579",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2384",
+    "name": "IC 2384",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "592",
+    "name": "ICE 592",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2289",
+    "name": "IC 2289",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1013",
+    "name": "ICE 1013",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "691",
+    "name": "ICE 691",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "184",
+    "name": "IC 184",
+    "wagons": []
+  },
+  {
+    "id": "512",
+    "name": "ICE 512",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2062",
+    "name": "IC 2062",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2165",
+    "name": "IC 2165",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "892",
+    "name": "ICE 892",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "613",
+    "name": "ICE 613",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "285",
+    "name": "IC 285",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "ICE 90",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "ICE 23",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "ICE 91",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "ICE 93",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "ICE 20",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "ICE 27",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "IC 94",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "ICE 29",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1299",
+    "name": "IC 1299",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "385",
+    "name": "IC 385",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "386",
+    "name": "IC 386",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "5760",
+    "name": "IC 5760",
+    "wagons": []
+  },
+  {
+    "id": "384",
+    "name": "IC 384",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2218",
+    "name": "IC 2218",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "724",
+    "name": "ICE 724",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "5106",
+    "name": "IC 5106",
+    "wagons": []
+  },
+  {
+    "id": "941",
+    "name": "ICE 941",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2201",
+    "name": "IC 2201",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "942",
+    "name": "ICE 942",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2200",
+    "name": "IC 2200",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "721",
+    "name": "ICE 721",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2217",
+    "name": "IC 2217",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "610",
+    "name": "ICE 610",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "722",
+    "name": "ICE 722",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "name": "ICE 125",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "641",
+    "name": "ICE 641",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1011",
+    "name": "ICE 1011",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "640",
+    "name": "ICE 640",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2359",
+    "name": "IC 2359",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "723",
+    "name": "ICE 723",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "name": "ICE 124",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "918",
+    "name": "ICE 918",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "611",
+    "name": "ICE 611",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2312",
+    "name": "IC 2312",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2423",
+    "name": "IC 2423",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "720",
+    "name": "ICE 720",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2157",
+    "name": "IC 2157",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2203",
+    "name": "IC 2203",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "943",
+    "name": "ICE 943",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "940",
+    "name": "ICE 940",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2004",
+    "name": "IC 2004",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2451",
+    "name": "IC 2451",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "725",
+    "name": "ICE 725",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2311",
+    "name": "IC 2311",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "518",
+    "name": "ICE 518",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2196",
+    "name": "IC 2196",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "628",
+    "name": "ICE 628",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1013",
+    "name": "ICE 1013",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "name": "ICE 127",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "643",
+    "name": "ICE 643",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1228",
+    "name": "ICE 1228",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2453",
+    "name": "IC 2453",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "548",
+    "name": "ICE 548",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2012",
+    "name": "IC 2012",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "727",
+    "name": "ICE 727",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "613",
+    "name": "ICE 613",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "626",
+    "name": "ICE 626",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2205",
+    "name": "IC 2205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "945",
+    "name": "ICE 945",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "848",
+    "name": "ICE 848",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2152",
+    "name": "IC 2152",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "name": "ICE 122",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2002",
+    "name": "IC 2002",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "729",
+    "name": "ICE 729",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2213",
+    "name": "IC 2213",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2300",
+    "name": "IC 2300",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "516",
+    "name": "ICE 516",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1144",
+    "name": "ICE 1144",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "name": "ICE 129",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1015",
+    "name": "ICE 1015",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "645",
+    "name": "ICE 645",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "914",
+    "name": "ICE 914",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "821",
+    "name": "ICE 821",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "546",
+    "name": "ICE 546",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2016",
+    "name": "IC 2016",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2195",
+    "name": "IC 2195",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "615",
+    "name": "ICE 615",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "ICE 104",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "622",
+    "name": "ICE 622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2207",
+    "name": "IC 2207",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "947",
+    "name": "ICE 947",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "846",
+    "name": "ICE 846",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "514",
+    "name": "ICE 514",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "620",
+    "name": "ICE 620",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "ICE 221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "ICE 120",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "544",
+    "name": "ICE 544",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2254",
+    "name": "IC 2254",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "912",
+    "name": "ICE 912",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2199",
+    "name": "IC 2199",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2318",
+    "name": "IC 2318",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1600",
+    "name": "ICE 1600",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "603",
+    "name": "ICE 603",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "508",
+    "name": "ICE 508",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1605",
+    "name": "ICE 1605",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1705",
+    "name": "ICE 1705",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2071",
+    "name": "IC 2071",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "803",
+    "name": "ICE 803",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "506",
+    "name": "ICE 506",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2073",
+    "name": "IC 2073",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "504",
+    "name": "ICE 504",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "609",
+    "name": "ICE 609",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2431",
+    "name": "IC 2431",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "386",
+    "name": "IC 386",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "5760",
+    "name": "IC 5760",
+    "wagons": []
+  },
+  {
+    "id": "384",
+    "name": "IC 384",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2039",
+    "name": "IC 2039",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2036",
+    "name": "IC 2036",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2049",
+    "name": "IC 2049",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2442",
+    "name": "IC 2442",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2034",
+    "name": "IC 2034",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2431",
+    "name": "IC 2431",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2239",
+    "name": "IC 2239",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2047",
+    "name": "IC 2047",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2444",
+    "name": "IC 2444",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2433",
+    "name": "IC 2433",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2032",
+    "name": "IC 2032",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2045",
+    "name": "IC 2045",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2446",
+    "name": "IC 2446",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2030",
+    "name": "IC 2030",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2435",
+    "name": "IC 2435",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2043",
+    "name": "IC 2043",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2448",
+    "name": "IC 2448",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "508",
+    "name": "ICE 508",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1601",
+    "name": "ICE 1601",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "690",
+    "name": "ICE 690",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "693",
+    "name": "ICE 693",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "506",
+    "name": "ICE 506",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "603",
+    "name": "ICE 603",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "598",
+    "name": "ICE 598",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "695",
+    "name": "ICE 695",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "504",
+    "name": "ICE 504",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1605",
+    "name": "ICE 1605",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2908",
+    "name": "ICE 2908",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "596",
+    "name": "ICE 596",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "502",
+    "name": "ICE 502",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1607",
+    "name": "ICE 1607",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "594",
+    "name": "ICE 594",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "699",
+    "name": "ICE 699",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "500",
+    "name": "ICE 500",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2431",
+    "name": "IC 2431",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2064",
+    "name": "IC 2064",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2161",
+    "name": "IC 2161",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2062",
+    "name": "IC 2062",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2163",
+    "name": "IC 2163",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2060",
+    "name": "IC 2060",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2165",
+    "name": "IC 2165",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2085",
+    "name": "IC 2085",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "817",
+    "name": "ICE 817",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "816",
+    "name": "ICE 816",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "826",
+    "name": "ICE 826",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "819",
+    "name": "ICE 819",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "710",
+    "name": "ICE 710",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "814",
+    "name": "ICE 814",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1228",
+    "name": "ICE 1228",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "911",
+    "name": "ICE 911",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "828",
+    "name": "ICE 828",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "620",
+    "name": "ICE 620",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "821",
+    "name": "ICE 821",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "810",
+    "name": "ICE 810",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "524",
+    "name": "ICE 524",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2068",
+    "name": "IC 2068",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2266",
+    "name": "IC 2266",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "371",
+    "name": "ICE 371",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "276",
+    "name": "ICE 276",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1299",
+    "name": "IC 1299",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2313",
+    "name": "IC 2313",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "name": "ICE 70",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2066",
+    "name": "IC 2066",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "name": "ICE 109",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "ICE 104",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2163",
+    "name": "IC 2163",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "name": "ICE 77",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2264",
+    "name": "IC 2264",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9563",
+    "name": "ICE 9563",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "373",
+    "name": "ICE 373",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "274",
+    "name": "ICE 274",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2269",
+    "name": "IC 2269",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1962",
+    "name": "IC 1962",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "376",
+    "name": "ICE 376",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2064",
+    "name": "IC 2064",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "201",
+    "name": "ICE 201",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "ICE 102",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2165",
+    "name": "IC 2165",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "name": "ICE 79",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1671",
+    "name": "ICE 1671",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2183",
+    "name": "IC 2183",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2262",
+    "name": "IC 2262",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "375",
+    "name": "ICE 375",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "272",
+    "name": "ICE 272",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2902",
+    "name": "IC 2902",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2369",
+    "name": "IC 2369",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2375",
+    "name": "IC 2375",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2062",
+    "name": "IC 2062",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "ICE 100",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2167",
+    "name": "IC 2167",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1171",
+    "name": "ICE 1171",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "203",
+    "name": "ICE 203",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2260",
+    "name": "IC 2260",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "377",
+    "name": "ICE 377",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "ICE 4",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2060",
+    "name": "IC 2060",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "273",
+    "name": "ICE 273",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2431",
+    "name": "IC 2431",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2457",
+    "name": "IC 2457",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2060",
+    "name": "IC 2060",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1705",
+    "name": "ICE 1705",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2027",
+    "name": "IC 2027",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2012",
+    "name": "IC 2012",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2203",
+    "name": "IC 2203",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2311",
+    "name": "IC 2311",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2002",
+    "name": "IC 2002",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "924",
+    "name": "ICE 924",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "929",
+    "name": "ICE 929",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2016",
+    "name": "IC 2016",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2205",
+    "name": "IC 2205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2213",
+    "name": "IC 2213",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "556",
+    "name": "ICE 556",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "ICE 26",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1021",
+    "name": "ICE 1021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2318",
+    "name": "IC 2318",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2210",
+    "name": "IC 2210",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2217",
+    "name": "IC 2217",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2027",
+    "name": "IC 2027",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "924",
+    "name": "ICE 924",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2016",
+    "name": "IC 2016",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2311",
+    "name": "IC 2311",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "929",
+    "name": "ICE 929",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "ICE 26",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2205",
+    "name": "IC 2205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2213",
+    "name": "IC 2213",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2318",
+    "name": "IC 2318",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "556",
+    "name": "ICE 556",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1021",
+    "name": "ICE 1021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2210",
+    "name": "IC 2210",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "201",
+    "name": "ICE 201",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "name": "ICE 106",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "558",
+    "name": "ICE 558",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2043",
+    "name": "IC 2043",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "name": "ICE 127",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "ICE 12",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2002",
+    "name": "IC 2002",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "name": "ICE 122",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "955",
+    "name": "ICE 955",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "929",
+    "name": "ICE 929",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "613",
+    "name": "ICE 613",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "710",
+    "name": "ICE 710",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2300",
+    "name": "IC 2300",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "858",
+    "name": "ICE 858",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "924",
+    "name": "ICE 924",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "516",
+    "name": "ICE 516",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2205",
+    "name": "IC 2205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "317",
+    "name": "ICE 317",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "911",
+    "name": "ICE 911",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2440",
+    "name": "IC 2440",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2016",
+    "name": "IC 2016",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "655",
+    "name": "ICE 655",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2213",
+    "name": "IC 2213",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "203",
+    "name": "ICE 203",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "204",
+    "name": "ICE 204",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "ICE 104",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "556",
+    "name": "ICE 556",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "name": "ICE 129",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "947",
+    "name": "ICE 947",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "ICE 10",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2195",
+    "name": "IC 2195",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1021",
+    "name": "ICE 1021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "615",
+    "name": "ICE 615",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "ICE 26",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "856",
+    "name": "ICE 856",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "514",
+    "name": "ICE 514",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2207",
+    "name": "IC 2207",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "ICE 19",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "846",
+    "name": "ICE 846",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "ICE 120",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2442",
+    "name": "IC 2442",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2318",
+    "name": "IC 2318",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "554",
+    "name": "ICE 554",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "ICE 102",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "ICE 221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2254",
+    "name": "IC 2254",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "544",
+    "name": "ICE 544",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2199",
+    "name": "IC 2199",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "810",
+    "name": "ICE 810",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "512",
+    "name": "ICE 512",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "854",
+    "name": "ICE 854",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "844",
+    "name": "ICE 844",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "949",
+    "name": "ICE 949",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2444",
+    "name": "IC 2444",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2307",
+    "name": "IC 2307",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2210",
+    "name": "IC 2210",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "ICE 100",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "552",
+    "name": "ICE 552",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "542",
+    "name": "ICE 542",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "842",
+    "name": "ICE 842",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "522",
+    "name": "ICE 522",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "name": "IC 142",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "241",
+    "name": "IC 241",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "140",
+    "name": "IC 140",
+    "wagons": []
+  },
+  {
+    "id": "243",
+    "name": "IC 243",
+    "wagons": []
+  },
+  {
+    "id": "690",
+    "name": "ICE 690",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2174",
+    "name": "IC 2174",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "name": "ICE 92",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1092",
+    "name": "ICE 1092",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2273",
+    "name": "IC 2273",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2055",
+    "name": "IC 2055",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "542",
+    "name": "ICE 542",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "598",
+    "name": "ICE 598",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1631",
+    "name": "ICE 1631",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "651",
+    "name": "ICE 651",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "641",
+    "name": "ICE 641",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1617",
+    "name": "ICE 1617",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "842",
+    "name": "ICE 842",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2172",
+    "name": "IC 2172",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1002",
+    "name": "ICE 1002",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2275",
+    "name": "IC 2275",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "953",
+    "name": "ICE 953",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "943",
+    "name": "ICE 943",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "833",
+    "name": "ICE 833",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "840",
+    "name": "ICE 840",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "653",
+    "name": "ICE 653",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "643",
+    "name": "ICE 643",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1000",
+    "name": "ICE 1000",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "name": "IC 95",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "955",
+    "name": "ICE 955",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "945",
+    "name": "ICE 945",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "702",
+    "name": "ICE 702",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "594",
+    "name": "ICE 594",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1635",
+    "name": "ICE 1635",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "655",
+    "name": "ICE 655",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "645",
+    "name": "ICE 645",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "948",
+    "name": "ICE 948",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "947",
+    "name": "ICE 947",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1700",
+    "name": "ICE 1700",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "877",
+    "name": "ICE 877",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2242",
+    "name": "IC 2242",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2431",
+    "name": "IC 2431",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1196",
+    "name": "ICE 1196",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "name": "IC 147",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "278",
+    "name": "ICE 278",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2359",
+    "name": "IC 2359",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "794",
+    "name": "ICE 794",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2451",
+    "name": "IC 2451",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "name": "IC 149",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "276",
+    "name": "ICE 276",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2453",
+    "name": "IC 2453",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "792",
+    "name": "ICE 792",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2174",
+    "name": "IC 2174",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2275",
+    "name": "IC 2275",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2172",
+    "name": "IC 2172",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "name": "IC 95",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2258",
+    "name": "IC 2258",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1299",
+    "name": "IC 1299",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1291",
+    "name": "IC 1291",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "914",
+    "name": "ICE 914",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "622",
+    "name": "ICE 622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "828",
+    "name": "ICE 828",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "727",
+    "name": "ICE 727",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "572",
+    "name": "ICE 572",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "ICE 10",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "613",
+    "name": "ICE 613",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1556",
+    "name": "ICE 1556",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1657",
+    "name": "ICE 1657",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "514",
+    "name": "ICE 514",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "317",
+    "name": "ICE 317",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1228",
+    "name": "ICE 1228",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "620",
+    "name": "ICE 620",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "771",
+    "name": "ICE 771",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "729",
+    "name": "ICE 729",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "911",
+    "name": "ICE 911",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "ICE 120",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "203",
+    "name": "ICE 203",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "912",
+    "name": "ICE 912",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "929",
+    "name": "ICE 929",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "ICE 102",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1015",
+    "name": "ICE 1015",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "name": "ICE 129",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "528",
+    "name": "ICE 528",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "821",
+    "name": "ICE 821",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "810",
+    "name": "ICE 810",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "615",
+    "name": "ICE 615",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1554",
+    "name": "ICE 1554",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1659",
+    "name": "ICE 1659",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "512",
+    "name": "ICE 512",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "ICE 19",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "773",
+    "name": "ICE 773",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "526",
+    "name": "ICE 526",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1021",
+    "name": "ICE 1021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "ICE 100",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "ICE 221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "524",
+    "name": "ICE 524",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "877",
+    "name": "ICE 877",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "522",
+    "name": "ICE 522",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2020",
+    "name": "IC 2020",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "887",
+    "name": "ICE 887",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "990",
+    "name": "ICE 990",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "209",
+    "name": "ICE 209",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1578",
+    "name": "ICE 1578",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2188",
+    "name": "IC 2188",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2055",
+    "name": "IC 2055",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2071",
+    "name": "IC 2071",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "997",
+    "name": "ICE 997",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "504",
+    "name": "ICE 504",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2172",
+    "name": "IC 2172",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "803",
+    "name": "ICE 803",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1617",
+    "name": "ICE 1617",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1002",
+    "name": "ICE 1002",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "704",
+    "name": "ICE 704",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2908",
+    "name": "ICE 2908",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "596",
+    "name": "ICE 596",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2910",
+    "name": "ICE 2910",
+    "wagons": []
+  },
+  {
+    "id": "904",
+    "name": "ICE 904",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1607",
+    "name": "ICE 1607",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2275",
+    "name": "IC 2275",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "833",
+    "name": "ICE 833",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "502",
+    "name": "ICE 502",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "906",
+    "name": "ICE 906",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "699",
+    "name": "ICE 699",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1000",
+    "name": "ICE 1000",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "702",
+    "name": "ICE 702",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "594",
+    "name": "ICE 594",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "900",
+    "name": "ICE 900",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "609",
+    "name": "ICE 609",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1635",
+    "name": "ICE 1635",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2912",
+    "name": "ICE 2912",
+    "wagons": []
+  },
+  {
+    "id": "500",
+    "name": "ICE 500",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "905",
+    "name": "ICE 905",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1700",
+    "name": "ICE 1700",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2380",
+    "name": "IC 2380",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2289",
+    "name": "IC 2289",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2285",
+    "name": "IC 2285",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "ICE 120",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "317",
+    "name": "ICE 317",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1228",
+    "name": "ICE 1228",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1699",
+    "name": "ICE 1699",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "838",
+    "name": "ICE 838",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "693",
+    "name": "ICE 693",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "376",
+    "name": "ICE 376",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "729",
+    "name": "ICE 729",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "911",
+    "name": "ICE 911",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1171",
+    "name": "ICE 1171",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "528",
+    "name": "ICE 528",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "592",
+    "name": "ICE 592",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1690",
+    "name": "ICE 1690",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2299",
+    "name": "IC 2299",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "929",
+    "name": "ICE 929",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "name": "ICE 129",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "810",
+    "name": "ICE 810",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1554",
+    "name": "ICE 1554",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "377",
+    "name": "ICE 377",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1570",
+    "name": "ICE 1570",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "821",
+    "name": "ICE 821",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9555",
+    "name": "ICE 9555",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "773",
+    "name": "ICE 773",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1675",
+    "name": "ICE 1675",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "526",
+    "name": "ICE 526",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "272",
+    "name": "ICE 272",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2902",
+    "name": "IC 2902",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1659",
+    "name": "ICE 1659",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "ICE 19",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1591",
+    "name": "ICE 1591",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "695",
+    "name": "ICE 695",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "892",
+    "name": "ICE 892",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "836",
+    "name": "ICE 836",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2914",
+    "name": "ICE 2914",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "273",
+    "name": "ICE 273",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "590",
+    "name": "ICE 590",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "524",
+    "name": "ICE 524",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1021",
+    "name": "ICE 1021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "ICE 221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1552",
+    "name": "ICE 1552",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9557",
+    "name": "ICE 9557",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "877",
+    "name": "ICE 877",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1593",
+    "name": "ICE 1593",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "522",
+    "name": "ICE 522",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "ICE 4",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2020",
+    "name": "IC 2020",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2290",
+    "name": "IC 2290",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "ICE 20",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1627",
+    "name": "ICE 1627",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "520",
+    "name": "ICE 520",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "887",
+    "name": "ICE 887",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "990",
+    "name": "ICE 990",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "699",
+    "name": "ICE 699",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "209",
+    "name": "ICE 209",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "698",
+    "name": "ICE 698",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "208",
+    "name": "ICE 208",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "599",
+    "name": "ICE 599",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "611",
+    "name": "ICE 611",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "709",
+    "name": "ICE 709",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "990",
+    "name": "ICE 990",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2269",
+    "name": "IC 2269",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "691",
+    "name": "ICE 691",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2297",
+    "name": "IC 2297",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "613",
+    "name": "ICE 613",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "801",
+    "name": "ICE 801",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "693",
+    "name": "ICE 693",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "618",
+    "name": "ICE 618",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "615",
+    "name": "ICE 615",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "616",
+    "name": "ICE 616",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "5727",
+    "name": "IC 5727",
+    "wagons": []
+  },
+  {
+    "id": "5768",
+    "name": "IC 5768",
+    "wagons": []
+  },
+  {
+    "id": "5745",
+    "name": "IC 5745",
+    "wagons": []
+  },
+  {
+    "id": "1705",
+    "name": "ICE 1705",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "name": "IC 95",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "IC 94",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "ICE 10",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2055",
+    "name": "IC 2055",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "ICE 10",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2311",
+    "name": "IC 2311",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2260",
+    "name": "IC 2260",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2369",
+    "name": "IC 2369",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2213",
+    "name": "IC 2213",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "229",
+    "name": "ICE 229",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "IC 94",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "856",
+    "name": "ICE 856",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "ICE 120",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2442",
+    "name": "IC 2442",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2215",
+    "name": "IC 2215",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2318",
+    "name": "IC 2318",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "554",
+    "name": "ICE 554",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "ICE 102",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "ICE 221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2254",
+    "name": "IC 2254",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "544",
+    "name": "ICE 544",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2199",
+    "name": "IC 2199",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2221",
+    "name": "IC 2221",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "810",
+    "name": "ICE 810",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "512",
+    "name": "ICE 512",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1622",
+    "name": "ICE 1622",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "854",
+    "name": "ICE 854",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "844",
+    "name": "ICE 844",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "949",
+    "name": "ICE 949",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2444",
+    "name": "IC 2444",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2307",
+    "name": "IC 2307",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2210",
+    "name": "IC 2210",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "ICE 100",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "552",
+    "name": "ICE 552",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "542",
+    "name": "ICE 542",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "ICE 22",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "842",
+    "name": "ICE 842",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "522",
+    "name": "ICE 522",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "919",
+    "name": "ICE 919",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2020",
+    "name": "IC 2020",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "827",
+    "name": "ICE 827",
+    "wagons": []
+  },
+  {
+    "id": "1028",
+    "name": "ICE 1028",
+    "wagons": []
+  },
+  {
+    "id": "2021",
+    "name": "IC 2021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "541",
+    "name": "ICE 541",
+    "wagons": []
+  },
+  {
+    "id": "521",
+    "name": "ICE 521",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "948",
+    "name": "ICE 948",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "name": "IC 149",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "699",
+    "name": "ICE 699",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "276",
+    "name": "ICE 276",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "840",
+    "name": "ICE 840",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2453",
+    "name": "IC 2453",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "906",
+    "name": "ICE 906",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "945",
+    "name": "ICE 945",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "609",
+    "name": "ICE 609",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "792",
+    "name": "ICE 792",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "900",
+    "name": "ICE 900",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "645",
+    "name": "ICE 645",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "274",
+    "name": "ICE 274",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "905",
+    "name": "ICE 905",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "947",
+    "name": "ICE 947",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1690",
+    "name": "ICE 1690",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "646",
+    "name": "ICE 646",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "275",
+    "name": "ICE 275",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "5727",
+    "name": "IC 5727",
+    "wagons": []
+  },
+  {
+    "id": "5745",
+    "name": "IC 5745",
+    "wagons": []
+  },
+  {
+    "id": "5727",
+    "name": "IC 5727",
+    "wagons": []
+  },
+  {
+    "id": "5768",
+    "name": "IC 5768",
+    "wagons": []
+  },
+  {
+    "id": "5745",
+    "name": "IC 5745",
+    "wagons": []
+  },
+  {
+    "id": "528",
+    "name": "ICE 528",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "526",
+    "name": "ICE 526",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "524",
+    "name": "ICE 524",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "209",
+    "name": "ICE 209",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1028",
+    "name": "ICE 1028",
+    "wagons": []
+  },
+  {
+    "id": "100",
+    "name": "ICE 100",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2260",
+    "name": "IC 2260",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "377",
+    "name": "ICE 377",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "ICE 4",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2060",
+    "name": "IC 2060",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "273",
+    "name": "ICE 273",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "877",
+    "name": "ICE 877",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "208",
+    "name": "ICE 208",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "618",
+    "name": "ICE 618",
+    "wagons": []
+  },
+  {
+    "id": "209",
+    "name": "ICE 209",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2291",
+    "name": "IC 2291",
+    "wagons": []
+  },
+  {
+    "id": "1094",
+    "name": "ICE 1094",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2285",
+    "name": "IC 2285",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2287",
+    "name": "IC 2287",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2285",
+    "name": "IC 2285",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2380",
+    "name": "IC 2380",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2287",
+    "name": "IC 2287",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2435",
+    "name": "IC 2435",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2434",
+    "name": "IC 2434",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "615",
+    "name": "ICE 615",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "377",
+    "name": "ICE 377",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "ICE 100",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "773",
+    "name": "ICE 773",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "9557",
+    "name": "ICE 9557",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "695",
+    "name": "ICE 695",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "ICE 4",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "510",
+    "name": "ICE 510",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "ICE 205",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "273",
+    "name": "ICE 273",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "836",
+    "name": "ICE 836",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2914",
+    "name": "ICE 2914",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "990",
+    "name": "ICE 990",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "877",
+    "name": "ICE 877",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "619",
+    "name": "ICE 619",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "698",
+    "name": "ICE 698",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "208",
+    "name": "ICE 208",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "699",
+    "name": "ICE 699",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "209",
+    "name": "ICE 209",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "618",
+    "name": "ICE 618",
+    "wagons": []
+  },
+  {
+    "id": "2020",
+    "name": "IC 2020",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2021",
+    "name": "IC 2021",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      },
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2380",
+    "name": "IC 2380",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "2287",
+    "name": "IC 2287",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "526",
+    "name": "ICE 526",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "524",
+    "name": "ICE 524",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "209",
+    "name": "ICE 209",
+    "wagons": [
+      {
+        "maxCapacity": -1,
+        "occupied": 0
+      }
+    ]
+  },
+  {
+    "id": "1028",
+    "name": "ICE 1028",
+    "wagons": []
+  },
+  {
+    "id": "523",
+    "name": "ICE 523",
+    "wagons": []
+  },
+  {
+    "id": "5745",
+    "name": "IC 5745",
+    "wagons": []
+  }
+]

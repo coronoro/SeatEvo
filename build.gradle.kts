@@ -19,7 +19,7 @@ dependencies {
     implementation("com.beust:klaxon:5.1")
     compile(group= "org.restlet.jee", name= "org.restlet", version= "2.3.12")
     testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
-    implementation("com.github.coronoro:marudorAPI:967ef841a5")
+    implementation("com.github.coronoro:marudorAPI:91ce7b3f88")
     compile("org.graphstream", "gs-core", "1.3")
     compile("org.graphstream", "gs-algo", "1.3")
     compile("org.graphstream", "gs-ui", "1.3")

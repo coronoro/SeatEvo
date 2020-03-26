@@ -153,11 +153,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       }
@@ -306,6 +301,11 @@
       },
       {
         "access": 0,
+        "id": 23,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 30,
         "pair": null
       }
@@ -349,17 +349,17 @@
       },
       {
         "access": 0,
+        "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 4,
         "pair": null
       },
       {
         "access": 0,
         "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 6,
         "pair": null
       }
     ]
@@ -449,11 +449,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       }
@@ -494,7 +489,13 @@
   {
     "id": "8100013",
     "name": "Linz Hbf",
-    "tracks": []
+    "tracks": [
+      {
+        "access": 0,
+        "id": 6,
+        "pair": null
+      }
+    ]
   },
   {
     "id": "8101101",
@@ -569,22 +570,12 @@
       },
       {
         "access": 0,
-        "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 11,
         "pair": null
       },
       {
         "access": 0,
         "id": 12,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 13,
         "pair": null
       },
       {
@@ -620,11 +611,6 @@
       {
         "access": 0,
         "id": 21,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 22,
         "pair": null
       },
       {
@@ -680,11 +666,6 @@
     "id": "8098096",
     "name": "Stuttgart Hbf (tief)",
     "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 2,
@@ -868,7 +849,7 @@
     "tracks": [
       {
         "access": 0,
-        "id": 2,
+        "id": 1,
         "pair": null
       },
       {
@@ -900,6 +881,16 @@
       {
         "access": 0,
         "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 6,
         "pair": null
       },
       {
@@ -1009,13 +1000,7 @@
   {
     "id": "8602175",
     "name": "Skanderborg st",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8010224",
@@ -1039,6 +1024,11 @@
       {
         "access": 0,
         "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
         "pair": null
       },
       {
@@ -1085,6 +1075,11 @@
       {
         "access": 0,
         "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
         "pair": null
       },
       {
@@ -1184,11 +1179,6 @@
       {
         "access": 0,
         "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 6,
         "pair": null
       },
       {
@@ -1294,11 +1284,6 @@
       {
         "access": 0,
         "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 102,
         "pair": null
       },
       {
@@ -1605,11 +1590,6 @@
       },
       {
         "access": 0,
-        "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 5,
         "pair": null
       }
@@ -1665,18 +1645,7 @@
   {
     "id": "8002623",
     "name": "Haspelmoor",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8000687",
@@ -1731,11 +1700,6 @@
       {
         "access": 0,
         "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 104,
         "pair": null
       },
       {
@@ -1925,6 +1889,11 @@
       },
       {
         "access": 0,
+        "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 6,
         "pair": null
       },
@@ -1941,6 +1910,11 @@
       {
         "access": 0,
         "id": 9,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 10,
         "pair": null
       },
       {
@@ -2015,11 +1989,6 @@
         "access": 0,
         "id": 3,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
-        "pair": null
       }
     ]
   },
@@ -2035,16 +2004,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
         "pair": null
       }
     ]
@@ -2478,11 +2437,6 @@
       },
       {
         "access": 0,
-        "id": 20,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 21,
         "pair": null
       },
@@ -2494,6 +2448,11 @@
       {
         "access": 0,
         "id": 23,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 24,
         "pair": null
       },
       {
@@ -2543,6 +2502,11 @@
     "id": "8004158",
     "name": "München-Pasing",
     "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      },
       {
         "access": 0,
         "id": 3,
@@ -2609,18 +2573,7 @@
   {
     "id": "8602553",
     "name": "Tinglev st",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8005494",
@@ -2833,6 +2786,11 @@
     "tracks": [
       {
         "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 2,
         "pair": null
       },
@@ -2930,6 +2888,11 @@
         "access": 0,
         "id": 3,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 10,
+        "pair": null
       }
     ]
   },
@@ -2960,12 +2923,7 @@
     "tracks": [
       {
         "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
+        "id": 5,
         "pair": null
       }
     ]
@@ -3232,6 +3190,11 @@
         "access": 0,
         "id": 2,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
+        "pair": null
       }
     ]
   },
@@ -3331,11 +3294,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       }
@@ -3387,11 +3345,6 @@
     "id": "8601996",
     "name": "Roedekro st",
     "tracks": [
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 3,
@@ -3492,11 +3445,6 @@
       {
         "access": 0,
         "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 102,
         "pair": null
       },
       {
@@ -3619,17 +3567,17 @@
       },
       {
         "access": 0,
-        "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 10,
         "pair": null
       },
       {
         "access": 0,
         "id": 11,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 13,
         "pair": null
       }
     ]
@@ -3646,16 +3594,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
         "pair": null
       }
     ]
@@ -3687,11 +3625,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       },
@@ -3703,11 +3636,6 @@
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       }
     ]
@@ -3972,11 +3900,6 @@
       },
       {
         "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 44,
         "pair": null
       }
@@ -3990,18 +3913,7 @@
   {
     "id": "8601770",
     "name": "Odense st",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 6,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8079097",
@@ -4304,6 +4216,11 @@
         "access": 0,
         "id": 2,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
+        "pair": null
       }
     ]
   },
@@ -4390,18 +4307,7 @@
   {
     "id": "8400173",
     "name": "Deventer",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8102055",
@@ -4495,11 +4401,6 @@
     "id": "8602887",
     "name": "Vojens st",
     "tracks": [
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 3,
@@ -4680,13 +4581,7 @@
   {
     "id": "8601309",
     "name": "Koebenhavn H",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 5,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "5403687",
@@ -4696,7 +4591,13 @@
   {
     "id": "8002185",
     "name": "Garding",
-    "tracks": []
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
   },
   {
     "id": "8004124",
@@ -4710,11 +4611,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
         "pair": null
       },
       {
@@ -4779,6 +4675,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
         "pair": null
       },
       {
@@ -4900,11 +4801,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       },
@@ -4936,11 +4832,6 @@
       {
         "access": 0,
         "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 10,
         "pair": null
       }
     ]
@@ -5084,36 +4975,6 @@
       },
       {
         "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 7,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 8,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 11,
         "pair": null
       },
@@ -5141,11 +5002,6 @@
       {
         "access": 0,
         "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 7,
         "pair": null
       }
     ]
@@ -5187,11 +5043,6 @@
       {
         "access": 0,
         "id": 11,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 12,
         "pair": null
       },
       {
@@ -5306,11 +5157,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       }
@@ -5347,17 +5193,7 @@
       },
       {
         "access": 0,
-        "id": 8,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 11,
         "pair": null
       },
       {
@@ -5555,12 +5391,12 @@
     "tracks": [
       {
         "access": 0,
-        "id": 2,
+        "id": 18,
         "pair": null
       },
       {
         "access": 0,
-        "id": 18,
+        "id": 2,
         "pair": null
       },
       {
@@ -5821,6 +5657,11 @@
         "access": 0,
         "id": 5,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 6,
+        "pair": null
       }
     ]
   },
@@ -5872,11 +5713,6 @@
       {
         "access": 0,
         "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 9,
         "pair": null
       },
       {
@@ -5944,11 +5780,6 @@
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 101,
         "pair": null
       },
       {
@@ -6075,6 +5906,11 @@
         "access": 0,
         "id": 10,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 11,
+        "pair": null
       }
     ]
   },
@@ -6094,7 +5930,7 @@
       },
       {
         "access": 0,
-        "id": 3,
+        "id": 4,
         "pair": null
       }
     ]
@@ -6342,7 +6178,7 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
+        "id": 2,
         "pair": null
       }
     ]
@@ -6354,11 +6190,6 @@
       {
         "access": 0,
         "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
         "pair": null
       }
     ]
@@ -6396,11 +6227,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       }
@@ -6423,16 +6249,6 @@
       {
         "access": 0,
         "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       }
     ]
@@ -6567,11 +6383,6 @@
       },
       {
         "access": 0,
-        "id": 12,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 13,
         "pair": null
       }
@@ -6588,12 +6399,12 @@
       },
       {
         "access": 0,
-        "id": 18,
+        "id": 2,
         "pair": null
       },
       {
         "access": 0,
-        "id": 2,
+        "id": 18,
         "pair": null
       },
       {
@@ -6770,6 +6581,11 @@
         "access": 0,
         "id": 11,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 13,
+        "pair": null
       }
     ]
   },
@@ -6801,11 +6617,6 @@
       {
         "access": 0,
         "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
         "pair": null
       }
     ]
@@ -6955,17 +6766,12 @@
       },
       {
         "access": 0,
-        "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 101,
         "pair": null
       },
       {
         "access": 0,
-        "id": 102,
+        "id": 5,
         "pair": null
       },
       {
@@ -6975,12 +6781,17 @@
       },
       {
         "access": 0,
-        "id": 103,
+        "id": 102,
         "pair": null
       },
       {
         "access": 0,
         "id": 7,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 103,
         "pair": null
       },
       {
@@ -7172,11 +6983,6 @@
       },
       {
         "access": 0,
-        "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 5,
         "pair": null
       }
@@ -7186,11 +6992,6 @@
     "id": "8000156",
     "name": "Heidelberg Hbf",
     "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 2,
@@ -7224,11 +7025,6 @@
       {
         "access": 0,
         "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 10,
         "pair": null
       }
     ]
@@ -7335,6 +7131,11 @@
         "access": 0,
         "id": 2,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 4,
+        "pair": null
       }
     ]
   },
@@ -7360,6 +7161,11 @@
       {
         "access": 0,
         "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
         "pair": null
       }
     ]
@@ -7740,6 +7546,16 @@
         "access": 0,
         "id": 5,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 14,
+        "pair": null
       }
     ]
   },
@@ -7805,18 +7621,7 @@
   {
     "id": "8601979",
     "name": "Ringsted st",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8013487",
@@ -7860,16 +7665,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 11,
         "pair": null
       }
@@ -7902,6 +7697,11 @@
       {
         "access": 0,
         "id": 25,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 27,
         "pair": null
       },
       {
@@ -8130,11 +7930,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       },
@@ -8256,17 +8051,17 @@
     "tracks": [
       {
         "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 2,
         "pair": null
       },
       {
         "access": 0,
         "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
         "pair": null
       },
       {
@@ -8320,18 +8115,7 @@
   {
     "id": "8400322",
     "name": "Hilversum",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8089083",
@@ -8388,11 +8172,6 @@
     "id": "8270780",
     "name": "Munsbach",
     "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 2,
@@ -8458,11 +8237,6 @@
       {
         "access": 0,
         "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 102,
         "pair": null
       },
       {
@@ -8577,6 +8351,11 @@
         "access": 0,
         "id": 2,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
+        "pair": null
       }
     ]
   },
@@ -8659,6 +8438,11 @@
       },
       {
         "access": 0,
+        "id": 40,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 120,
         "pair": null
       },
@@ -8669,22 +8453,7 @@
       },
       {
         "access": 0,
-        "id": 40,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 42,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 45,
         "pair": null
       }
     ]
@@ -9007,11 +8776,6 @@
       },
       {
         "access": 0,
-        "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 10,
         "pair": null
       },
@@ -9120,7 +8884,13 @@
   {
     "id": "8000755",
     "name": "Bad St Peter-Ording",
-    "tracks": []
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
   },
   {
     "id": "8800569",
@@ -9187,6 +8957,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
         "pair": null
       },
       {
@@ -9360,11 +9135,6 @@
         "access": 0,
         "id": 3,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
       }
     ]
   },
@@ -9372,6 +9142,11 @@
     "id": "8010334",
     "name": "Stendal Hbf",
     "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
       {
         "access": 0,
         "id": 3,
@@ -9390,6 +9165,11 @@
       {
         "access": 0,
         "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 7,
         "pair": null
       },
       {
@@ -9443,6 +9223,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
         "pair": null
       }
     ]
@@ -9638,6 +9423,11 @@
         "access": 0,
         "id": 10,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 11,
+        "pair": null
       }
     ]
   },
@@ -9648,11 +9438,6 @@
       {
         "access": 0,
         "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
         "pair": null
       },
       {
@@ -9865,6 +9650,11 @@
     "tracks": [
       {
         "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 2,
         "pair": null
       }
@@ -9932,27 +9722,12 @@
       },
       {
         "access": 0,
-        "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 7,
         "pair": null
       },
       {
         "access": 0,
         "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 59,
         "pair": null
       }
     ]
@@ -10094,12 +9869,12 @@
       },
       {
         "access": 0,
-        "id": 5,
+        "id": 101,
         "pair": null
       },
       {
         "access": 0,
-        "id": 101,
+        "id": 5,
         "pair": null
       },
       {
@@ -10180,13 +9955,7 @@
   {
     "id": "8100549",
     "name": "Gießenbach in Tirol",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8010110",
@@ -10300,11 +10069,6 @@
       {
         "access": 0,
         "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 8,
         "pair": null
       }
     ]
@@ -10546,11 +10310,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 18,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 5,
         "pair": null
       }
@@ -10753,11 +10512,6 @@
       },
       {
         "access": 0,
-        "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 7,
         "pair": null
       }
@@ -10786,6 +10540,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
         "pair": null
       },
       {
@@ -10821,11 +10580,6 @@
       },
       {
         "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       },
@@ -10841,22 +10595,12 @@
       },
       {
         "access": 0,
-        "id": 8,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 11,
         "pair": null
       },
       {
         "access": 0,
         "id": 12,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 14,
         "pair": null
       }
     ]
@@ -11141,29 +10885,13 @@
         "access": 0,
         "id": 3,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 24,
-        "pair": null
       }
     ]
   },
   {
     "id": "8000575",
     "name": "Amorbach",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8003845",
@@ -11192,17 +10920,22 @@
       },
       {
         "access": 0,
+        "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 4,
         "pair": null
       },
       {
         "access": 0,
         "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 6,
         "pair": null
       }
     ]
@@ -11313,6 +11046,11 @@
       },
       {
         "access": 0,
+        "id": 50,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 3,
         "pair": null
       }
@@ -11351,6 +11089,11 @@
       {
         "access": 0,
         "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
         "pair": null
       }
     ]
@@ -11445,6 +11188,11 @@
     "tracks": [
       {
         "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 2,
         "pair": null
       },
@@ -11461,11 +11209,6 @@
       {
         "access": 0,
         "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 11,
         "pair": null
       }
     ]
@@ -11498,16 +11241,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       }
     ]
@@ -11629,6 +11362,11 @@
       {
         "access": 0,
         "id": 23,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 24,
         "pair": null
       },
       {
@@ -11776,6 +11514,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 6,
         "pair": null
       },
       {
@@ -11931,11 +11674,6 @@
       {
         "access": 0,
         "id": 8,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 9,
         "pair": null
       }
     ]
@@ -12137,16 +11875,6 @@
         "access": 0,
         "id": 7,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 11,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 12,
-        "pair": null
       }
     ]
   },
@@ -12158,24 +11886,12 @@
   {
     "id": "8507492",
     "name": "Interlaken Ost",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 7,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8507493",
     "name": "Interlaken West",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8101481",
@@ -12277,11 +11993,6 @@
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       },
       {
@@ -12406,22 +12117,12 @@
     "tracks": [
       {
         "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       },
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       }
     ]
@@ -12482,11 +12183,6 @@
         "access": 0,
         "id": 2,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 12,
-        "pair": null
       }
     ]
   },
@@ -12498,7 +12194,18 @@
   {
     "id": "8011605",
     "name": "Bernburg-Roschwitz",
-    "tracks": []
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      }
+    ]
   },
   {
     "id": "8889012",
@@ -12708,11 +12415,6 @@
       },
       {
         "access": 0,
-        "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 44,
         "pair": null
       }
@@ -12816,11 +12518,6 @@
         "access": 0,
         "id": 1,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
       }
     ]
   },
@@ -12862,11 +12559,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
         "pair": null
       },
       {
@@ -12946,6 +12638,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
         "pair": null
       },
       {
@@ -13224,6 +12921,16 @@
       },
       {
         "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 7,
         "pair": null
       },
@@ -13367,6 +13074,11 @@
       {
         "access": 0,
         "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 8,
         "pair": null
       },
       {
@@ -13599,6 +13311,11 @@
         "access": 0,
         "id": 4,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
       }
     ]
   },
@@ -13606,11 +13323,6 @@
     "id": "8000096",
     "name": "Stuttgart Hbf",
     "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 2,
@@ -13724,12 +13436,12 @@
       },
       {
         "access": 0,
-        "id": 22,
+        "id": 6,
         "pair": null
       },
       {
         "access": 0,
-        "id": 6,
+        "id": 22,
         "pair": null
       },
       {
@@ -13844,16 +13556,6 @@
         "access": 0,
         "id": 4,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 10,
-        "pair": null
       }
     ]
   },
@@ -13865,18 +13567,7 @@
   {
     "id": "8507483",
     "name": "Spiez",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8005791",
@@ -13931,6 +13622,11 @@
       {
         "access": 0,
         "id": 8,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 9,
         "pair": null
       }
     ]
@@ -14137,18 +13833,7 @@
   {
     "id": "8400051",
     "name": "Almelo",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8400058",
@@ -14179,18 +13864,7 @@
   {
     "id": "8400055",
     "name": "Amersfoort",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 7,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8004471",
@@ -14264,23 +13938,18 @@
   {
     "id": "8602756",
     "name": "Vejle st",
-    "tracks": []
-  },
-  {
-    "id": "8400066",
-    "name": "Apeldoorn",
     "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 4,
         "pair": null
       }
     ]
+  },
+  {
+    "id": "8400066",
+    "name": "Apeldoorn",
+    "tracks": []
   },
   {
     "id": "8800197",
@@ -14347,11 +14016,6 @@
         "access": 0,
         "id": 2,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
       }
     ]
   },
@@ -14405,11 +14069,6 @@
         "access": 0,
         "id": 2,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
       }
     ]
   },
@@ -14425,11 +14084,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
         "pair": null
       }
     ]
@@ -14597,11 +14251,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       }
@@ -14624,37 +14273,32 @@
     "tracks": [
       {
         "access": 0,
+        "id": 17,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 6,
         "pair": null
       },
       {
         "access": 0,
-        "id": 7,
+        "id": 8,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 9,
         "pair": null
       },
       {
         "access": 0,
         "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 11,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 12,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 13,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 14,
         "pair": null
       }
     ]
@@ -14806,18 +14450,7 @@
   {
     "id": "8012215",
     "name": "Leuthen(Cottbus)",
-    "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
-      }
-    ]
+    "tracks": []
   },
   {
     "id": "8012456",
@@ -14863,11 +14496,6 @@
       {
         "access": 0,
         "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
         "pair": null
       },
       {
@@ -15126,6 +14754,11 @@
       },
       {
         "access": 0,
+        "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 6,
         "pair": null
       },
@@ -15163,6 +14796,11 @@
       {
         "access": 0,
         "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
         "pair": null
       },
       {
@@ -15486,11 +15124,6 @@
         "access": 0,
         "id": 2,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
-        "pair": null
       }
     ]
   },
@@ -15552,11 +15185,6 @@
       },
       {
         "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       },
@@ -15594,11 +15222,6 @@
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       }
     ]
@@ -15800,11 +15423,6 @@
       },
       {
         "access": 0,
-        "id": 8,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 10,
         "pair": null
       }
@@ -15860,11 +15478,6 @@
         "access": 0,
         "id": 3,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
-        "pair": null
       }
     ]
   },
@@ -15885,11 +15498,6 @@
       {
         "access": 0,
         "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 6,
         "pair": null
       }
     ]
@@ -16031,11 +15639,6 @@
         "access": 0,
         "id": 1,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
-        "pair": null
       }
     ]
   },
@@ -16071,17 +15674,7 @@
       },
       {
         "access": 0,
-        "id": 801,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
         "pair": null
       },
       {
@@ -16346,6 +15939,11 @@
       },
       {
         "access": 0,
+        "id": 10,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 11,
         "pair": null
       }
@@ -16367,7 +15965,17 @@
       },
       {
         "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 7,
         "pair": null
       },
       {
@@ -16413,11 +16021,6 @@
       {
         "access": 0,
         "id": 16,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 17,
         "pair": null
       },
       {
@@ -16569,6 +16172,11 @@
       },
       {
         "access": 0,
+        "id": 7,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 8,
         "pair": null
       },
@@ -16583,6 +16191,11 @@
     "id": "8000020",
     "name": "Bad Hersfeld",
     "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
       {
         "access": 0,
         "id": 2,
@@ -16627,11 +16240,6 @@
       {
         "access": 0,
         "id": 9,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 11,
         "pair": null
       },
       {
@@ -16884,6 +16492,11 @@
     "tracks": [
       {
         "access": 0,
+        "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 3,
         "pair": null
       },
@@ -16936,11 +16549,6 @@
       {
         "access": 0,
         "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 2,
         "pair": null
       },
       {
@@ -17171,11 +16779,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       },
@@ -17243,7 +16846,17 @@
       },
       {
         "access": 0,
+        "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 7,
         "pair": null
       }
     ]
@@ -17265,22 +16878,12 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 2,
         "pair": null
       },
       {
         "access": 0,
         "id": 3,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 4,
         "pair": null
       },
       {
@@ -17327,11 +16930,6 @@
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 5,
         "pair": null
       }
     ]
@@ -17786,11 +17384,6 @@
       },
       {
         "access": 0,
-        "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       },
@@ -18068,6 +17661,11 @@
       {
         "access": 0,
         "id": 22,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 23,
         "pair": null
       },
       {
@@ -18433,6 +18031,11 @@
     "tracks": [
       {
         "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 2,
         "pair": null
       }
@@ -18450,11 +18053,6 @@
       {
         "access": 0,
         "id": 2,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
         "pair": null
       }
     ]
@@ -18631,11 +18229,6 @@
       {
         "access": 0,
         "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 7,
         "pair": null
       },
       {
@@ -18858,11 +18451,6 @@
     "tracks": [
       {
         "access": 0,
-        "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 3,
         "pair": null
       },
@@ -18879,11 +18467,6 @@
       {
         "access": 0,
         "id": 6,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 7,
         "pair": null
       }
     ]
@@ -18993,11 +18576,6 @@
       },
       {
         "access": 0,
-        "id": 5,
-        "pair": null
-      },
-      {
-        "access": 0,
         "id": 103,
         "pair": null
       },
@@ -19020,11 +18598,6 @@
       {
         "access": 0,
         "id": 4,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 40,
         "pair": null
       },
       {
@@ -19182,6 +18755,11 @@
         "access": 0,
         "id": 6,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": 7,
+        "pair": null
       }
     ]
   },
@@ -19231,11 +18809,6 @@
     "id": "8000067",
     "name": "Crailsheim",
     "tracks": [
-      {
-        "access": 0,
-        "id": 1,
-        "pair": null
-      },
       {
         "access": 0,
         "id": 2,
@@ -19296,11 +18869,6 @@
         "access": 0,
         "id": 11,
         "pair": null
-      },
-      {
-        "access": 0,
-        "id": 12,
-        "pair": null
       }
     ]
   },
@@ -19310,37 +18878,32 @@
     "tracks": [
       {
         "access": 0,
+        "id": 17,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
         "id": 6,
         "pair": null
       },
       {
         "access": 0,
-        "id": 7,
+        "id": 8,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 9,
         "pair": null
       },
       {
         "access": 0,
         "id": 10,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 11,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 12,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 13,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 14,
         "pair": null
       }
     ]
@@ -19405,11 +18968,6 @@
       {
         "access": 0,
         "id": 1,
-        "pair": null
-      },
-      {
-        "access": 0,
-        "id": 3,
         "pair": null
       }
     ]

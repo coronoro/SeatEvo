@@ -9,7 +9,10 @@ import evo.recombination.WagonCrossOver
 import evo.selectors.InverseStochasticUniversalSampling
 import evo.selectors.TournamentSelector
 import json.JsonDataLoader
+import json.JsonDataWriter
+import json.JsonTimeTable
 import marudor.MarudorApi
+import model.Train
 import model.TrainNetwork
 import model.Traveler
 import util.RandomDataUtil
@@ -24,10 +27,13 @@ fun main(args: Array<String>) {
     //load data from marudor
     //MarudorLoader.loadICE()
     //MarudorLoader.loadAllStationTracks()
-    MarudorLoader.loadICETimeTables()
+    //MarudorLoader.loadICETimeTables()
 
+    repairTracks()
+    //trainSet()
 
     //analyse genetic algorithm
+    //loadSnap()
 
 
     //loadMinimumExample()
@@ -38,9 +44,30 @@ fun main(args: Array<String>) {
 
 }
 
+fun trainSet(){
+    val loadTrains = JsonDataLoader.loadTrains(true, "marudor-")
+    val map = HashMap<String, Train>()
+    loadTrains.forEach { train ->
+        var get = map.get(train.id)
+        if (get == null){
+            get = train
+            map.put(get.id, get)
+        }
+    }
+    JsonDataWriter.writeTrains(map.values.toList())
+}
+
+fun repairTracks(){
+    val jsonTimetables = JsonDataLoader.repairTracks(true,"marudor-")
+    JsonDataWriter.writeJSonTimeTables(jsonTimetables)
+    loadSnap()
+}
 
 
-
+fun loadSnap(){
+    val timeTables = JsonDataLoader.loadTimeTables(true,"marudor-")
+    val trainNetwork = TrainNetwork(timeTables)
+}
 
 
 
