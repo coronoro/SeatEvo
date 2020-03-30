@@ -224,6 +224,7 @@ object MarudorLoader {
                                 if (!mapEntry.departures.contains(time)){
                                     mapEntry.departures.add(time)
                                 }
+                                timetableMap.put(key,mapEntry)
                             }else{
                                 println("a new connection")
 
