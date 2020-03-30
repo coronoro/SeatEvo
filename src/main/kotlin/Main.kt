@@ -26,11 +26,15 @@ fun main(args: Array<String>) {
 
     //load data from marudor
     //MarudorLoader.loadICE()
+    //MarudorLoader.loadAllStations(true)
     //MarudorLoader.loadAllStationTracks()
-    //MarudorLoader.loadICETimeTables()
+    MarudorLoader.loadICETimeTables()
 
-    repairTracks()
+    // Repair the data
+    //repairTracks()
     //trainSet()
+    cleanTimetableDupes()
+
 
     //analyse genetic algorithm
     //loadSnap()
@@ -42,6 +46,11 @@ fun main(args: Array<String>) {
     //analyseGridNetwork()
     //geneticAnalysis()
 
+}
+
+fun cleanTimetableDupes(){
+    val cleanData = JsonDataLoader.cleanData(true, "marudor-")
+    JsonDataWriter.writeJSonTimeTables(cleanData.toList())
 }
 
 fun trainSet(){

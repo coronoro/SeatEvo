@@ -55,6 +55,13 @@ object JsonDataLoader {
         return stations
     }
 
+    fun loadJsonTimeTable(snap: Boolean = false, prefix: String = ""): List<JsonTimeTable> {
+        val infix = if (snap) snapInfix else ""
+        val timetableFile = getFileName(DataType.Timetable, prefix, infix)
+        val jsonTimetables = loadJsonList(timetableFile, JsonTimeTable::class.java)
+        return jsonTimetables
+    }
+
     fun loadTimeTables(snap: Boolean = false, prefix: String = ""): List<TimeTable> {
         val infix = if (snap) snapInfix else ""
         val timetableFile = getFileName(DataType.Timetable, prefix, infix)
@@ -79,6 +86,43 @@ object JsonDataLoader {
 
         return result
 
+    }
+
+    fun cleanData(snap: Boolean = false, prefix: String = ""): MutableCollection<JsonTimeTable> {
+        val infix = if (snap) snapInfix else ""
+        val timetableFile = getFileName(DataType.Timetable, prefix, infix)
+
+        val jsonTimetables = loadJsonList(timetableFile, JsonTimeTable::class.java)
+        val stations = loadStations(snap, prefix)
+        val trains = loadTrains(snap, prefix)
+
+        val map = HashMap<Triple<String, String, String>, JsonTimeTable>()
+
+        jsonTimetables.forEach { timetable ->
+            val trainID = timetable.train
+            val firstStopID = timetable.stops.first().station
+            val lastStopID = timetable.stops.last().station
+            val key = Triple(trainID, firstStopID, lastStopID)
+            var get = map.get(key)
+            if (get == null){
+                get = timetable
+            }else{
+                // they have the same start, end and trainnumber
+                if (timetable.stops.size != get.stops.size){
+                    println(key.toString() + " has different stop sizes")
+                }
+                println("merging timetables")
+                timetable.departures.forEach { depature ->
+                    if (!get.departures.contains(depature)){
+                        get.departures.add(depature)
+                    }else{
+                        println("already know this departure")
+                    }
+                }
+            }
+            map.put(key, get)
+        }
+        return map.values
     }
 
     fun repairTracks(snap: Boolean = false, prefix: String = ""): List<JsonTimeTable> {
