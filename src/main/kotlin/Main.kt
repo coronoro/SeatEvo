@@ -21,6 +21,7 @@ import java.io.File
 fun main(args: Array<String>) {
     System.setProperty("org.graphstream.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
 
+    TravelerAnalysis.analyseMarudorTravelers()
     //TravelerAnalysis.analyseTravelerGen()
     //TravelerAnalysis.analyseGridTravelerGraph(3, 4000)
 
@@ -28,12 +29,12 @@ fun main(args: Array<String>) {
     //MarudorLoader.loadICE()
     //MarudorLoader.loadAllStations(true)
     //MarudorLoader.loadAllStationTracks()
-    MarudorLoader.loadICETimeTables()
+    //MarudorLoader.loadICETimeTables()
 
     // Repair the data
     //repairTracks()
     //trainSet()
-    cleanTimetableDupes()
+    //cleanTimetableDupes()
 
 
     //analyse genetic algorithm

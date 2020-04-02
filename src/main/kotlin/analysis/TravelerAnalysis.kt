@@ -4,6 +4,7 @@ import data.DataGenerator
 import json.JsonDataLoader
 import model.TrainNetwork
 import model.Traveler
+import model.timetable.TimeTable
 import org.graphstream.graph.Edge
 import org.graphstream.graph.Node
 import org.graphstream.graph.implementations.MultiGraph
@@ -50,6 +51,64 @@ object TravelerAnalysis {
         return hashmap
     }
 
+    fun analyseMarudorTravelers(){
+
+        val timeTables = JsonDataLoader.fillTimeTables(true, "marudor-")
+
+        val ttMap = HashMap<String, TimeTable>()
+        timeTables.forEach { tt ->
+            var entry = ttMap.get(tt.train.id)
+            if (entry == null){
+                entry = tt
+            }
+            ttMap.put(tt.train.id, entry)
+        }
+
+        val trainNetwork = TrainNetwork(ttMap.values.toList())
+
+        val rounds = 100
+
+        for (travelerAmount in 4000..5000 step 1000) {
+            val averageHashmap = HashMap<Int, Double>()
+            val averageWayMap = HashMap<String, Double>()
+            for (i in 0 until rounds) {
+                //println("========================== #"+i)
+                val travelers = RandomDataUtil.generateTravelers(trainNetwork, travelerAmount)
+                val analyzeTravelers = analyzeTravelers(travelers, false)
+                analyzeTravelers.entries.forEach {
+                    var get = averageHashmap.get(it.key)
+                    if (get == null) {
+                        get = 0.0
+                    }
+                    get = it.value + get ?: 0.0
+                    averageHashmap.put(it.key, get)
+                }
+                val wayMap = analyzeTravelerWay(travelers, false)
+                wayMap.entries.forEach {
+                    var get = wayMap.get(it.key)
+                    if (get == null) {
+                        get = 0
+                    }
+                    get = it.value + get!!
+                    wayMap.put(it.key, get!!)
+                }
+            }
+
+            print(travelerAmount.toString() + "\t")
+            averageHashmap.keys.sorted().forEach { key ->
+                var get = averageHashmap.get(key)
+                val average = (get ?: 0.0) / rounds
+                print(average.toString() + "\t")
+            }
+            println()
+
+            println("max: " + averageHashmap.keys.sorted().last())
+            averageWayMap.entries.forEach {
+                val average = it.value / rounds
+                println(it.key + "\t" + average)
+            }
+        }
+    }
 
     fun analyseTravelerGen(){
         val arrayOf = arrayOf(3,4,5)

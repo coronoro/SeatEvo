@@ -5,6 +5,8 @@ import model.timetable.StationStop
 import model.timetable.TimeTable
 import org.graphstream.graph.Edge
 import org.graphstream.graph.Node
+import org.graphstream.graph.implementations.DefaultGraph
+import org.graphstream.graph.implementations.MultiGraph
 import org.graphstream.graph.implementations.SingleGraph
 import java.lang.Exception
 import java.time.LocalTime
@@ -14,7 +16,7 @@ import kotlin.math.abs
 
 class TrainNetwork(val timeTables: List<TimeTable>) {
 
-    var graph = SingleGraph("timetable")
+    var graph = MultiGraph("timetable")
 
     var timeTableMap = HashMap<String, TimeTable>()
 
@@ -54,10 +56,20 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
                         }
 
                         val duration = second.arrival!!.minus(first.departure)
-                        val edge : Edge = graph.addEdge(node1ID+"-"+node2ID, node1, node2, true)
+                        val edge: Edge
+                        val edgeID = node1ID+"-"+node2ID + "<" + timetable.train.id
+                        try {
+                            edge  = graph.addEdge(edgeID, node1, node2, true)
+                        }catch (e:Exception){
+                            val edge1 = graph.getEdge<Edge>(edgeID)
+                            val attribute = edge1.getAttribute<TimeTable>("timetable")
+                            println("existing: " +attribute.train.id)
+                            println("new: " +timetable.train.id)
+                            throw e
+                        }
+
                         edge.setAttribute("weight", duration.toMinutes().toDouble())
                         edge.setAttribute("timetable", timetable)
-                        //TODO
                     }
                 }
             }

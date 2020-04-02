@@ -97,6 +97,11 @@
         "access": 0,
         "id": 23,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -372,6 +377,11 @@
       {
         "access": 0,
         "id": 36,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -1089,6 +1099,11 @@
         "access": 0,
         "id": 30,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -1502,6 +1517,11 @@
         "access": 0,
         "id": 10,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -1700,6 +1720,11 @@
       {
         "access": 0,
         "id": 104,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -2069,6 +2094,11 @@
         "access": 0,
         "id": 12,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -2425,6 +2455,11 @@
         "access": 0,
         "id": 16,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -2500,6 +2535,11 @@
       {
         "access": 0,
         "id": 16,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -2735,6 +2775,11 @@
       {
         "access": 0,
         "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -3010,6 +3055,11 @@
         "access": 0,
         "id": 14,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -3142,6 +3192,11 @@
         "access": 0,
         "id": 12,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -3203,6 +3258,11 @@
       {
         "access": 0,
         "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -3369,6 +3429,11 @@
         "access": 0,
         "id": 10,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -3459,6 +3524,11 @@
         "access": 0,
         "id": 11,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -3529,7 +3599,13 @@
   {
     "id": "8070003",
     "name": "Frankfurt(M) Flughafen Fernbf",
-    "tracks": []
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
   },
   {
     "id": "8070004",
@@ -4045,6 +4121,11 @@
         "access": 0,
         "id": 8,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -4095,6 +4176,11 @@
       {
         "access": 0,
         "id": 14,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -4429,6 +4515,11 @@
         "access": 0,
         "id": 9,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -4624,6 +4715,11 @@
       {
         "access": 0,
         "id": 14,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -4918,6 +5014,11 @@
         "access": 0,
         "id": 13,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -5190,6 +5291,11 @@
       {
         "access": 0,
         "id": 14,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -5613,6 +5719,11 @@
         "access": 0,
         "id": 9,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -5797,6 +5908,11 @@
       {
         "access": 0,
         "id": 10,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -6142,6 +6258,11 @@
         "access": 0,
         "id": 16,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -6347,6 +6468,11 @@
       {
         "access": 0,
         "id": 28,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -6641,6 +6767,11 @@
         "access": 0,
         "id": 10,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -6772,6 +6903,11 @@
       {
         "access": 0,
         "id": 8,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -8751,6 +8887,11 @@
         "access": 0,
         "id": 14,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -8792,6 +8933,16 @@
       {
         "access": 0,
         "id": 12,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -9228,6 +9379,11 @@
         "access": 0,
         "id": 11,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -9273,6 +9429,11 @@
       {
         "access": 0,
         "id": 11,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -9417,6 +9578,11 @@
       {
         "access": 0,
         "id": 12,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -9699,6 +9865,11 @@
       {
         "access": 0,
         "id": 6,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -10641,6 +10812,11 @@
         "access": 0,
         "id": 11,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -11356,6 +11532,11 @@
         "access": 0,
         "id": 109,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -11636,6 +11817,11 @@
       {
         "access": 0,
         "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -11925,7 +12111,13 @@
   {
     "id": "8100013",
     "name": "Linz Hbf",
-    "tracks": []
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
   },
   {
     "id": "8000230",
@@ -12105,6 +12297,11 @@
       {
         "access": 0,
         "id": 8,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -14092,6 +14289,11 @@
         "access": 0,
         "id": 11,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -15489,6 +15691,11 @@
         "access": 0,
         "id": 11,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -16231,6 +16438,11 @@
         "access": 0,
         "id": 6,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -16571,6 +16783,11 @@
         "access": 0,
         "id": 3,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -16906,6 +17123,16 @@
       {
         "access": 0,
         "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
         "pair": null
       }
     ]
@@ -19411,6 +19638,11 @@
         "access": 0,
         "id": 5,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
       }
     ]
   },
@@ -20590,6 +20822,11 @@
       {
         "access": 0,
         "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 6,
         "pair": null
       }
     ]
@@ -22445,6 +22682,16 @@
         "access": 0,
         "id": 2,
         "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
       }
     ]
   },
@@ -22944,5 +23191,444 @@
         "pair": null
       }
     ]
-  }
+  },
+  {
+    "id": "8000257",
+    "name": "Worms Hbf",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8003016",
+    "name": "Hünfeld",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 4,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8000891",
+    "name": "Schlüchtern",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 4,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8003487",
+    "name": "Hannover Messe/Laatzen",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8010396",
+    "name": "Züssow",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8010004",
+    "name": "Angermünde",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8002554",
+    "name": "Hamburg-Bergedorf",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8100316",
+    "name": "Summerau",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8100239",
+    "name": "Freistadt",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8100536",
+    "name": "Kefermarkt",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8100528",
+    "name": "Pregarten",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8100807",
+    "name": "Linz/Donau Franckstraße",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800007",
+    "name": "Antwerpen Centraal",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800008",
+    "name": "Antwerpen-Berchem",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 6,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800143",
+    "name": "Sint-Niklaas",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800127",
+    "name": "Lokeren",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800058",
+    "name": "Gent-Dampoort",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800031",
+    "name": "Gent St Pieters",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 6,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800092",
+    "name": "Waregem",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800077",
+    "name": "Kortrijk",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8800159",
+    "name": "Mouscron",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8705002",
+    "name": "Tourcoing(fr)",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8700121",
+    "name": "Tourcoing",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8700236",
+    "name": "Roubaix",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8700030",
+    "name": "Lille Flandres",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8507000",
+    "name": "Bern",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 7,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8101178",
+    "name": "Lasberg-St. Oswald",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8007768",
+    "name": "Norddeich Mole",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8000800",
+    "name": "Norden",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8001768",
+    "name": "Emden Hbf",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 3,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 4,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 5,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "8004449",
+    "name": "Norddeich",
+    "tracks": [
+      {
+        "access": 0,
+        "id": 1,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": 2,
+        "pair": null
+      },
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "5600179",
+    "name": "Emden Hbf",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+    "id": "5600179",
+    "name": "Emden Hbf",
+    "tracks": [
+      {
+        "access": 0,
+        "id": -1,
+        "pair": null
+      }
+    ]
+  },
+  {
+  "id": "5600179",
+  "name": "Leer",
+  "tracks": [
+    {
+      "access": 0,
+      "id": -1,
+      "pair": null
+    }
+  ]
+}
 ]
