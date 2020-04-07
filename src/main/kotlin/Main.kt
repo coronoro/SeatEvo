@@ -1,3 +1,4 @@
+import analysis.AlgorithmAnalysis
 import analysis.TravelerAnalysis
 import data.DataGenerator
 import data.MarudorLoader
@@ -21,9 +22,9 @@ import java.io.File
 fun main(args: Array<String>) {
     System.setProperty("org.graphstream.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
 
-    TravelerAnalysis.analyseMarudorTravelers()
+    //TravelerAnalysis.analyseMarudorTravelers()
     //TravelerAnalysis.analyseTravelerGen()
-    //TravelerAnalysis.analyseGridTravelerGraph(3, 4000)
+    //TravelerAnalysis.analyseGridTravelerGraph(3, 40000)
 
     //load data from marudor
     //MarudorLoader.loadICE()
@@ -38,6 +39,7 @@ fun main(args: Array<String>) {
 
 
     //analyse genetic algorithm
+    AlgorithmAnalysis.gridAnalysis(7, 4000, 10, 10)
     //loadSnap()
 
 

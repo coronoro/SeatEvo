@@ -111,7 +111,7 @@ object TravelerAnalysis {
     }
 
     fun analyseTravelerGen(){
-        val arrayOf = arrayOf(3,4,5)
+        val arrayOf = arrayOf(20)
         for (i in 0 until arrayOf.size) {
             var f = arrayOf[i]
             //for (f in 2 .. 25) {
@@ -122,7 +122,7 @@ object TravelerAnalysis {
             val timeTables = JsonDataLoader.loadTimeTables(true)
             val trainNetwork = TrainNetwork(timeTables)
 
-            val rounds = 100
+            val rounds = 2
 
             for (travelerAmount in 4000..5000 step 1000) {
                 val averageHashmap = HashMap<Int, Double>()
@@ -175,8 +175,8 @@ object TravelerAnalysis {
         DataGenerator.generateGridNetwork(Pair(gridSize,gridSize), 1, 1, 5)
         val timeTables = JsonDataLoader.loadTimeTables(true)
         val trainNetwork = TrainNetwork(timeTables)
-        trainNetwork.graph.display(false)
-        val rounds = 100
+        //trainNetwork.graph.display(false)
+        val rounds = 10000
         val graph = SingleGraph("Gridsize" + gridSize)
         trainNetwork.stations.forEach{
             val node = graph.addNode<Node>(it.name)
