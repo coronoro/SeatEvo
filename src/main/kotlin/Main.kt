@@ -25,6 +25,7 @@ fun main(args: Array<String>) {
     //TravelerAnalysis.analyseMarudorTravelers()
     //TravelerAnalysis.analyseTravelerGen()
     //TravelerAnalysis.analyseGridTravelerGraph(3, 40000)
+    //TravelerAnalysis.analyseStairTravelerGraph(9, 4000)
 
     //load data from marudor
     //MarudorLoader.loadICE()
@@ -39,7 +40,8 @@ fun main(args: Array<String>) {
 
 
     //analyse genetic algorithm
-    AlgorithmAnalysis.gridAnalysis(7, 4000, 10, 10)
+    //AlgorithmAnalysis.gridAnalysis(7, 7000, 10, 74)
+    AlgorithmAnalysis.stairAnalysis(9, 5000, 10, 74)
     //loadSnap()
 
 

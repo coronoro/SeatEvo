@@ -7,7 +7,6 @@ import model.Traveler
 import model.timetable.TimeTable
 import org.graphstream.graph.Edge
 import org.graphstream.graph.Node
-import org.graphstream.graph.implementations.MultiGraph
 import org.graphstream.graph.implementations.SingleGraph
 import util.RandomDataUtil
 
@@ -80,7 +79,7 @@ object TravelerAnalysis {
                     if (get == null) {
                         get = 0.0
                     }
-                    get = it.value + get ?: 0.0
+                    get = it.value + get
                     averageHashmap.put(it.key, get)
                 }
                 val wayMap = analyzeTravelerWay(travelers, false)
@@ -136,7 +135,7 @@ object TravelerAnalysis {
                         if (get == null) {
                             get = 0.0
                         }
-                        get = it.value + get ?: 0.0
+                        get = it.value + get
                         averageHashmap.put(it.key, get)
                     }
                     val wayMap = analyzeTravelerWay(travelers, false)
@@ -152,7 +151,7 @@ object TravelerAnalysis {
 
                 print(travelerAmount.toString() + "\t")
                 averageHashmap.keys.sorted().forEach { key ->
-                    var get = averageHashmap.get(key)
+                    val get = averageHashmap.get(key)
                     val average = (get ?: 0.0) / rounds
                     print(average.toString() + "\t")
                 }
@@ -168,15 +167,16 @@ object TravelerAnalysis {
         }
     }
 
+
     /**
      * shows the percentage of the travelers in the graph
      */
-    fun analyseGridTravelerGraph(gridSize: Int, traveleramount:Int){
+    fun analyseMarudorTravelerGraph(gridSize: Int, traveleramount:Int){
         DataGenerator.generateGridNetwork(Pair(gridSize,gridSize), 1, 1, 5)
         val timeTables = JsonDataLoader.loadTimeTables(true)
         val trainNetwork = TrainNetwork(timeTables)
         //trainNetwork.graph.display(false)
-        val rounds = 10000
+
         val graph = SingleGraph("Gridsize" + gridSize)
         trainNetwork.stations.forEach{
             val node = graph.addNode<Node>(it.name)
@@ -199,15 +199,20 @@ object TravelerAnalysis {
             y = y + yTemp
             node.addAttribute("xyz", x, y, 0)
             node.addAttribute("ui.style", "text-alignment: above; text-background-mode:plain;text-size:25px;size:25px;")
-
         }
 
+        var routeCount = 0.0
         val averageWayMap = HashMap<String, Double>()
+        var travelerRouteCount = 0.0
+
+        val rounds = 1000
         for (i in 0 until rounds) {
             //println("========================== #"+i)
             val travelers = RandomDataUtil.generateTravelers(trainNetwork, traveleramount)
             travelers.forEach { traveler ->
+                travelerRouteCount += traveler.route.waypoints.size - 1
                 traveler.route.waypoints.forEach {
+                    routeCount++
                     val from = graph.getNode<Node>(it.fromStation.name)
                     val to = graph.getNode<Node>(it.toStation.name)
                     val edgeID = from.id + "-" + to.id
@@ -222,12 +227,166 @@ object TravelerAnalysis {
                 }
             }
         }
+        println(travelerRouteCount/(rounds*traveleramount))
+
         graph.getEdgeSet<Edge>().forEach {edge ->
             val count = edge.getAttribute<Int>("count")
-            val average = count / rounds.toDouble()
-            val percentage = average * 100 / traveleramount
+            val percentage = count * 100 / routeCount
 
-            edge.addAttribute("ui.label", "%.2f".format(percentage) + "%");
+            edge.addAttribute("ui.label", "%.2f".format(percentage) + "%")
+            edge.addAttribute("ui.style", "text-background-mode:plain;text-size:25px;")
+
+        }
+        graph.addAttribute("ui.quality", 4)
+        graph.addAttribute("ui.antialias")
+
+        val display = graph.display(false)
+        display.enableXYZfeedback(false)
+        //display.disableAutoLayout()
+    }
+
+
+    /**
+     * shows the percentage of the travelers in the graph
+     */
+    fun analyseGridTravelerGraph(gridSize: Int, traveleramount:Int){
+        DataGenerator.generateGridNetwork(Pair(gridSize,gridSize), 1, 1, 5)
+        val timeTables = JsonDataLoader.loadTimeTables(true)
+        val trainNetwork = TrainNetwork(timeTables)
+        //trainNetwork.graph.display(false)
+
+        val graph = SingleGraph("Gridsize" + gridSize)
+        trainNetwork.stations.forEach{
+            val node = graph.addNode<Node>(it.name)
+            node.addAttribute("ui.label", it.name)
+            val idNumber = it.id.toInt()
+
+            var x = (idNumber % gridSize).toDouble()
+            var y = (idNumber / gridSize).toDouble()
+            //verschiebe y
+            var yTemp = 0.0
+            if (x > 1){
+                yTemp = -0.25* Math.pow(x,2.0)+ 0.25*x
+            }
+            //verschiebe  x
+            var xTemp = 0.0
+            if (y > 1){
+                xTemp = -0.25* Math.pow(y,2.0)+ 0.25*y
+            }
+            x = x + xTemp
+            y = y + yTemp
+            node.addAttribute("xyz", x, y, 0)
+            node.addAttribute("ui.style", "text-alignment: above; text-background-mode:plain;text-size:25px;size:25px;")
+        }
+
+        var routeCount = 0.0
+        val averageWayMap = HashMap<String, Double>()
+        var travelerRouteCount = 0.0
+
+        val rounds = 1000
+        for (i in 0 until rounds) {
+            //println("========================== #"+i)
+            val travelers = RandomDataUtil.generateTravelers(trainNetwork, traveleramount)
+            travelers.forEach { traveler ->
+                travelerRouteCount += traveler.route.waypoints.size - 1
+                traveler.route.waypoints.forEach {
+                    routeCount++
+                    val from = graph.getNode<Node>(it.fromStation.name)
+                    val to = graph.getNode<Node>(it.toStation.name)
+                    val edgeID = from.id + "-" + to.id
+                    var edge = graph.getEdge<Edge>(edgeID)
+                    if (edge == null){
+                        edge = graph.addEdge<Edge>(edgeID, from, to, true)
+                        edge.addAttribute("count", 0)
+                    }
+                    var weight = edge.getAttribute<Int>("count")
+                    weight = weight+1
+                    edge.addAttribute("count", weight)
+                }
+            }
+        }
+        println(travelerRouteCount/(rounds*traveleramount))
+
+        graph.getEdgeSet<Edge>().forEach {edge ->
+            val count = edge.getAttribute<Int>("count")
+            val percentage = count * 100 / routeCount
+
+            edge.addAttribute("ui.label", "%.2f".format(percentage) + "%")
+            edge.addAttribute("ui.style", "text-background-mode:plain;text-size:25px;")
+
+        }
+        graph.addAttribute("ui.quality", 4)
+        graph.addAttribute("ui.antialias")
+
+        val display = graph.display(false)
+        display.enableXYZfeedback(false)
+        //display.disableAutoLayout()
+    }
+
+    /**
+     * shows the percentage of the travelers in the graph
+     */
+    fun analyseStairTravelerGraph(stations: Int, traveleramount:Int){
+        DataGenerator.generateStairNetwork(stations, false, 1,5,5)
+        val timeTables = JsonDataLoader.loadTimeTables(true)
+        val trainNetwork = TrainNetwork(timeTables)
+        //trainNetwork.graph.display(false)
+
+        val graph = SingleGraph("Stationen" + stations)
+
+        val xCircleOffset = 10
+        val yCircleOffset = 10
+        val radius = 5
+        val angle = 360.0 / trainNetwork.stations.size
+
+
+        trainNetwork.stations.sortedBy { it.name }.forEachIndexed { index, station ->
+            val node = graph.addNode<Node>(station.name)
+            node.addAttribute("ui.label", station.name)
+            val idNumber = station.id.toInt()
+
+            val radian = Math.toRadians(index*angle)
+            val x = (radius * Math.sin(radian)) + xCircleOffset
+            val y = (radius * Math.cos(radian)) + yCircleOffset
+
+            node.addAttribute("xyz", x, y, 0)
+            node.addAttribute("ui.style", "text-alignment: above; text-background-mode:plain;text-size:25px;size:25px;")
+
+        }
+
+        val averageWayMap = HashMap<String, Double>()
+        var routeCount = 0.0
+
+        var travelerRouteCount = 0.0
+        val rounds = 1000
+        for (i in 0 until rounds) {
+            //println("========================== #"+i)
+            val travelers = RandomDataUtil.generateTravelers(trainNetwork, traveleramount)
+            travelers.forEach { traveler ->
+                travelerRouteCount += traveler.route.waypoints.size - 1
+                traveler.route.waypoints.forEach {
+                    routeCount++
+                    val from = graph.getNode<Node>(it.fromStation.name)
+                    val to = graph.getNode<Node>(it.toStation.name)
+                    val edgeID = from.id + "-" + to.id
+                    var edge = graph.getEdge<Edge>(edgeID)
+                    if (edge == null){
+                        edge = graph.addEdge<Edge>(edgeID, from, to, true)
+                        edge.addAttribute("count", 0)
+                    }
+                    var weight = edge.getAttribute<Int>("count")
+                    weight = weight+1
+                    edge.addAttribute("count", weight)
+                }
+            }
+        }
+
+        println(travelerRouteCount/(rounds*traveleramount))
+        graph.getEdgeSet<Edge>().forEach {edge ->
+            val count = edge.getAttribute<Int>("count")
+            val percentage = count * 100 / routeCount
+
+            edge.addAttribute("ui.label", "%.2f".format(percentage) + "%")
             edge.addAttribute("ui.style", "text-background-mode:plain;text-size:25px;")
 
         }
@@ -239,5 +398,6 @@ object TravelerAnalysis {
         //display.disableAutoLayout()
 
     }
+
 
 }
