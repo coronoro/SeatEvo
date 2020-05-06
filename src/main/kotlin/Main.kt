@@ -41,7 +41,10 @@ fun main(args: Array<String>) {
 
     //analyse genetic algorithm
     //AlgorithmAnalysis.gridAnalysis(7, 7000, 10, 74)
-    AlgorithmAnalysis.stairAnalysis(9, 5000, 10, 74)
+    //AlgorithmAnalysis.stairAnalysis(9, 500, 10, 8)
+    AlgorithmAnalysis.stairAnalysisPopulation(9, 500, 10, 8)
+
+
     //loadSnap()
 
 
