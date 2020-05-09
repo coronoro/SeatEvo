@@ -3,6 +3,7 @@ package analysis
 import data.DataGenerator
 import evo.SeatEvo
 import evo.mutation.ChangeWagonMutation
+import evo.recombination.TravelerCrossOver
 import evo.recombination.WagonCrossOver
 import evo.selectors.InverseFitnessProportionalSelector
 import evo.selectors.InverseStochasticUniversalSampling
@@ -39,9 +40,9 @@ object AlgorithmAnalysis {
               InverseFitnessProportionalSelector(popSize),
 //              InverseStochasticUniversalSampling(popSize),
 //                TournamentSelector(4),
-                //TravelerCrossOver(i/10.0),
-                WagonCrossOver(0.6),
-                ChangeWagonMutation(0.9)
+                TravelerCrossOver(0.7),
+                //WagonCrossOver(0.6),
+                ChangeWagonMutation(0.8)
 //              WagonSwapMutation(0.9)
             )
             genetic.logging = false
@@ -78,7 +79,7 @@ object AlgorithmAnalysis {
 
         val minDataSets = mutableListOf<XYSeries>()
         val maxDataSets = mutableListOf<XYSeries>()
-        val repetitions = 50
+        val repetitions = 1
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
@@ -86,12 +87,12 @@ object AlgorithmAnalysis {
                 travelers,
                 popSize,
                 cycles,
-                InverseFitnessProportionalSelector(popSize),
-//                  InverseStochasticUniversalSampling(popSize),
+//                InverseFitnessProportionalSelector(popSize),
+                InverseStochasticUniversalSampling(popSize),
 //                    TournamentSelector(4),
                 //TravelerCrossOver(i/10.0),
                 WagonCrossOver(0.7),
-                ChangeWagonMutation(0.9)
+                ChangeWagonMutation(0.5)
 //              WagonSwapMutation(0.9)
             )
             genetic.logging = false
@@ -143,8 +144,8 @@ object AlgorithmAnalysis {
 //              InverseStochasticUniversalSampling(popSize),
                 TournamentSelector(4),
                 //TravelerCrossOver(i/10.0),
-                WagonCrossOver(0.6),
-                ChangeWagonMutation(0.4)
+                WagonCrossOver(0.7),
+                ChangeWagonMutation(0.9)
 //              WagonSwapMutation(0.9)
             )
             genetic.logging = false

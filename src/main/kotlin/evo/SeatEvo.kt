@@ -46,18 +46,23 @@ class SeatEvo(
         var bestCircle = 0;
         var population = createRandomPopulation()
         for (i in 0..cycles) {
+            val start = System.currentTimeMillis()
             logging("======================== " + popSize + " | #" + i + " ======================== ")
             // evaluate individuals
+
             population.forEach {
+//                val start = System.currentTimeMillis()
                 if (!groupSoftConstraint){
                     repairIndividualGroups(it)
                 }
+                var evaluate = evaluate(it,i)
 
-                var evaluate = evaluate(it)
-
+                logging("best found in circle " + bestCircle)
                 // check for wagon penalty
+
                 val overload = getWagonOverload(it)
                 evaluate += penalty * overload
+
 
                 //check for group penalty
                 if (groupSoftConstraint){
@@ -72,12 +77,17 @@ class SeatEvo(
                     bestFitness = evaluate
                     bestCircle = i
                 }
+                val end = System.currentTimeMillis()
+//                println("eval took " + (end-start))
             }
+
             analyzePopulation(population, i)
 
             val selected = selector.select(population)
             population = recobinator.recombine(selected).toMutableList()
             population = mutator.mutate(population).toMutableList()
+            val end = System.currentTimeMillis()
+            println("cycle took " + (end-start))
         }
         //evaluate the last population
         population.forEach {
@@ -158,15 +168,16 @@ class SeatEvo(
     }
 
 
-    fun evaluate(individual: Individual, pow: Boolean = true): Double {
+    fun evaluate(individual: Individual,  cycle: Int? = null, pow: Boolean = true): Double {
         var fitness = 0.0
         for (i in 0 until travelers.size) {
             val wagonData = individual.data.get(i)
             val traveler = travelers.get(i)
             //ignore the last entry
             val stopsSize = traveler.route.waypoints.size
-            var distance: Double
+            var distanceSum = 0.0
             for (j in 0 until stopsSize) {
+                var distance: Double = 0.0
                 val wp = traveler.route.waypoints.get(j)
                 val wagonNumber = wagonData.get(j)
                 //if there is no predecessor
@@ -177,13 +188,20 @@ class SeatEvo(
                     val previousWagonNumber = wagonData.get(j - 1)
                     distance = network.getDistance(wp.train, wagonNumber, previousWp.train, previousWagonNumber, wp.fromStation)
                 }
+                //get the distance for leaving
+                if (j == stopsSize -1){
+                    val last = traveler.route.waypoints.last()
+                    val distance = network.getDistance(last.train, wagonData.last(), last.toStation)
+                }
+                distanceSum += distance;
                 if (pow)
                     distance = Math.pow(distance, 2.0)
                 fitness += distance
+
+                //analysis stuff
+                //if (cycle != null)
+                    //analysis.averageTravelDistance.add(cycle, distance/stopsSize)
             }
-            //get the distance for leaving
-            val last = traveler.route.waypoints.last()
-            fitness += network.getDistance(last.train, wagonData.last(), last.toStation)
         }
         return fitness
     }
@@ -246,7 +264,7 @@ class SeatEvo(
             traveler.route.waypoints.forEachIndexed { j, it ->
                 it.wagonNumber = individual.data[i][j]
                 var list = trainmap.get(it.train.id)
-                if (list == null){
+                if (list == null) {
                     list = mutableListOf()
                 }
                 list.add(it)
@@ -254,6 +272,7 @@ class SeatEvo(
                 trainmap.put(it.train.id, list)
             }
         }
+
         trainmap.keys.forEach { key ->
             val list = trainmap.get(key)
             if (list != null){
