@@ -32,7 +32,7 @@ class SeatEvo(
     /**
      * the penalty for overfilling a wagon
      */
-    var penalty = 100;
+    var penalty = 100L;
 
     fun evolution(): Individual {
         mutator.travelers = travelers
@@ -42,11 +42,11 @@ class SeatEvo(
 
         //create initial population
         var best = Individual(emptyList())
-        var bestFitness = Double.MAX_VALUE
+        var bestFitness = Long.MAX_VALUE
         var bestCircle = 0;
         var population = createRandomPopulation()
         for (i in 0..cycles) {
-            val start = System.currentTimeMillis()
+//            val start = System.currentTimeMillis()
             logging("======================== " + popSize + " | #" + i + " ======================== ")
             // evaluate individuals
 
@@ -57,11 +57,12 @@ class SeatEvo(
                 }
                 var evaluate = evaluate(it,i)
 
-                logging("best found in circle " + bestCircle)
                 // check for wagon penalty
 
                 val overload = getWagonOverload(it)
-                evaluate += penalty * overload
+                var penalty = penalty * overload
+                //penalty = penalty * i /cycles
+                evaluate += penalty
 
 
                 //check for group penalty
@@ -86,15 +87,8 @@ class SeatEvo(
             val selected = selector.select(population)
             population = recobinator.recombine(selected).toMutableList()
             population = mutator.mutate(population).toMutableList()
-            val end = System.currentTimeMillis()
-            println("cycle took " + (end-start))
-        }
-        //evaluate the last population
-        population.forEach {
-            val evaluate = evaluate(it)
-            it.fitness = evaluate
-            if (evaluate < bestFitness)
-                best = it
+//            val end = System.currentTimeMillis()
+//            println("cycle took " + (end-start))
         }
 
         logging("best found in circle " + bestCircle)
@@ -102,16 +96,20 @@ class SeatEvo(
     }
 
     private fun analyzePopulation(population: MutableList<Individual>, circle: Int) {
-        var max = Double.MIN_VALUE
-        var min = Double.MAX_VALUE
+        var max = Long.MIN_VALUE
+        var min = Long.MAX_VALUE
+        var maxIndividual: Individual? = null;
+        var minIndividual: Individual? = null;
         var sum = 0.0
         var populationDivergence = 1
         val count = HashMap<Int, Int>()
         population.forEach {
             sum += it.fitness
             if (it.fitness > max){
+                maxIndividual = it;
                 max = it.fitness
             }else if (it.fitness < min){
+                minIndividual = it
                 min = it.fitness
             }
             val hash = it.data.hashCode()
@@ -123,6 +121,14 @@ class SeatEvo(
             count.put(hash,get)
         }
         sum = sum/population.size
+
+        if (minIndividual != null){
+            analysis.minAverageTravelDistance.add(circle, getAverageTravelDistance(minIndividual!!))
+        }
+        if (maxIndividual != null){
+            analysis.maxAverageTravelDistance.add(circle, getAverageTravelDistance(maxIndividual!!))
+        }
+
         analysis.minDataSet.add(circle, min)
         analysis.maxDataSet.add(circle, max)
         FileLogger.write("" + circle + "," + min + "," + max + "," +sum +"\n")
@@ -168,16 +174,16 @@ class SeatEvo(
     }
 
 
-    fun evaluate(individual: Individual,  cycle: Int? = null, pow: Boolean = true): Double {
-        var fitness = 0.0
+    fun evaluate(individual: Individual,  cycle: Int? = null, pow: Boolean = true): Long {
+        var fitness = 0L
         for (i in 0 until travelers.size) {
             val wagonData = individual.data.get(i)
             val traveler = travelers.get(i)
             //ignore the last entry
             val stopsSize = traveler.route.waypoints.size
-            var distanceSum = 0.0
+            var distanceSum = 0L
             for (j in 0 until stopsSize) {
-                var distance: Double = 0.0
+                var distance = 0L
                 val wp = traveler.route.waypoints.get(j)
                 val wagonNumber = wagonData.get(j)
                 //if there is no predecessor
@@ -195,7 +201,7 @@ class SeatEvo(
                 }
                 distanceSum += distance;
                 if (pow)
-                    distance = Math.pow(distance, 2.0)
+                    distance = distance * distance
                 fitness += distance
 
                 //analysis stuff
@@ -204,6 +210,38 @@ class SeatEvo(
             }
         }
         return fitness
+    }
+
+    fun getAverageTravelDistance(individual: Individual): Double {
+        var result = 0.0
+        for (i in 0 until travelers.size) {
+            val wagonData = individual.data.get(i)
+            val traveler = travelers.get(i)
+            //ignore the last entry
+            val stopsSize = traveler.route.waypoints.size
+            var distanceSum = 0.0
+            for (j in 0 until stopsSize) {
+                var distance = 0L
+                val wp = traveler.route.waypoints.get(j)
+                val wagonNumber = wagonData.get(j)
+                //if there is no predecessor
+                if (j-1 < 0){
+                    distance = network.getDistance(wp.train, wagonNumber, wp.fromStation)
+                }else{
+                    val previousWp = traveler.route.waypoints.get(j - 1)
+                    val previousWagonNumber = wagonData.get(j - 1)
+                    distance = network.getDistance(wp.train, wagonNumber, previousWp.train, previousWagonNumber, wp.fromStation)
+                }
+                //get the distance for leaving
+                if (j == stopsSize -1){
+                    val last = traveler.route.waypoints.last()
+                    val distance = network.getDistance(last.train, wagonData.last(), last.toStation)
+                }
+                distanceSum += distance;
+            }
+            result += distanceSum / stopsSize
+        }
+        return result / travelers.size
     }
 
     private fun repairIndividualGroups(individual: Individual) {
@@ -257,8 +295,8 @@ class SeatEvo(
         return splitAmount
     }
 
-    private fun getWagonOverload(individual: Individual): Int {
-        var overload = 0
+    private fun getWagonOverload(individual: Individual): Long {
+        var overload = 0L
         val trainmap = HashMap<String, MutableList<RouteItem>>()
         travelers.forEachIndexed { i, traveler ->
             traveler.route.waypoints.forEachIndexed { j, it ->

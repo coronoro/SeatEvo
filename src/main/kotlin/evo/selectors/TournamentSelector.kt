@@ -10,7 +10,7 @@ class TournamentSelector(var size:Int) : SelectorFunction(){
         if (size >=2 ){
             for (i in 0 until population.size){
                 var best: Individual? = null
-                var fitness = Double.MAX_VALUE
+                var fitness = Long.MAX_VALUE
                 for (j in 0 until size){
                     val participant = population.get(RandomUtil.seed.nextInt(0, population.size))
                     if (participant.fitness < fitness){

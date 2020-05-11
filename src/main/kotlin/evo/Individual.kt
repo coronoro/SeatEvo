@@ -2,6 +2,6 @@ package evo
 
 data class Individual(var data: List<List<Int>>) {
 
-    var fitness: Double = 0.0
+    var fitness: Long = 0
 
 }

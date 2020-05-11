@@ -7,7 +7,7 @@ class InverseStochasticUniversalSampling(val amount: Int) : SelectorFunction() {
 
     override fun select(population: List<Individual>): List<Individual> {
         val result = mutableListOf<Individual>()
-        val sum = population.sumByDouble { individual -> 1/individual.fitness }
+        val sum = population.sumByDouble { individual -> 1.0/individual.fitness }
         val distance = sum / amount
         val start = RandomUtil.seed.nextDouble(0.0, distance)
 

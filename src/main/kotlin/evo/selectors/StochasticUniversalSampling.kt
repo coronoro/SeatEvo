@@ -7,7 +7,7 @@ class StochasticUniversalSampling(val amount: Int) : SelectorFunction() {
 
     override fun select(population: List<Individual>): List<Individual> {
         val result = mutableListOf<Individual>()
-        val sum = population.sumByDouble { individual -> individual.fitness }
+        val sum = population.sumByDouble{ individual -> individual.fitness.toDouble() }
         val distance = sum / amount
         val start = RandomUtil.seed.nextDouble(0.0, distance)
 
