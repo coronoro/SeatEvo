@@ -30,6 +30,7 @@ object AlgorithmAnalysis {
 
         val minDataSets = mutableListOf<XYSeries>()
         val maxDataSets = mutableListOf<XYSeries>()
+        val averageTravelDistanceSet = mutableListOf<XYSeries>()
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
@@ -53,6 +54,7 @@ object AlgorithmAnalysis {
         for (i in 0 .. cycles){
             var minAverage = 0.0
             var maxAverage = 0.0
+            var travelAverage = 0.0
             minDataSets.forEach { set ->
                 val y = set.getY(i)
                 minAverage = minAverage + y.toFloat()
@@ -61,9 +63,14 @@ object AlgorithmAnalysis {
                 val y = set.getY(i)
                 maxAverage = maxAverage + y.toFloat()
             }
-            minAverage = minAverage / cycles
-            maxAverage = maxAverage / cycles
-            println(i.toString()+"\t" + minAverage +"\t" + maxAverage)
+            averageTravelDistanceSet.forEach { set ->
+                val y = set.getY(i)
+                travelAverage = travelAverage + y.toFloat()
+            }
+            minAverage = minAverage / repetitions
+            maxAverage = maxAverage / repetitions
+            travelAverage = travelAverage / repetitions
+            println(i.toString()+"\t" + minAverage +"\t" + maxAverage + "\t" + travelAverage)
         }
     }
 
@@ -74,12 +81,21 @@ object AlgorithmAnalysis {
         val trainNetwork = TrainNetwork(timeTables)
         val travelers = RandomDataUtil.generateTravelers(trainNetwork, travelerAmount)
 
-        val popSize = 1000
+        val popSize = 400
+        println(popSize)
         val cycles = 100
+        println(cycles)
+        val Pr = 0.9
+        println(Pr)
+        val Pm = 0.4
+        println(Pm)
+
 
         val minDataSets = mutableListOf<XYSeries>()
         val maxDataSets = mutableListOf<XYSeries>()
-        val repetitions = 1
+        val minAverageTravelDistanceSet = mutableListOf<XYSeries>()
+        val maxAverageTravelDistanceSet = mutableListOf<XYSeries>()
+        val repetitions = 100
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
@@ -87,22 +103,26 @@ object AlgorithmAnalysis {
                 travelers,
                 popSize,
                 cycles,
-//                InverseFitnessProportionalSelector(popSize),
-                InverseStochasticUniversalSampling(popSize),
+                InverseFitnessProportionalSelector(popSize),
+//                InverseStochasticUniversalSampling(popSize),
 //                    TournamentSelector(4),
                 //TravelerCrossOver(i/10.0),
-                WagonCrossOver(0.7),
-                ChangeWagonMutation(0.5)
+                WagonCrossOver(Pr),
+                ChangeWagonMutation(Pm)
 //              WagonSwapMutation(0.9)
             )
             genetic.logging = false
             val result = genetic.evolution()
             minDataSets.add(genetic.analysis.minDataSet)
             maxDataSets.add(genetic.analysis.maxDataSet)
+            minAverageTravelDistanceSet.add(genetic.analysis.minAverageTravelDistance)
+            maxAverageTravelDistanceSet.add(genetic.analysis.maxAverageTravelDistance)
         }
         for (i in 0 .. cycles){
             var minAverage = 0.0
             var maxAverage = 0.0
+            var minTravelAverage = 0.0
+            var maxTravelAverage = 0.0
             minDataSets.forEach { set ->
                 val y = set.getY(i)
                 minAverage = minAverage + y.toFloat()
@@ -111,9 +131,19 @@ object AlgorithmAnalysis {
                 val y = set.getY(i)
                 maxAverage = maxAverage + y.toFloat()
             }
-            minAverage = minAverage / cycles
-            maxAverage = maxAverage / cycles
-            println(i.toString()+"\t" + minAverage +"\t" + maxAverage)
+            minAverageTravelDistanceSet.forEach { set ->
+                val y = set.getY(i)
+                minTravelAverage = minTravelAverage + y.toFloat()
+            }
+            maxAverageTravelDistanceSet.forEach { set ->
+                val y = set.getY(i)
+                maxTravelAverage = maxTravelAverage + y.toFloat()
+            }
+            minAverage = minAverage / minDataSets.size
+            maxAverage = maxAverage / maxDataSets.size
+            minTravelAverage = minTravelAverage / repetitions
+            maxTravelAverage = maxTravelAverage / repetitions
+            println(i.toString()+"\t" + minAverage +"\t" + maxAverage + "\t" + minTravelAverage + "\t" + maxTravelAverage)
         }
 
     }
