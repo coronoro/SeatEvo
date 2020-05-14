@@ -18,7 +18,7 @@ class InverseStochasticUniversalSampling(val amount: Int) : SelectorFunction() {
             var individual:Individual
             do {
                 individual = population.get(j)
-                fitnessSum += 1/individual.fitness
+                fitnessSum += 1.0/individual.fitness
                 j++
             }while (fitnessSum < start + (i * distance))
             result.add(individual)

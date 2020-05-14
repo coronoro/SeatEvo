@@ -124,9 +124,11 @@ class SeatEvo(
 
         if (minIndividual != null){
             analysis.minAverageTravelDistance.add(circle, getAverageTravelDistance(minIndividual!!))
+            analysis.minWagonOverload.add(circle, getWagonOverload(minIndividual!!))
         }
         if (maxIndividual != null){
             analysis.maxAverageTravelDistance.add(circle, getAverageTravelDistance(maxIndividual!!))
+            analysis.maxWagonOverload.add(circle, getWagonOverload(maxIndividual!!))
         }
 
         analysis.minDataSet.add(circle, min)

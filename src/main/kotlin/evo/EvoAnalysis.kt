@@ -17,6 +17,8 @@ class EvoAnalysis: JFrame() {
     val maxDataSet = XYSeries("max")
     val minAverageTravelDistance = XYSeries("minAvgTravelDistance")
     val maxAverageTravelDistance = XYSeries("maxAvgTravelDistance")
+    val maxWagonOverload = XYSeries("wagonOverloadMax")
+    val minWagonOverload = XYSeries("wagonOverloadMin")
 
     fun showChart(title:String = "Population overview"){
         var dataset = XYSeriesCollection();
