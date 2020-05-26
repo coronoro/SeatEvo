@@ -1404,7 +1404,7 @@
         "departure": {
           "minutes": 0
         },
-        "direction": "FORWARD",990
+        "direction": "FORWARD"
         "offset": 0,
         "station": "8000085",
         "track": {
@@ -2543,241 +2543,6 @@
       }
     ],
     "train": "275"
-  },
-  {
-    "departures": [
-      {
-        "hour": 20,
-        "minute": 44
-      }
-    ],
-    "stops": [
-      {
-        "arrival": {
-          "minutes": 0
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000261",
-        "track": {
-          "number": 14
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 8
-        },
-        "departure": {
-          "minutes": 9
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8004158",
-        "track": {
-          "number": 10
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 31
-        },
-        "departure": {
-          "minutes": 33
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000013",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 61
-        },
-        "departure": {
-          "minutes": 63
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000139",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 77
-        },
-        "departure": {
-          "minutes": 79
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000170",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 135
-        },
-        "departure": {
-          "minutes": 141
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000096",
-        "track": {
-          "number": 10
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 181
-        },
-        "departure": {
-          "minutes": 187
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000244",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 219
-        },
-        "departure": {
-          "minutes": 226
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8070003",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 236
-        },
-        "departure": {
-          "minutes": 252
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000105",
-        "track": {
-          "number": 7
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 268
-        },
-        "departure": {
-          "minutes": 270
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000150",
-        "track": {
-          "number": 7
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 312
-        },
-        "departure": {
-          "minutes": 314
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000115",
-        "track": {
-          "number": 6
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 339
-        },
-        "departure": {
-          "minutes": 341
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000020",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 399
-        },
-        "departure": {
-          "minutes": 401
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000128",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 457
-        },
-        "departure": {
-          "minutes": 460
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000152",
-        "track": {
-          "number": 8
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 547
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8000147",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 564
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8002549",
-        "track": {
-          "number": -1
-        }
-      }
-    ],
-    "train": "990"
   },
   {
     "departures": [
@@ -7830,213 +7595,6 @@
   {
     "departures": [
       {
-        "hour": 15,
-        "minute": 38
-      }
-    ],
-    "stops": [
-      {
-        "arrival": {
-          "minutes": 0
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8011102",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 11
-        },
-        "departure": {
-          "minutes": 12
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8098160",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 21
-        },
-        "departure": {
-          "minutes": 22
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010404",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 74
-        },
-        "departure": {
-          "minutes": 75
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8006552",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 110
-        },
-        "departure": {
-          "minutes": 113
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000152",
-        "track": {
-          "number": 12
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 163
-        },
-        "departure": {
-          "minutes": 165
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000036",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 190
-        },
-        "departure": {
-          "minutes": 194
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000149",
-        "track": {
-          "number": 10
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 210
-        },
-        "departure": {
-          "minutes": 212
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000080",
-        "track": {
-          "number": 16
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 224
-        },
-        "departure": {
-          "minutes": 226
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000041",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 236
-        },
-        "departure": {
-          "minutes": 238
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000098",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 249
-        },
-        "departure": {
-          "minutes": 251
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000086",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 259
-        },
-        "departure": {
-          "minutes": 261
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000082",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 268
-        },
-        "departure": {
-          "minutes": 270
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000085",
-        "track": {
-          "number": 15
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 298
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8000207",
-        "track": {
-          "number": -1
-        }
-      }
-    ],
-    "train": "846"
-  },
-  {
-    "departures": [
-      {
         "hour": 19,
         "minute": 54
       }
@@ -8570,255 +8128,6 @@
       }
     ],
     "train": "1123"
-  },
-  {
-    "departures": [
-      {
-        "hour": 15,
-        "minute": 20
-      }
-    ],
-    "stops": [
-      {
-        "arrival": {
-          "minutes": 0
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000207",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 21
-        },
-        "departure": {
-          "minutes": 23
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000085",
-        "track": {
-          "number": 17
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 28
-        },
-        "departure": {
-          "minutes": 30
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000082",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 39
-        },
-        "departure": {
-          "minutes": 42
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000086",
-        "track": {
-          "number": 12
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 54
-        },
-        "departure": {
-          "minutes": 56
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000098",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 67
-        },
-        "departure": {
-          "minutes": 69
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000041",
-        "track": {
-          "number": 6
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 80
-        },
-        "departure": {
-          "minutes": 82
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000080",
-        "track": {
-          "number": 8
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 102
-        },
-        "departure": {
-          "minutes": 107
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000149",
-        "track": {
-          "number": 8
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 120
-        },
-        "departure": {
-          "minutes": 122
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000076",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 131
-        },
-        "departure": {
-          "minutes": 133
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000571",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 147
-        },
-        "departure": {
-          "minutes": 149
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000297",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 162
-        },
-        "departure": {
-          "minutes": 164
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000004",
-        "track": {
-          "number": 22
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 184
-        },
-        "departure": {
-          "minutes": 186
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000196",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 217
-        },
-        "departure": {
-          "minutes": 219
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8003200",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 274
-        },
-        "departure": {
-          "minutes": 276
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010097",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 290
-        },
-        "departure": {
-          "minutes": 297
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010136",
-        "track": {
-          "number": 5
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 314
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8010101",
-        "track": {
-          "number": -1
-        }
-      }
-    ],
-    "train": "2157"
   },
   {
     "departures": [
@@ -9756,255 +9065,6 @@
         "direction": "BACKWARD",
         "offset": 0,
         "station": "8000206",
-        "track": {
-          "number": -1
-        }
-      }
-    ],
-    "train": "2205"
-  },
-  {
-    "departures": [
-      {
-        "hour": 13,
-        "minute": 51
-      }
-    ],
-    "stops": [
-      {
-        "arrival": {
-          "minutes": 0
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8007768",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 5
-        },
-        "departure": {
-          "minutes": 6
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8004449",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 12
-        },
-        "departure": {
-          "minutes": 16
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000800",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 38
-        },
-        "departure": {
-          "minutes": 43
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8001768",
-        "track": {
-          "number": 5
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 60
-        },
-        "departure": {
-          "minutes": 62
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000225",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 71
-        },
-        "departure": {
-          "minutes": 73
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8004751",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 98
-        },
-        "departure": {
-          "minutes": 100
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8003978",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 111
-        },
-        "departure": {
-          "minutes": 113
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8003701",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 131
-        },
-        "departure": {
-          "minutes": 133
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000316",
-        "track": {
-          "number": 5
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 158
-        },
-        "departure": {
-          "minutes": 161
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000263",
-        "track": {
-          "number": 9
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 190
-        },
-        "departure": {
-          "minutes": 192
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000307",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 198
-        },
-        "departure": {
-          "minutes": 200
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000192",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 203
-        },
-        "departure": {
-          "minutes": 205
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000118",
-        "track": {
-          "number": 5
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 214
-        },
-        "departure": {
-          "minutes": 216
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000286",
-        "track": {
-          "number": 7
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 221
-        },
-        "departure": {
-          "minutes": 223
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000086",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 236
-        },
-        "departure": {
-          "minutes": 238
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000085",
-        "track": {
-          "number": 16
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 262
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8000207",
         "track": {
           "number": -1
         }
@@ -16103,353 +15163,6 @@
       }
     ],
     "train": "709"
-  },
-  {
-    "departures": [
-      {
-        "hour": 22,
-        "minute": 29
-      }
-    ],
-    "stops": [
-      {
-        "arrival": {
-          "minutes": 0
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8098160",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 46
-        },
-        "departure": {
-          "minutes": 48
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010222",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 64
-        },
-        "departure": {
-          "minutes": 66
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010050",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 89
-        },
-        "departure": {
-          "minutes": 125
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010205",
-        "track": {
-          "number": 10
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 147
-        },
-        "departure": {
-          "minutes": 164
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010159",
-        "track": {
-          "number": 6
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 192
-        },
-        "departure": {
-          "minutes": 194
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8010240",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 164
-        },
-        "departure": {
-          "minutes": 166
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8011956",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 170
-        },
-        "departure": {
-          "minutes": 172
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8010133",
-        "track": {
-          "number": 1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 198
-        },
-        "departure": {
-          "minutes": 200
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8010309",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 257
-        },
-        "departure": {
-          "minutes": 259
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8000228",
-        "track": {
-          "number": 5
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 291
-        },
-        "departure": {
-          "minutes": 293
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8000025",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 313
-        },
-        "departure": {
-          "minutes": 315
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8001844",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 324
-        },
-        "departure": {
-          "minutes": 326
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8000114",
-        "track": {
-          "number": 3
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 333
-        },
-        "departure": {
-          "minutes": 349
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000284",
-        "track": {
-          "number": 14
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 424
-        },
-        "departure": {
-          "minutes": 432
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000309",
-        "track": {
-          "number": 8
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 466
-        },
-        "departure": {
-          "minutes": 467
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000095",
-        "track": {
-          "number": 4
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 481
-        },
-        "departure": {
-          "minutes": 483
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000301",
-        "track": {
-          "number": 6
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 521
-        },
-        "departure": {
-          "minutes": 537
-        },
-        "direction": "FORWARD",
-        "offset": 0,
-        "station": "8000298",
-        "track": {
-          "number": 2
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 544
-        },
-        "departure": {
-          "minutes": 545
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8100024",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 580
-        },
-        "departure": {
-          "minutes": 582
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8100014",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 594
-        },
-        "departure": {
-          "minutes": 596
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8100013",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 643
-        },
-        "departure": {
-          "minutes": 645
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8100008",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 669
-        },
-        "departure": {
-          "minutes": 671
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8100514",
-        "track": {
-          "number": -1
-        }
-      },
-      {
-        "arrival": {
-          "minutes": 676
-        },
-        "departure": {
-          "minutes": 0
-        },
-        "direction": "BACKWARD",
-        "offset": 0,
-        "station": "8103000",
-        "track": {
-          "number": -1
-        }
-      }
-    ],
-    "train": "95"
   },
   {
     "departures": [
@@ -37235,10 +35948,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 61
         },
         "departure": {
-          "minutes": 0
+          "minutes": 64
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -37249,10 +35962,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 93
         },
         "departure": {
-          "minutes": 0
+          "minutes": 98
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -48402,10 +47115,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 60
         },
         "departure": {
-          "minutes": 0
+          "minutes": 63
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -48416,10 +47129,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 101
         },
         "departure": {
-          "minutes": 0
+          "minutes": 105
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -58433,10 +57146,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 79
         },
         "departure": {
-          "minutes": 0
+          "minutes": 84
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -58447,10 +57160,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 104
         },
         "departure": {
-          "minutes": 0
+          "minutes": 107
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -66670,10 +65383,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 82
         },
         "departure": {
-          "minutes": 0
+          "minutes": 85
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -66684,10 +65397,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 105
         },
         "departure": {
-          "minutes": 0
+          "minutes": 108
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -73254,10 +71967,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 115
         },
         "departure": {
-          "minutes": 0
+          "minutes": 118
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -84841,10 +83554,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 161
         },
         "departure": {
-          "minutes": 0
+          "minutes": 164
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -84855,10 +83568,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 204
         },
         "departure": {
-          "minutes": 0
+          "minutes": 207
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -84992,10 +83705,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 233
         },
         "departure": {
-          "minutes": 0
+          "minutes": 235
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -85006,10 +83719,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 285
         },
         "departure": {
-          "minutes": 0
+          "minutes": 288
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -94082,10 +92795,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 161
         },
         "departure": {
-          "minutes": 0
+          "minutes": 164
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -94096,10 +92809,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 204
         },
         "departure": {
-          "minutes": 0
+          "minutes": 209
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -102458,10 +101171,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 161
         },
         "departure": {
-          "minutes": 0
+          "minutes": 164
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -102472,10 +101185,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 204
         },
         "departure": {
-          "minutes": 0
+          "minutes": 207
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -109994,10 +108707,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 79
         },
         "departure": {
-          "minutes": 0
+          "minutes": 85
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -111907,10 +110620,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 61
         },
         "departure": {
-          "minutes": 0
+          "minutes": 64
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -121961,10 +120674,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 61
         },
         "departure": {
-          "minutes": 0
+          "minutes": 64
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -123877,10 +122590,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 300
         },
         "departure": {
-          "minutes": 0
+          "minutes": 305
         },
         "direction": "BACKWARD",
         "offset": 0,
@@ -140918,10 +139631,10 @@
       },
       {
         "arrival": {
-          "minutes": 0
+          "minutes": 115
         },
         "departure": {
-          "minutes": 0
+          "minutes": 118
         },
         "direction": "BACKWARD",
         "offset": 0,

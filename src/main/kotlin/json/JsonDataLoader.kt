@@ -1,5 +1,6 @@
 package json
 
+
 import model.Identifiable
 import model.Station
 import model.Train
@@ -9,8 +10,12 @@ import model.track.Track
 import util.JsonUtil
 import util.RandomUtil
 import java.io.File
+import java.io.FileInputStream
+import java.lang.reflect.Type
+
 
 object JsonDataLoader {
+
 
     private enum class DataType(var location:String, var filename: String ){
         Timetable("/timetable/","timetable"),
@@ -71,7 +76,10 @@ object JsonDataLoader {
         val trains = loadTrains(snap, prefix)
 
         val jsonTimetables = loadJsonList(timetableFile, JsonTimeTable::class.java)
+        println("timetables:" + jsonTimetables.size)
+        var  current = 0;
         jsonTimetables.forEach { json ->
+            println("#:" + current)
             val train = findIdentifier(trains, json.train)
             var stops = mutableListOf<StationStop>()
             json.stops.forEach { jsonStop ->
@@ -101,6 +109,7 @@ object JsonDataLoader {
         return result
     }
 
+
     fun fillTimeTables(snap: Boolean = false, prefix: String = ""): List<TimeTable> {
         val infix = if (snap) snapInfix else ""
         val timetableFile = getFileName(DataType.Timetable, prefix, infix)
@@ -127,7 +136,7 @@ object JsonDataLoader {
                 try {
                     station = findIdentifier(stations, jsonStop.station)
                 }catch (e:Exception){
-                    station = Station("TEMP" + tempStationCount, emptyList(), jsonStop.station)
+                    station = Station(jsonStop.station + "-TEMP#" + tempStationCount, emptyList(), jsonStop.station)
                     tempStationCount++
                     stations.add(station)
                 }

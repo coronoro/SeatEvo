@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.41"
+    kotlin("jvm") version "1.3.61"
 }
 
 group = "htwk"
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("com.beust:klaxon:5.1")
+    implementation("com.beust:klaxon:5.2")
     compile(group= "org.restlet.jee", name= "org.restlet", version= "2.3.12")
     testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
     implementation("com.github.coronoro:marudorAPI:91ce7b3f88")

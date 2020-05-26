@@ -17,6 +17,9 @@ class TravelerCrossOver(recombinationRate: Double, var k: Int = 1) : Recombinati
             val recomb = RandomUtil.seed.nextDouble(0.0, 1.0)
             if (recomb > 1 - recombinationRate) {
                 val dataSize = a.data.size
+                val newDataA = mutableListOf<List<Int>>()
+                val newDataB = mutableListOf<List<Int>>()
+
                 var swapIndizes = mutableSetOf<Int>()
                 for (j in 0..k) {
                     if (j == k) {
@@ -26,8 +29,6 @@ class TravelerCrossOver(recombinationRate: Double, var k: Int = 1) : Recombinati
                     }
                 }
                 var previous = 0
-                val newDataA = mutableListOf<List<Int>>()
-                val newDataB = mutableListOf<List<Int>>()
                 val sorted = swapIndizes.sorted()
                 sorted.forEachIndexed { j,swapIndex ->
                     var subListA: List<List<Int>>

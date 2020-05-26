@@ -22,16 +22,17 @@ import java.io.File
 fun main(args: Array<String>) {
     System.setProperty("org.graphstream.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
 
-    //TravelerAnalysis.analyseMarudorTravelers()
+//    TravelerAnalysis.analyseMarudorTravelers()
     //TravelerAnalysis.analyseTravelerGen()
-    //TravelerAnalysis.analyseGridTravelerGraph(3, 40000)
-    //TravelerAnalysis.analyseStairTravelerGraph(9, 4000)
+//    TravelerAnalysis.analyseGridTravelerGraph(5, 5000)
+//    TravelerAnalysis.analyseStairTravelerGraph(9, 500)
+//    TravelerAnalysis.analyseMarudorTravelerGraph(4000)
 
     //load data from marudor
     //MarudorLoader.loadICE()
-    //MarudorLoader.loadAllStations(true)
+//    MarudorLoader.loadAllStations(true)
     //MarudorLoader.loadAllStationTracks()
-    //MarudorLoader.loadICETimeTables()
+//    MarudorLoader.loadICETimeTables()
 
     // Repair the data
     //repairTracks()
@@ -43,8 +44,9 @@ fun main(args: Array<String>) {
     //AlgorithmAnalysis.gridAnalysis(7, 7000, 10, 74)
     //AlgorithmAnalysis.stairAnalysis(9, 500, 10, 8)
 //    AlgorithmAnalysis.stairAnalysisPopulation(9, 500, 10, 8)
-    AlgorithmAnalysis.gridAnalysis(9, 500, 10, 10)
-
+//    AlgorithmAnalysis.gridAnalysis(9, 500, 10, 10)
+//    AlgorithmAnalysis.gridDistributionAnalysis(9, 500, 10, 10)
+AlgorithmAnalysis.marudorDistributionAnalysis(500, 14, 10)
     //loadSnap()
 
 

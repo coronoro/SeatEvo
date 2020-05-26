@@ -6,10 +6,15 @@ import evo.selectors.SelectorFunction
 import model.TrainNetwork
 import model.Traveler
 import model.route.RouteItem
+import org.jfree.data.xy.XYSeries
 import util.FileLogger
 import util.RandomUtil
+import java.math.BigDecimal
+import java.math.RoundingMode
+import java.text.DecimalFormat
 import java.util.*
 import kotlin.collections.HashMap
+
 
 class SeatEvo(
     var network: TrainNetwork,
@@ -32,7 +37,7 @@ class SeatEvo(
     /**
      * the penalty for overfilling a wagon
      */
-    var penalty = 100L;
+    var penaltyValue = 100L;
 
     fun evolution(): Individual {
         mutator.travelers = travelers
@@ -60,7 +65,7 @@ class SeatEvo(
                 // check for wagon penalty
 
                 val overload = getWagonOverload(it)
-                var penalty = penalty * overload
+                var penalty = penaltyValue * overload
                 //penalty = penalty * i /cycles
                 evaluate += penalty
 
@@ -68,7 +73,7 @@ class SeatEvo(
                 //check for group penalty
                 if (groupSoftConstraint){
                     val splits = getGroupSplit(it)
-                    evaluate += penalty * splits
+                    evaluate += penaltyValue * splits
                 }
 
                 it.fitness = evaluate
@@ -95,15 +100,33 @@ class SeatEvo(
         return best
     }
 
-    private fun analyzePopulation(population: MutableList<Individual>, circle: Int) {
+    private fun truncateDecimal(x: Double, numberofDecimals: Int): BigDecimal {
+        return if (x > 0) {
+            BigDecimal(x.toString()).setScale(numberofDecimals, BigDecimal.ROUND_FLOOR)
+        } else {
+            BigDecimal(x.toString()).setScale(numberofDecimals, BigDecimal.ROUND_CEILING)
+        }
+    }
+
+    private fun analyzePopulation(population: MutableList<Individual>, cycle: Int) {
         var max = Long.MIN_VALUE
         var min = Long.MAX_VALUE
         var maxIndividual: Individual? = null;
         var minIndividual: Individual? = null;
         var sum = 0.0
         var populationDivergence = 1
-        val count = HashMap<Int, Int>()
+        val countMap = HashMap<Double, Int>()
         population.forEach {
+
+            var distance = getAverageTravelDistance(it);
+            distance = truncateDecimal(distance, 2).toDouble()
+            var get = countMap.get(distance)
+            if (get == null){
+                get = 0
+            }
+            get ++
+            countMap.put(distance,get)
+
             sum += it.fitness
             if (it.fitness > max){
                 maxIndividual = it;
@@ -112,28 +135,36 @@ class SeatEvo(
                 minIndividual = it
                 min = it.fitness
             }
-            val hash = it.data.hashCode()
-            var get = count.get(hash)
-            if (get == null){
-                get = 0
-            }
-            get ++
-            count.put(hash,get)
+//            val hash = it.data.hashCode()
+//            var get = count.get(hash)
+//            if (get == null){
+//                get = 0
+//            }
+//            get ++
+//            count.put(hash,get)
         }
         sum = sum/population.size
 
+
+        val cycleSeries = XYSeries("travelDistribution" + cycle)
+        countMap.forEach { x, y ->  cycleSeries.add(x,y)}
+        analysis.travelDistribution.put(cycle, cycleSeries)
+
+
         if (minIndividual != null){
-            analysis.minAverageTravelDistance.add(circle, getAverageTravelDistance(minIndividual!!))
-            analysis.minWagonOverload.add(circle, getWagonOverload(minIndividual!!))
+            analysis.minAverageTravelDistance.add(cycle, getAverageTravelDistance(minIndividual!!))
+            analysis.minWagonOverload.add(cycle, getWagonOverload(minIndividual!!))
+            analysis.minGroupSplit.add(cycle, getGroupSplit(minIndividual!!))
         }
         if (maxIndividual != null){
-            analysis.maxAverageTravelDistance.add(circle, getAverageTravelDistance(maxIndividual!!))
-            analysis.maxWagonOverload.add(circle, getWagonOverload(maxIndividual!!))
+            analysis.maxAverageTravelDistance.add(cycle, getAverageTravelDistance(maxIndividual!!))
+            analysis.maxWagonOverload.add(cycle, getWagonOverload(maxIndividual!!))
+            analysis.maxGroupSplit.add(cycle, getGroupSplit(maxIndividual!!))
         }
 
-        analysis.minDataSet.add(circle, min)
-        analysis.maxDataSet.add(circle, max)
-        FileLogger.write("" + circle + "," + min + "," + max + "," +sum +"\n")
+        analysis.minDataSet.add(cycle, min)
+        analysis.maxDataSet.add(cycle, max)
+        FileLogger.write("" + cycle + "," + min + "," + max + "," +sum +"\n")
     }
 
     fun printConfig(){
@@ -162,6 +193,7 @@ class SeatEvo(
                     list = mutableListOf()
                 }
                 list.add(index)
+                groupMap.put(group, list)
             }
         }
     }
@@ -265,11 +297,10 @@ class SeatEvo(
                 }
                 if (fix){
                     val templateIndex = RandomUtil.seed.nextInt(0,indizes.size)
-                    val template = data[templateIndex]
+                    val template = data[indizes[templateIndex]]
                     for (i in 0 until indizes.size){
                         val index = indizes[i]
                         data[index] = template
-
                     }
                 }
             }
