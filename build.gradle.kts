@@ -1,14 +1,13 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.61"
+    kotlin("jvm") version "1.3.41"
 }
 
 group = "htwk"
 version = "1.0-SNAPSHOT"
 
 repositories {
-
     mavenCentral()
     jcenter()
     maven { setUrl("https://jitpack.io") }
@@ -29,6 +28,7 @@ dependencies {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
 
 tasks.withType<KotlinCompile>(){
     kotlinOptions.jvmTarget = "1.8"

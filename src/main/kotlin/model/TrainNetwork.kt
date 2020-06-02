@@ -177,6 +177,22 @@ class TrainNetwork(val timeTables: List<TimeTable>) {
         return result
     }
 
+    fun getTrackDistance(from: Train,  to: Train, station: Station): Long {
+        var result  = 0L
+        val fromStop = getStationStop(from, station)
+        val toStop = getStationStop(to, station)
+        if (fromStop != null && toStop != null) {
+            val fromTrack = fromStop.track
+            val toTrack = toStop.track
+            // from track to track
+            result += Math.abs(fromTrack.id - toTrack.id)
+        }else{
+            throw Exception("no Stops were defined for Train "+from.id + ", " + to.id + " at station: "+ station.id)
+        }
+        return result
+    }
+
+
     /**
      * gets distance to board or leave a train on a specific station
      */

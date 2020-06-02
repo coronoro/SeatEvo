@@ -109,7 +109,6 @@ object JsonDataLoader {
         return result
     }
 
-
     fun fillTimeTables(snap: Boolean = false, prefix: String = ""): List<TimeTable> {
         val infix = if (snap) snapInfix else ""
         val timetableFile = getFileName(DataType.Timetable, prefix, infix)
@@ -157,6 +156,9 @@ object JsonDataLoader {
         }
         JsonDataWriter.writeStations(stations)
         JsonDataWriter.writeTrains(trains)
+
+
+
         return result
     }
 

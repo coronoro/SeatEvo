@@ -10,9 +10,12 @@ import evo.recombination.WagonCrossOver
 import evo.selectors.InverseFitnessProportionalSelector
 import evo.selectors.TournamentSelector
 import json.JsonDataLoader
+import json.JsonDataWriter
+import json.JsonTimeTable
 import model.TrainNetwork
 import model.Traveler
 import model.Wagon
+import model.route.RouteItem
 import model.timetable.TimeTable
 import org.jfree.data.xy.XYDataItem
 import org.jfree.data.xy.XYSeries
@@ -29,7 +32,7 @@ object AlgorithmAnalysis {
         val trainNetwork = TrainNetwork(timeTables)
         val travelers = RandomDataUtil.generateTravelers(trainNetwork, travelerAmount)
 
-        val repetitions = 100
+        val repetitions = 1000
 
         val popSize = 300
         val cycles = 100
@@ -113,7 +116,7 @@ object AlgorithmAnalysis {
         val maxAverageTravelDistanceSet = mutableListOf<XYSeries>()
         val minWagonOverloadSet = mutableListOf<XYSeries>()
         val maxWagonOverloadSet = mutableListOf<XYSeries>()
-        val repetitions = 50
+        val repetitions = 1000
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
@@ -233,7 +236,7 @@ object AlgorithmAnalysis {
         val maxWagonOverloadSet = mutableListOf<XYSeries>()
         val minGroupSplitSet = mutableListOf<XYSeries>()
         val maxGroupSplitSet = mutableListOf<XYSeries>()
-        val repetitions = 1
+        val repetitions = 1000
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
@@ -284,14 +287,6 @@ object AlgorithmAnalysis {
             minAverageTravelDistanceSet.forEach { set ->
                 val y = set.getY(i)
                 minTravelAverage = minTravelAverage + y.toFloat()
-            }
-            maxAverageTravelDistanceSet.forEach { set ->
-                val y = set.getY(i)
-                maxTravelAverage = maxTravelAverage + y.toFloat()
-            }
-            minWagonOverloadSet.forEach { set ->
-                val y = set.getY(i)
-                minWagonOverload = minWagonOverload + y.toFloat()
             }
             maxWagonOverloadSet.forEach { set ->
                 val y = set.getY(i)
@@ -375,7 +370,7 @@ object AlgorithmAnalysis {
         val maxGroupSplitSet = mutableListOf<XYSeries>()
         var xySeries: XYSeries = XYSeries("")
 
-        val repetitions = 1
+        val repetitions = 1000
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
@@ -472,33 +467,17 @@ object AlgorithmAnalysis {
 
 
     fun loadMarudorTimeTables(wagonNumber:Int, wagonSize:Int): List<TimeTable>{
+
         val timeTables = JsonDataLoader.fillTimeTables(true)
 //        val timeTables = timeTables = JsonDataLoader.fillTimeTables(true, "marudor-")
-
-        var timeTableMap = HashMap<String, MutableList<TimeTable>>()
         timeTables.forEach { tt ->
             var wagons = mutableListOf<Wagon>()
             for (i in 0 until wagonNumber){
                 wagons.add(Wagon(wagonSize,0))
             }
             tt.train.wagons = wagons
-            var get = timeTableMap.get(tt.train.id)
-            if (get== null)
-                get = mutableListOf()
-            get.add(tt)
-            timeTableMap.put(tt.train.id, get)
         }
-
-        var cleansed = mutableListOf<TimeTable>()
-        timeTableMap.keys.forEach { key->
-            val get = timeTableMap.get(key)
-            if (get != null){
-                get.sortBy { timeTable -> timeTable.stops.size }
-                cleansed.add(get.last())
-            }
-
-        }
-        return cleansed
+        return timeTables
     }
 
     fun marudorDistributionAnalysis( travelerAmount: Int, wagonNumber:Int, wagonSize:Int){
@@ -506,11 +485,11 @@ object AlgorithmAnalysis {
 
         val popSize = 700
         println("popsize: " + popSize)
-        val cycles = 100
+        val cycles = 150
         println("cycles: " + cycles)
         val Pr = 0.9
         println("Pr: " + Pr)
-        val Pm = 0.2
+        val Pm = .9
         println("Pm: "+Pm)
 
         val timeTables = loadMarudorTimeTables(wagonNumber, wagonSize)
@@ -518,6 +497,23 @@ object AlgorithmAnalysis {
         val trainNetwork = TrainNetwork(timeTables)
         var travelers = RandomDataUtil.generateTravelers(trainNetwork, travelerAmount).toMutableList()
 
+        var distance:Long = 0
+        var count = 0
+        travelers.forEach { t ->
+            if (t.route.waypoints.size > 1){
+
+                var prev: RouteItem? = null
+                t.route.waypoints.forEach {
+                    if (prev != null){
+                        count ++
+                        distance += trainNetwork.getTrackDistance(prev!!.train ,it.train, prev!!.toStation)
+                    }
+
+                    prev = it
+                }
+            }
+        }
+        println(distance /count)
         val groupPart = 0.0
         println("groupPart: " + groupPart)
         val maximumMembers = 3
@@ -542,7 +538,6 @@ object AlgorithmAnalysis {
         newTravelers.addAll(travelers.subList(newTravelers.size, travelers.size))
         travelers = newTravelers
 
-
 //        val k = 5
         val k = Math.floor(travelers.fold( 0, { acc: Int, t: Traveler -> acc + t.route.waypoints.size })/2.0).toInt()
 //        val k = Math.floor(travelers.size/2.0).toInt();
@@ -559,7 +554,7 @@ object AlgorithmAnalysis {
         val maxGroupSplitSet = mutableListOf<XYSeries>()
         var xySeries: XYSeries = XYSeries("")
 
-        val repetitions = 10
+        val repetitions = 1
         for (i in 1.. repetitions step 1){
             println("repetition: " + i +" of "+ repetitions)
             val genetic = SeatEvo(
